@@ -1,0 +1,85 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "BAX",
+          "mechanism": "activates transcription",
+          "probability": 0.9,
+          "evidence": "PMID: 10871862"
+        },
+        {
+          "source": "BAX",
+          "target": "apoptosis",
+          "mechanism": "promotes",
+          "probability": 0.85,
+          "evidence": "PMID: 10449407"
+        },
+        {
+          "source": "apoptosis",
+          "target": "NOD2",
+          "mechanism": "downregulates expression",
+          "probability": 0.6,
+          "evidence": "PMID: 15087488"
+        }
+      ],
+      "overall_probability": 0.459,
+      "summary": "TP53 activates BAX, promoting apoptosis, which downregulates NOD2."
+    },
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "MDM2",
+          "mechanism": "activates transcription",
+          "probability": 0.95,
+          "evidence": "PMID: 16458856"
+        },
+        {
+          "source": "MDM2",
+          "target": "NF-kB",
+          "mechanism": "inhibits",
+          "probability": 0.7,
+          "evidence": "PMID: 11297557"
+        },
+        {
+          "source": "NF-kB",
+          "target": "NOD2",
+          "mechanism": "activates transcription",
+          "probability": 0.8,
+          "evidence": "PMID: 12101285"
+        }
+      ],
+      "overall_probability": 0.532,
+      "summary": "TP53 activates MDM2, inhibiting NF-kB, which activates NOD2."
+    },
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "p21",
+          "mechanism": "activates transcription",
+          "probability": 0.9,
+          "evidence": "PMID: 7957061"
+        },
+        {
+          "source": "p21",
+          "target": "cell cycle arrest",
+          "mechanism": "induces",
+          "probability": 0.85,
+          "evidence": "PMID: 8668203"
+        },
+        {
+          "source": "cell cycle arrest",
+          "target": "NOD2",
+          "mechanism": "downregulates expression",
+          "probability": 0.5,
+          "evidence": "PMID: 15087488"
+        }
+      ],
+      "overall_probability": 0.383,
+      "summary": "TP53 activates p21, inducing cell cycle arrest, which downregulates NOD2."
+    }
+  ]
+}

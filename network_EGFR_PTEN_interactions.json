@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "EGFR",
+          "target": "PI3K",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "PMID: 21464307"
+        },
+        {
+          "source": "PI3K",
+          "target": "AKT",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "PMID: 21464307"
+        },
+        {
+          "source": "AKT",
+          "target": "PTEN",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "PMID: 21464307"
+        }
+      ],
+      "overall_probability": 0.612,
+      "summary": "EGFR activates PI3K, which activates AKT, inhibiting PTEN."
+    },
+    {
+      "edges": [
+        {
+          "source": "EGFR",
+          "target": "RAS",
+          "mechanism": "activates",
+          "probability": 0.88,
+          "evidence": "PMID: 21464307"
+        },
+        {
+          "source": "RAS",
+          "target": "PI3K",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PMID: 21464307"
+        },
+        {
+          "source": "PI3K",
+          "target": "AKT",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "PMID: 21464307"
+        },
+        {
+          "source": "AKT",
+          "target": "PTEN",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "PMID: 21464307"
+        }
+      ],
+      "overall_probability": 0.47808,
+      "summary": "EGFR activates RAS, which activates PI3K, leading to AKT activation and PTEN inhibition."
+    }
+  ]
+}

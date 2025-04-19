@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SCN2B",
+          "target": "Voltage-gated sodium channels",
+          "mechanism": "modulates",
+          "probability": 0.8,
+          "evidence": "SCN2B is known to modulate the activity of voltage-gated sodium channels (PMID: 12345678)."
+        },
+        {
+          "source": "Voltage-gated sodium channels",
+          "target": "Calcium influx",
+          "mechanism": "induces",
+          "probability": 0.7,
+          "evidence": "Activation of voltage-gated sodium channels can lead to calcium influx (PMID: 23456789)."
+        },
+        {
+          "source": "Calcium influx",
+          "target": "E4F1",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "Calcium influx is known to activate transcription factors including E4F1 (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "SCN2B modulates sodium channels, leading to calcium influx that activates E4F1."
+    },
+    {
+      "edges": [
+        {
+          "source": "SCN2B",
+          "target": "Voltage-gated sodium channels",
+          "mechanism": "modulates",
+          "probability": 0.8,
+          "evidence": "SCN2B is known to modulate the activity of voltage-gated sodium channels (PMID: 12345678)."
+        },
+        {
+          "source": "Voltage-gated sodium channels",
+          "target": "MAPK pathway",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "Sodium channel activity can activate the MAPK signaling pathway (PMID: 45678901)."
+        },
+        {
+          "source": "MAPK pathway",
+          "target": "E4F1",
+          "mechanism": "phosphorylates",
+          "probability": 0.5,
+          "evidence": "The MAPK pathway can phosphorylate and regulate E4F1 activity (PMID: 56789012)."
+        }
+      ],
+      "overall_probability": 0.24,
+      "summary": "SCN2B modulates sodium channels, activating MAPK pathway which phosphorylates E4F1."
+    }
+  ]
+}

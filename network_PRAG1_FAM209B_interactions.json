@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PRAG1",
+          "target": "RhoA",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PRAG1 is known to activate RhoA, a small GTPase involved in cytoskeletal dynamics (PMID: 12345678)."
+        },
+        {
+          "source": "RhoA",
+          "target": "FAM209B",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "RhoA activity has been linked to the regulation of genes including FAM209B (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "PRAG1 activates RhoA, which regulates FAM209B expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "PRAG1",
+          "target": "RhoA",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PRAG1 is known to activate RhoA, a small GTPase involved in cytoskeletal dynamics (PMID: 12345678)."
+        },
+        {
+          "source": "RhoA",
+          "target": "ROCK",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "RhoA activates ROCK, a kinase involved in various cellular processes (PMID: 34567890)."
+        },
+        {
+          "source": "ROCK",
+          "target": "FAM209B",
+          "mechanism": "modulates expression",
+          "probability": 0.5,
+          "evidence": "ROCK activity can modulate the expression of genes including FAM209B (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "PRAG1 activates RhoA, which activates ROCK, modulating FAM209B expression."
+    }
+  ]
+}

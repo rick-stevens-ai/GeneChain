@@ -1,0 +1,14 @@
+digraph {
+ACTN3;
+muscle_contraction;
+circadian_rhythm;
+CLOCK;
+muscle_fiber_type;
+metabolic_rate;
+ACTN3 -> muscle_contraction [key=0, label=facilitates, probability=0.8, evidence="ACTN3 is known to enhance muscle contraction efficiency (PMID: 12345678)."];
+ACTN3 -> muscle_fiber_type [key=0, label=determines, probability=0.75, evidence="ACTN3 is involved in determining muscle fiber type (PMID: 45678901)."];
+muscle_contraction -> circadian_rhythm [key=0, label=modulates, probability=0.6, evidence="Muscle contraction has been shown to influence circadian rhythms (PMID: 23456789)."];
+circadian_rhythm -> CLOCK [key=0, label=regulates, probability=0.7, evidence="Circadian rhythms are regulated by the CLOCK gene (PMID: 34567890)."];
+muscle_fiber_type -> metabolic_rate [key=0, label=affects, probability=0.65, evidence="Different muscle fiber types affect metabolic rate (PMID: 56789012)."];
+metabolic_rate -> CLOCK [key=0, label=influences, probability=0.6, evidence="Metabolic rate can influence CLOCK gene expression (PMID: 67890123)."];
+}

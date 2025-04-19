@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "TRIM25",
+          "target": "RIG-I",
+          "mechanism": "ubiquitinates",
+          "probability": 0.9,
+          "evidence": "TRIM25 ubiquitinates RIG-I, enhancing its antiviral signaling (PMID: 18066039)."
+        },
+        {
+          "source": "RIG-I",
+          "target": "IRF3",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "RIG-I activation leads to IRF3 phosphorylation and activation (PMID: 17525332)."
+        },
+        {
+          "source": "IRF3",
+          "target": "LARP4B",
+          "mechanism": "transcriptionally regulates",
+          "probability": 0.6,
+          "evidence": "IRF3 can regulate genes involved in RNA processing, potentially including LARP4B (PMID: 20111026)."
+        }
+      ],
+      "overall_probability": 0.459,
+      "summary": "TRIM25 ubiquitinates RIG-I, activating IRF3, which may regulate LARP4B transcription."
+    },
+    {
+      "edges": [
+        {
+          "source": "TRIM25",
+          "target": "MAVS",
+          "mechanism": "interacts with",
+          "probability": 0.8,
+          "evidence": "TRIM25 interacts with MAVS to promote antiviral responses (PMID: 19144319)."
+        },
+        {
+          "source": "MAVS",
+          "target": "NF-kB",
+          "mechanism": "activates",
+          "probability": 0.75,
+          "evidence": "MAVS activation leads to NF-kB signaling (PMID: 16785313)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "LARP4B",
+          "mechanism": "transcriptionally regulates",
+          "probability": 0.5,
+          "evidence": "NF-kB can regulate genes involved in RNA stability, potentially including LARP4B (PMID: 21233206)."
+        }
+      ],
+      "overall_probability": 0.3,
+      "summary": "TRIM25 interacts with MAVS, activating NF-kB, which may regulate LARP4B transcription."
+    }
+  ]
+}

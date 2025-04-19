@@ -17,7 +17,7 @@ from the returned paths and writes:
 Usage
 -----
 $ export OPENAI_API_KEY="sk‑..."
-$ python gene_interaction_chain_finder.py TP53 EGFR --model gpt-4o --paths 4
+$ python gene_chain_v1.py TP53 EGFR --model gpt-4o --paths 4
 
 Requirements
 ------------
@@ -46,6 +46,7 @@ from typing import Dict, List, Any
 
 import openai
 import networkx as nx
+import re
 
 try:
     import matplotlib.pyplot as plt
@@ -154,13 +155,63 @@ def draw_graph_png(G: nx.MultiDiGraph, filepath: Path):
     plt.close()
 
 # ---------------------------------------------------------------------------
+# Batch/single pair processing helper
+# ---------------------------------------------------------------------------
+def process_pair(entity_a: str, entity_b: str, base: str, paths: int, model: str) -> None:
+    print(f"[info] Querying model {model} for interaction chains between {entity_a} and {entity_b}…")
+    try:
+        response = query_paths(entity_a, entity_b, paths, model)
+    except Exception as exc:
+        print(f"[error] Failed to query paths for {entity_a}, {entity_b}: {exc}", file=sys.stderr)
+        return
+
+    if response.get("no_path"):
+        print(f"[warn] No plausible interaction path found for {entity_a} - {entity_b}: {response.get('reason', '(no reason provided)')}")
+        return
+
+    paths_list = response.get("paths", [])
+    if not paths_list:
+        print(f"[warn] Model returned zero paths for {entity_a} - {entity_b}.")
+        return
+
+    # Save raw JSON
+    json_path = Path(f"{base}_interactions.json")
+    json_path.write_text(json.dumps(response, indent=2))
+    print(f"[info] Wrote {json_path}")
+
+    # Build graph
+    G = build_graph(paths_list)
+    dot_path = Path(f"{base}.dot")
+    try:
+        dump_graphviz(G, dot_path)
+        print(f"[info] Wrote Graphviz file {dot_path}")
+    except Exception as exc:
+        print(f"[warn] Could not write DOT file {dot_path}: {exc}")
+
+    png_path = Path(f"{base}.png")
+    try:
+        draw_graph_png(G, png_path)
+        print(f"[info] Wrote PNG {png_path}")
+    except Exception as exc:
+        print(f"[warn] Could not render PNG {png_path}: {exc}")
+
+    # Summaries
+    print(f"\n=== Interaction Path Summaries for {entity_a} -> {entity_b} ===")
+    for i, path in enumerate(paths_list, 1):
+        desc = path.get("summary", "(no summary)")
+        prob = path.get("overall_probability", "?")
+        print(f"Path {i} (P={prob}): {desc}")
+    print("")  # blank line
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Discover interaction chains between two genes/proteins using GPT‑4.")
-    parser.add_argument("entity_a", help="First gene or protein identifier (e.g. TP53)")
-    parser.add_argument("entity_b", help="Second gene or protein identifier (e.g. EGFR)")
+    parser.add_argument("entity_a", nargs="?", help="First gene or protein identifier (e.g. TP53)")
+    parser.add_argument("entity_b", nargs="?", help="Second gene or protein identifier (e.g. EGFR)")
+    parser.add_argument("--input-file", "-i", dest="input_file", help="Path to input file with gene/protein pairs, one per line")
     parser.add_argument("--model", default="gpt-4o", help="OpenAI model name (default: gpt-4o)")
     parser.add_argument("--paths", type=int, default=3, help="Maximum number of paths to request (default: 3)")
     parser.add_argument("--out", default="network", help="Output file prefix (default: network)")
@@ -171,46 +222,30 @@ def main() -> None:
         print("[error] OPENAI_API_KEY environment variable is not set.", file=sys.stderr)
         sys.exit(1)
 
-    print(f"[info] Querying model {args.model} for interaction chains…")
-    response = query_paths(args.entity_a, args.entity_b, args.paths, args.model)
-
-    if response.get("no_path"):
-        print("No plausible interaction path found:", response.get("reason", "(no reason provided)"))
+    # Process either batch from input file or single pair
+    if args.input_file:
+        try:
+            with open(args.input_file) as f:
+                lines = f.readlines()
+        except Exception as exc:
+            print(f"[error] Could not open input file {args.input_file}: {exc}", file=sys.stderr)
+            sys.exit(1)
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            parts = re.split(r'[,\s]+', line)
+            if len(parts) < 2:
+                print(f"[warn] Skipping invalid line: {line}")
+                continue
+            ent_a, ent_b = parts[0], parts[1]
+            base = f"{args.out}_{ent_a}_{ent_b}"
+            process_pair(ent_a, ent_b, base, args.paths, args.model)
         sys.exit(0)
-
-    paths = response.get("paths", [])
-    if not paths:
-        print("Model returned zero paths – exiting.")
-        sys.exit(0)
-
-    # Save raw JSON
-    json_path = Path(f"{args.out}_interactions.json")
-    json_path.write_text(json.dumps(response, indent=2))
-    print(f"[info] Wrote {json_path}")
-
-    # Build graph
-    G = build_graph(paths)
-    dot_path = Path(f"{args.out}.dot")
-    png_path = Path(f"{args.out}.png")
-
-    try:
-        dump_graphviz(G, dot_path)
-        print(f"[info] Wrote Graphviz file {dot_path}")
-    except Exception as exc:
-        print(f"[warn] Could not write DOT file: {exc}")
-
-    try:
-        draw_graph_png(G, png_path)
-        print(f"[info] Wrote PNG {png_path}")
-    except Exception as exc:
-        print(f"[warn] Could not render PNG: {exc}")
-
-    # Pretty‑print summaries
-    print("\n=== Interaction Path Summaries ===")
-    for i, path in enumerate(paths, 1):
-        desc = path.get("summary", "(no summary)")
-        prob = path.get("overall_probability", "?")
-        print(f"Path {i} (P={prob}): {desc}")
+    elif args.entity_a and args.entity_b:
+        process_pair(args.entity_a, args.entity_b, args.out, args.paths, args.model)
+    else:
+        parser.error("Must provide either entity_a and entity_b or --input-file")
 
 
 if __name__ == "__main__":

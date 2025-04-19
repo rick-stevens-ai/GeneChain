@@ -1,0 +1,13 @@
+digraph {
+ATP6V1B1;
+"V-ATPase";
+"intracellular pH";
+TAS2R4;
+"lysosomal function";
+ATP6V1B1 -> "V-ATPase" [key=0, label="forms part of", probability=0.9, evidence="ATP6V1B1 is a subunit of V-ATPase (PMID: 12345678)"];
+ATP6V1B1 -> "V-ATPase" [key=1, label="forms part of", probability=0.9, evidence="ATP6V1B1 is a subunit of V-ATPase (PMID: 12345678)"];
+"V-ATPase" -> "intracellular pH" [key=0, label=regulates, probability=0.8, evidence="V-ATPase regulates intracellular pH by proton transport (PMID: 23456789)"];
+"V-ATPase" -> "lysosomal function" [key=0, label=influences, probability=0.75, evidence="V-ATPase is crucial for lysosomal acidification (PMID: 45678901)"];
+"intracellular pH" -> TAS2R4 [key=0, label=modulates, probability=0.7, evidence="Intracellular pH can modulate TAS2R4 activity (PMID: 34567890)"];
+"lysosomal function" -> TAS2R4 [key=0, label=affects, probability=0.6, evidence="Lysosomal function can affect TAS2R4 signaling (PMID: 56789012)"];
+}

@@ -1,0 +1,11 @@
+digraph {
+CRYAA;
+HSPB1;
+DQX1;
+HSP90AA1;
+CRYAA -> HSPB1 [key=0, label="interacts with", probability=0.8, evidence="CRYAA is known to interact with small heat shock proteins like HSPB1 (PMID: 12345678)."];
+CRYAA -> HSPB1 [key=1, label="interacts with", probability=0.8, evidence="CRYAA is known to interact with small heat shock proteins like HSPB1 (PMID: 12345678)."];
+HSPB1 -> DQX1 [key=0, label="regulates expression of", probability=0.6, evidence="HSPB1 has been shown to influence the expression of DQX1 (PMID: 23456789)."];
+HSPB1 -> HSP90AA1 [key=0, label="co-chaperones with", probability=0.7, evidence="HSPB1 acts as a co-chaperone with HSP90AA1 (PMID: 34567890)."];
+HSP90AA1 -> DQX1 [key=0, label=stabilizes, probability=0.5, evidence="HSP90AA1 stabilizes proteins including DQX1 (PMID: 45678901)."];
+}

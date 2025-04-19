@@ -1,0 +1,38 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "KRTAP4-3",
+          "target": "KRTAPs",
+          "mechanism": "is a member of",
+          "probability": 0.9,
+          "evidence": "UniProt database"
+        },
+        {
+          "source": "KRTAPs",
+          "target": "keratin",
+          "mechanism": "binds to",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "keratin",
+          "target": "DNA repair",
+          "mechanism": "facilitates",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "DNA repair",
+          "target": "UVSSA",
+          "mechanism": "is involved in",
+          "probability": 0.85,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.4284,
+      "summary": "KRTAP4-3 is a member of KRTAPs, which bind keratin, facilitating DNA repair involving UVSSA."
+    }
+  ]
+}

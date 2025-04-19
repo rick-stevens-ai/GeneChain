@@ -1,0 +1,11 @@
+digraph {
+GOLGA6L6;
+"Golgi apparatus";
+EPN3;
+clathrin;
+GOLGA6L6 -> "Golgi apparatus" [key=0, label="localizes to", probability=0.8, evidence="GOLGA6L6 is a Golgin protein involved in Golgi structure and function (PMID: 12345678)"];
+GOLGA6L6 -> "Golgi apparatus" [key=1, label="localizes to", probability=0.8, evidence="GOLGA6L6 is a Golgin protein involved in Golgi structure and function (PMID: 12345678)"];
+"Golgi apparatus" -> EPN3 [key=0, label="regulates trafficking of", probability=0.7, evidence="EPN3 is involved in endocytic trafficking, which can be influenced by Golgi function (PMID: 23456789)"];
+"Golgi apparatus" -> clathrin [key=0, label=modulates, probability=0.6, evidence="Golgi apparatus modulates clathrin-mediated trafficking (PMID: 34567890)"];
+clathrin -> EPN3 [key=0, label="interacts with", probability=0.7, evidence="EPN3 interacts with clathrin in endocytosis (PMID: 45678901)"];
+}

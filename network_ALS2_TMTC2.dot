@@ -1,0 +1,15 @@
+digraph {
+ALS2;
+RAB5;
+"ER-Golgi transport";
+TMTC2;
+PI3K;
+"ER stress response";
+ALS2 -> RAB5 [key=0, label=activates, probability=0.8, evidence="ALS2 acts as a guanine nucleotide exchange factor for RAB5, promoting its active GTP-bound state (PMID: 15107860)."];
+ALS2 -> RAB5 [key=1, label=activates, probability=0.8, evidence="ALS2 acts as a guanine nucleotide exchange factor for RAB5, promoting its active GTP-bound state (PMID: 15107860)."];
+RAB5 -> "ER-Golgi transport" [key=0, label=facilitates, probability=0.7, evidence="RAB5 is involved in the regulation of endocytic trafficking and can influence ER-Golgi transport (PMID: 11875566)."];
+RAB5 -> PI3K [key=0, label=activates, probability=0.6, evidence="RAB5 activation can lead to PI3K signaling pathway activation (PMID: 12082078)."];
+"ER-Golgi transport" -> TMTC2 [key=0, label=modulates, probability=0.6, evidence="TMTC2 is involved in the ER stress response and protein glycosylation, processes linked to ER-Golgi transport (PMID: 28807993)."];
+PI3K -> "ER stress response" [key=0, label=modulates, probability=0.5, evidence="PI3K signaling is involved in the modulation of the ER stress response (PMID: 21307253)."];
+"ER stress response" -> TMTC2 [key=0, label=regulates, probability=0.6, evidence="TMTC2 is involved in the ER stress response (PMID: 28807993)."];
+}

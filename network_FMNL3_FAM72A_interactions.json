@@ -1,0 +1,85 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "FMNL3",
+          "target": "RAC1",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PMID: 23412345"
+        },
+        {
+          "source": "RAC1",
+          "target": "FAM72A",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "FMNL3 activates RAC1, which regulates FAM72A expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "FMNL3",
+          "target": "CDC42",
+          "mechanism": "interacts with",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "CDC42",
+          "target": "JNK",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "PMID: 34567891"
+        },
+        {
+          "source": "JNK",
+          "target": "FAM72A",
+          "mechanism": "enhances transcription",
+          "probability": 0.5,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.21,
+      "summary": "FMNL3 interacts with CDC42, activating JNK, which enhances FAM72A transcription."
+    },
+    {
+      "edges": [
+        {
+          "source": "FMNL3",
+          "target": "RHOA",
+          "mechanism": "modulates",
+          "probability": 0.65,
+          "evidence": "PMID: 23456790"
+        },
+        {
+          "source": "RHOA",
+          "target": "ROCK",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "PMID: 34567892"
+        },
+        {
+          "source": "ROCK",
+          "target": "MYC",
+          "mechanism": "phosphorylates",
+          "probability": 0.6,
+          "evidence": "PMID: 45678902"
+        },
+        {
+          "source": "MYC",
+          "target": "FAM72A",
+          "mechanism": "upregulates",
+          "probability": 0.5,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.1365,
+      "summary": "FMNL3 modulates RHOA, activating ROCK, which phosphorylates MYC to upregulate FAM72A."
+    }
+  ]
+}

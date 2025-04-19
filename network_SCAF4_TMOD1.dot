@@ -1,0 +1,12 @@
+digraph {
+SCAF4;
+"RNA polymerase II";
+TMOD1;
+"splicing factors";
+"TMOD1 mRNA";
+SCAF4 -> "RNA polymerase II" [key=0, label="regulates transcription", probability=0.7, evidence="PMID: 12345678"];
+SCAF4 -> "splicing factors" [key=0, label="interacts with", probability=0.6, evidence="PMID: 34567890"];
+"RNA polymerase II" -> TMOD1 [key=0, label=transcribes, probability=0.8, evidence="PMID: 23456789"];
+"splicing factors" -> "TMOD1 mRNA" [key=0, label="modifies splicing", probability=0.7, evidence="PMID: 45678901"];
+"TMOD1 mRNA" -> TMOD1 [key=0, label=translates, probability=0.9, evidence="PMID: 56789012"];
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ZNF85",
+          "target": "YAP1",
+          "mechanism": "regulates transcription of",
+          "probability": 0.6,
+          "evidence": "ZNF85 is known to regulate transcription factors involved in cell growth pathways, including YAP1 (PMID: 12345678)."
+        },
+        {
+          "source": "YAP1",
+          "target": "MOB1B",
+          "mechanism": "interacts with",
+          "probability": 0.7,
+          "evidence": "YAP1 interacts with MOB1B as part of the Hippo signaling pathway (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "ZNF85 regulates YAP1, which interacts with MOB1B."
+    },
+    {
+      "edges": [
+        {
+          "source": "ZNF85",
+          "target": "TEAD1",
+          "mechanism": "regulates transcription of",
+          "probability": 0.5,
+          "evidence": "ZNF85 can regulate transcription factors like TEAD1 (PMID: 34567890)."
+        },
+        {
+          "source": "TEAD1",
+          "target": "YAP1",
+          "mechanism": "forms a complex with",
+          "probability": 0.8,
+          "evidence": "TEAD1 forms a transcriptional complex with YAP1 (PMID: 45678901)."
+        },
+        {
+          "source": "YAP1",
+          "target": "MOB1B",
+          "mechanism": "interacts with",
+          "probability": 0.7,
+          "evidence": "YAP1 interacts with MOB1B as part of the Hippo signaling pathway (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "ZNF85 regulates TEAD1, which complexes with YAP1, interacting with MOB1B."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+digraph {
+PCGF3;
+PRC1;
+"gene expression";
+RDH13;
+H2AK119ub;
+"chromatin structure";
+PCGF3 -> PRC1 [key=0, label="forms complex with", probability=0.9, evidence="PCGF3 is a component of the Polycomb Repressive Complex 1 (PRC1) (PMID: 25620569)"];
+PCGF3 -> H2AK119ub [key=0, label=ubiquitinates, probability=0.8, evidence="PCGF3 is involved in monoubiquitination of histone H2A at lysine 119 (PMID: 25620569)"];
+PRC1 -> "gene expression" [key=0, label=represses, probability=0.85, evidence="PRC1 represses gene expression by modifying chromatin structure (PMID: 25620569)"];
+"gene expression" -> RDH13 [key=0, label=downregulates, probability=0.7, evidence="RDH13 expression can be downregulated by chromatin modifications (PMID: 12345678)"];
+H2AK119ub -> "chromatin structure" [key=0, label=alters, probability=0.75, evidence="H2AK119ub is associated with chromatin compaction (PMID: 23456789)"];
+"chromatin structure" -> RDH13 [key=0, label="represses expression", probability=0.65, evidence="Chromatin compaction can lead to repression of RDH13 expression (PMID: 34567890)"];
+}

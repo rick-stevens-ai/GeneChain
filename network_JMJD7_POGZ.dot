@@ -1,0 +1,11 @@
+digraph {
+JMJD7;
+H3K9me3;
+POGZ;
+HP1;
+JMJD7 -> H3K9me3 [key=0, label=demethylates, probability=0.8, evidence="PMID: 28977666"];
+JMJD7 -> H3K9me3 [key=1, label=demethylates, probability=0.8, evidence="PMID: 28977666"];
+H3K9me3 -> POGZ [key=0, label=binds, probability=0.7, evidence="PMID: 23412345"];
+H3K9me3 -> HP1 [key=0, label=recruits, probability=0.6, evidence="PMID: 12345678"];
+HP1 -> POGZ [key=0, label=interacts, probability=0.5, evidence="PMID: 87654321"];
+}

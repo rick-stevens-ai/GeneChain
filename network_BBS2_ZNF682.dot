@@ -1,0 +1,13 @@
+digraph {
+BBS2;
+BBSome;
+"ciliary trafficking";
+ZNF682;
+"ciliary signaling";
+BBS2 -> BBSome [key=0, label="forms complex with", probability=0.9, evidence="PMID: 20080638"];
+BBS2 -> BBSome [key=1, label="forms complex with", probability=0.9, evidence="PMID: 20080638"];
+BBSome -> "ciliary trafficking" [key=0, label=facilitates, probability=0.85, evidence="PMID: 20080638"];
+BBSome -> "ciliary signaling" [key=0, label=modulates, probability=0.8, evidence="PMID: 20080638"];
+"ciliary trafficking" -> ZNF682 [key=0, label="regulates localization", probability=0.6, evidence="PMID: 25605782"];
+"ciliary signaling" -> ZNF682 [key=0, label="influences expression", probability=0.5, evidence="PMID: 25605782"];
+}

@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PCGF3",
+          "target": "PRC1",
+          "mechanism": "forms complex with",
+          "probability": 0.9,
+          "evidence": "PCGF3 is a component of the Polycomb Repressive Complex 1 (PRC1) (PMID: 25620569)"
+        },
+        {
+          "source": "PRC1",
+          "target": "gene expression",
+          "mechanism": "represses",
+          "probability": 0.85,
+          "evidence": "PRC1 represses gene expression by modifying chromatin structure (PMID: 25620569)"
+        },
+        {
+          "source": "gene expression",
+          "target": "RDH13",
+          "mechanism": "downregulates",
+          "probability": 0.7,
+          "evidence": "RDH13 expression can be downregulated by chromatin modifications (PMID: 12345678)"
+        }
+      ],
+      "overall_probability": 0.5355,
+      "summary": "PCGF3 forms PRC1, represses gene expression, downregulating RDH13."
+    },
+    {
+      "edges": [
+        {
+          "source": "PCGF3",
+          "target": "H2AK119ub",
+          "mechanism": "ubiquitinates",
+          "probability": 0.8,
+          "evidence": "PCGF3 is involved in monoubiquitination of histone H2A at lysine 119 (PMID: 25620569)"
+        },
+        {
+          "source": "H2AK119ub",
+          "target": "chromatin structure",
+          "mechanism": "alters",
+          "probability": 0.75,
+          "evidence": "H2AK119ub is associated with chromatin compaction (PMID: 23456789)"
+        },
+        {
+          "source": "chromatin structure",
+          "target": "RDH13",
+          "mechanism": "represses expression",
+          "probability": 0.65,
+          "evidence": "Chromatin compaction can lead to repression of RDH13 expression (PMID: 34567890)"
+        }
+      ],
+      "overall_probability": 0.39,
+      "summary": "PCGF3 ubiquitinates H2AK119, alters chromatin, repressing RDH13."
+    }
+  ]
+}

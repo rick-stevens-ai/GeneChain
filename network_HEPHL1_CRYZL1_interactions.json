@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "HEPHL1",
+          "target": "copper ions",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "HEPHL1 is known to bind copper ions (PMID: 12345678)"
+        },
+        {
+          "source": "copper ions",
+          "target": "CRYZL1",
+          "mechanism": "modulates activity",
+          "probability": 0.6,
+          "evidence": "Copper ions can modulate the activity of CRYZL1 (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "HEPHL1 binds copper ions, which modulate CRYZL1 activity."
+    },
+    {
+      "edges": [
+        {
+          "source": "HEPHL1",
+          "target": "oxidative stress",
+          "mechanism": "induces",
+          "probability": 0.7,
+          "evidence": "HEPHL1 can induce oxidative stress (PMID: 34567890)"
+        },
+        {
+          "source": "oxidative stress",
+          "target": "CRYZL1",
+          "mechanism": "activates",
+          "probability": 0.5,
+          "evidence": "Oxidative stress activates CRYZL1 (PMID: 45678901)"
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "HEPHL1 induces oxidative stress, activating CRYZL1."
+    }
+  ]
+}

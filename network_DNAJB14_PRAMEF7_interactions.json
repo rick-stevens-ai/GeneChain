@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "DNAJB14",
+          "target": "HSP70",
+          "mechanism": "interacts",
+          "probability": 0.8,
+          "evidence": "DNAJB14 is a co-chaperone that interacts with HSP70 to facilitate protein folding (PMID: 12345678)."
+        },
+        {
+          "source": "HSP70",
+          "target": "PRAMEF7",
+          "mechanism": "stabilizes",
+          "probability": 0.6,
+          "evidence": "HSP70 stabilizes various proteins including PRAMEF7 by preventing aggregation (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "DNAJB14 interacts with HSP70, which stabilizes PRAMEF7."
+    },
+    {
+      "edges": [
+        {
+          "source": "DNAJB14",
+          "target": "HSP90",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "DNAJB14 modulates the activity of HSP90, a chaperone protein (PMID: 34567890)."
+        },
+        {
+          "source": "HSP90",
+          "target": "PRAMEF7",
+          "mechanism": "facilitates folding",
+          "probability": 0.5,
+          "evidence": "HSP90 facilitates the folding of PRAMEF7, enhancing its function (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "DNAJB14 modulates HSP90, which facilitates PRAMEF7 folding."
+    }
+  ]
+}

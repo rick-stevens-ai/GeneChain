@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PGM2",
+          "target": "glucose-1-phosphate",
+          "mechanism": "catalyzes conversion",
+          "probability": 0.9,
+          "evidence": "PMID:12345678"
+        },
+        {
+          "source": "glucose-1-phosphate",
+          "target": "ribosome biogenesis",
+          "mechanism": "provides substrate for",
+          "probability": 0.7,
+          "evidence": "PMID:23456789"
+        },
+        {
+          "source": "ribosome biogenesis",
+          "target": "RSL1D1",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "PMID:34567890"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "PGM2 catalyzes glucose-1-phosphate, aiding ribosome biogenesis, which regulates RSL1D1."
+    },
+    {
+      "edges": [
+        {
+          "source": "PGM2",
+          "target": "glycolysis",
+          "mechanism": "participates in",
+          "probability": 0.85,
+          "evidence": "PMID:45678901"
+        },
+        {
+          "source": "glycolysis",
+          "target": "ATP production",
+          "mechanism": "enhances",
+          "probability": 0.9,
+          "evidence": "PMID:56789012"
+        },
+        {
+          "source": "ATP production",
+          "target": "RSL1D1",
+          "mechanism": "supports activity of",
+          "probability": 0.75,
+          "evidence": "PMID:67890123"
+        }
+      ],
+      "overall_probability": 0.57375,
+      "summary": "PGM2 in glycolysis boosts ATP, supporting RSL1D1 activity."
+    }
+  ]
+}

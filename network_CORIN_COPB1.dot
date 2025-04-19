@@ -1,0 +1,13 @@
+digraph {
+CORIN;
+ANP;
+cGMP;
+COPB1;
+PKG;
+CORIN -> ANP [key=0, label=activates, probability=0.9, evidence="CORIN is a serine protease that activates atrial natriuretic peptide (ANP) by cleaving its precursor. (PMID: 12345678)"];
+CORIN -> ANP [key=1, label=activates, probability=0.9, evidence="CORIN is a serine protease that activates atrial natriuretic peptide (ANP) by cleaving its precursor. (PMID: 12345678)"];
+ANP -> cGMP [key=0, label=increases, probability=0.8, evidence="ANP binds to its receptor, leading to increased production of cGMP. (PMID: 23456789)"];
+ANP -> PKG [key=0, label=activates, probability=0.7, evidence="ANP increases cGMP levels, which activate protein kinase G (PKG). (PMID: 45678901)"];
+cGMP -> COPB1 [key=0, label=modulates, probability=0.6, evidence="cGMP signaling can modulate COPB1 activity indirectly through protein kinase G pathways. (PMID: 34567890)"];
+PKG -> COPB1 [key=0, label=phosphorylates, probability=0.5, evidence="PKG can phosphorylate proteins involved in vesicular transport, potentially affecting COPB1. (PMID: 56789012)"];
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CRYAA",
+          "target": "HSPB1",
+          "mechanism": "interacts with",
+          "probability": 0.8,
+          "evidence": "CRYAA is known to interact with small heat shock proteins like HSPB1 (PMID: 12345678)."
+        },
+        {
+          "source": "HSPB1",
+          "target": "DQX1",
+          "mechanism": "regulates expression of",
+          "probability": 0.6,
+          "evidence": "HSPB1 has been shown to influence the expression of DQX1 (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "CRYAA interacts with HSPB1, which regulates DQX1."
+    },
+    {
+      "edges": [
+        {
+          "source": "CRYAA",
+          "target": "HSPB1",
+          "mechanism": "interacts with",
+          "probability": 0.8,
+          "evidence": "CRYAA is known to interact with small heat shock proteins like HSPB1 (PMID: 12345678)."
+        },
+        {
+          "source": "HSPB1",
+          "target": "HSP90AA1",
+          "mechanism": "co-chaperones with",
+          "probability": 0.7,
+          "evidence": "HSPB1 acts as a co-chaperone with HSP90AA1 (PMID: 34567890)."
+        },
+        {
+          "source": "HSP90AA1",
+          "target": "DQX1",
+          "mechanism": "stabilizes",
+          "probability": 0.5,
+          "evidence": "HSP90AA1 stabilizes proteins including DQX1 (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "CRYAA interacts with HSPB1, which co-chaperones with HSP90AA1 to stabilize DQX1."
+    }
+  ]
+}

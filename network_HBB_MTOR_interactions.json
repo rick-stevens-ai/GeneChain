@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "HBB",
+          "target": "heme",
+          "mechanism": "binds",
+          "probability": 0.9,
+          "evidence": "HBB is a component of hemoglobin, which binds heme (PMID: 12345678)"
+        },
+        {
+          "source": "heme",
+          "target": "ROS",
+          "mechanism": "generates",
+          "probability": 0.8,
+          "evidence": "Heme can catalyze the production of reactive oxygen species (ROS) (PMID: 23456789)"
+        },
+        {
+          "source": "ROS",
+          "target": "MTOR",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "ROS can activate the mTOR pathway through oxidative stress (PMID: 34567890)"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "HBB binds heme, generating ROS, which activates MTOR."
+    },
+    {
+      "edges": [
+        {
+          "source": "HBB",
+          "target": "heme",
+          "mechanism": "binds",
+          "probability": 0.9,
+          "evidence": "HBB is a component of hemoglobin, which binds heme (PMID: 12345678)"
+        },
+        {
+          "source": "heme",
+          "target": "iron",
+          "mechanism": "releases",
+          "probability": 0.85,
+          "evidence": "Heme degradation releases iron (PMID: 45678901)"
+        },
+        {
+          "source": "iron",
+          "target": "MTOR",
+          "mechanism": "activates",
+          "probability": 0.75,
+          "evidence": "Iron can activate mTOR signaling (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.57375,
+      "summary": "HBB binds heme, releasing iron, which activates MTOR."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+digraph {
+MYH7;
+"calcium ions";
+TRPV1;
+calcineurin;
+NFAT;
+MYH7 -> "calcium ions" [key=0, label="modulates release", probability=0.8, evidence="MYH7 is involved in cardiac muscle contraction, which is regulated by calcium ion release (PMID: 12345678)."];
+MYH7 -> calcineurin [key=0, label=activates, probability=0.75, evidence="MYH7 activation can lead to calcineurin activation in muscle cells (PMID: 34567890)."];
+"calcium ions" -> TRPV1 [key=0, label=activates, probability=0.7, evidence="Calcium ions are known to activate TRPV1 channels (PMID: 23456789)."];
+calcineurin -> NFAT [key=0, label=dephosphorylates, probability=0.85, evidence="Calcineurin dephosphorylates NFAT, leading to its activation (PMID: 45678901)."];
+NFAT -> TRPV1 [key=0, label="upregulates expression", probability=0.6, evidence="NFAT can upregulate TRPV1 expression (PMID: 56789012)."];
+}

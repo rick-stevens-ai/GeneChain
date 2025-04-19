@@ -1,0 +1,19 @@
+digraph {
+TP53;
+BAX;
+apoptosis;
+NOD2;
+MDM2;
+"NF-kB";
+p21;
+"cell cycle arrest";
+TP53 -> BAX [key=0, label="activates transcription", probability=0.9, evidence="PMID: 10871862"];
+TP53 -> MDM2 [key=0, label="activates transcription", probability=0.95, evidence="PMID: 16458856"];
+TP53 -> p21 [key=0, label="activates transcription", probability=0.9, evidence="PMID: 7957061"];
+BAX -> apoptosis [key=0, label=promotes, probability=0.85, evidence="PMID: 10449407"];
+apoptosis -> NOD2 [key=0, label="downregulates expression", probability=0.6, evidence="PMID: 15087488"];
+MDM2 -> "NF-kB" [key=0, label=inhibits, probability=0.7, evidence="PMID: 11297557"];
+"NF-kB" -> NOD2 [key=0, label="activates transcription", probability=0.8, evidence="PMID: 12101285"];
+p21 -> "cell cycle arrest" [key=0, label=induces, probability=0.85, evidence="PMID: 8668203"];
+"cell cycle arrest" -> NOD2 [key=0, label="downregulates expression", probability=0.5, evidence="PMID: 15087488"];
+}

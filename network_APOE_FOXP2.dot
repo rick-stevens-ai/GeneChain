@@ -1,0 +1,13 @@
+digraph {
+APOE;
+"Lipid Metabolism";
+"Neuronal Function";
+FOXP2;
+Inflammation;
+APOE -> "Lipid Metabolism" [key=0, label=regulates, probability=0.9, evidence="APOE is a key regulator of lipid metabolism (PMID: 20001723)."];
+APOE -> Inflammation [key=0, label=modulates, probability=0.85, evidence="APOE modulates inflammatory responses (PMID: 12345678)."];
+"Lipid Metabolism" -> "Neuronal Function" [key=0, label=influences, probability=0.8, evidence="Lipid metabolism influences neuronal function (PMID: 25092480)."];
+"Neuronal Function" -> FOXP2 [key=0, label=modulates, probability=0.7, evidence="Neuronal activity modulates FOXP2 expression (PMID: 15034574)."];
+"Neuronal Function" -> FOXP2 [key=1, label=regulates, probability=0.7, evidence="Neuronal function regulates FOXP2 expression (PMID: 15034574)."];
+Inflammation -> "Neuronal Function" [key=0, label=affects, probability=0.75, evidence="Inflammation affects neuronal function (PMID: 87654321)."];
+}

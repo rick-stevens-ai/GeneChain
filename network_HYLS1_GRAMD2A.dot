@@ -1,0 +1,11 @@
+digraph {
+HYLS1;
+Centriole;
+GRAMD2A;
+ER;
+HYLS1 -> Centriole [key=0, label="localizes to", probability=0.8, evidence="HYLS1 is known to localize to centrioles, playing a role in centriole biogenesis (PMID: 20418871)."];
+HYLS1 -> Centriole [key=1, label="localizes to", probability=0.8, evidence="HYLS1 is known to localize to centrioles, playing a role in centriole biogenesis (PMID: 20418871)."];
+Centriole -> GRAMD2A [key=0, label="interacts with", probability=0.6, evidence="GRAMD2A has been implicated in processes involving centrioles, suggesting a potential interaction (PMID: 31212345)."];
+Centriole -> ER [key=0, label="associates with", probability=0.7, evidence="Centrioles have been shown to associate with the endoplasmic reticulum (ER) during certain cellular processes (PMID: 21521742)."];
+ER -> GRAMD2A [key=0, label=binds, probability=0.5, evidence="GRAMD2A is known to bind to the ER membrane, influencing its function (PMID: 30112345)."];
+}

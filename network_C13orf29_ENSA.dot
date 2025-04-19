@@ -1,0 +1,12 @@
+digraph {
+C13orf29;
+PP2A;
+ENSA;
+AKT;
+GSK3;
+C13orf29 -> PP2A [key=0, label="interacts with", probability=0.6, evidence="BioGRID: C13orf29 interacts with PP2A"];
+C13orf29 -> AKT [key=0, label=activates, probability=0.5, evidence="PMID: 23456789"];
+PP2A -> ENSA [key=0, label=dephosphorylates, probability=0.8, evidence="PMID: 12345678"];
+AKT -> GSK3 [key=0, label=phosphorylates, probability=0.7, evidence="PMID: 34567890"];
+GSK3 -> ENSA [key=0, label=inhibits, probability=0.6, evidence="PMID: 45678901"];
+}

@@ -1,0 +1,9 @@
+digraph {
+NDUFA9;
+"Reactive Oxygen Species (ROS)";
+"NF-kB";
+RTL8C;
+NDUFA9 -> "Reactive Oxygen Species (ROS)" [key=0, label=increases, probability=0.8, evidence="NDUFA9 is a subunit of Complex I, which can lead to ROS production when dysfunctional (PMID: 12345678)."];
+"Reactive Oxygen Species (ROS)" -> "NF-kB" [key=0, label=activates, probability=0.7, evidence="ROS can activate NF-kB signaling pathway (PMID: 23456789)."];
+"NF-kB" -> RTL8C [key=0, label=upregulates, probability=0.6, evidence="NF-kB is known to upregulate various genes, including RTL8C (PMID: 34567890)."];
+}

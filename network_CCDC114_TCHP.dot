@@ -1,0 +1,7 @@
+digraph {
+CCDC114;
+IFT88;
+TCHP;
+CCDC114 -> IFT88 [key=0, label="interacts with", probability=0.7, evidence="PMID: 23475855"];
+IFT88 -> TCHP [key=0, label=regulates, probability=0.6, evidence="PMID: 24574456"];
+}

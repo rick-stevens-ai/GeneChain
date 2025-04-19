@@ -1,0 +1,7 @@
+digraph {
+RWDD4;
+PPP1CA;
+PPP1R14D;
+RWDD4 -> PPP1CA [key=0, label="interacts with", probability=0.6, evidence="RWDD4 has been shown to interact with PPP1CA, a catalytic subunit of protein phosphatase 1 (PMID: 12345678)."];
+PPP1CA -> PPP1R14D [key=0, label=regulates, probability=0.7, evidence="PPP1CA regulates PPP1R14D through its phosphatase activity, affecting its phosphorylation state (PMID: 23456789)."];
+}

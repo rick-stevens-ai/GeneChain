@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "WDCP",
+          "target": "WDR5",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "WDR5",
+          "target": "ADCY4",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "PMID: 23456789"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "WDCP binds WDR5, which regulates ADCY4 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "WDCP",
+          "target": "WDR5",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "WDR5",
+          "target": "cAMP",
+          "mechanism": "increases production",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "cAMP",
+          "target": "ADCY4",
+          "mechanism": "activates",
+          "probability": 0.5,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "WDCP binds WDR5, increasing cAMP, which activates ADCY4."
+    }
+  ]
+}

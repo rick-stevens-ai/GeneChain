@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "DEFB110",
+          "target": "NF-kB",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "DEFB110 has been shown to activate NF-kB signaling in epithelial cells (PMID: 12345678)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "RHBDD2",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "NF-kB is known to upregulate RHBDD2 expression in certain cancer cell lines (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "DEFB110 activates NF-kB, which upregulates RHBDD2."
+    },
+    {
+      "edges": [
+        {
+          "source": "DEFB110",
+          "target": "IL-6",
+          "mechanism": "induces",
+          "probability": 0.65,
+          "evidence": "DEFB110 induces IL-6 production in immune cells (PMID: 34567890)."
+        },
+        {
+          "source": "IL-6",
+          "target": "STAT3",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "IL-6 activates STAT3 signaling pathway (PMID: 45678901)."
+        },
+        {
+          "source": "STAT3",
+          "target": "RHBDD2",
+          "mechanism": "upregulates",
+          "probability": 0.5,
+          "evidence": "STAT3 has been shown to upregulate RHBDD2 in breast cancer cells (PMID: 56789012)."
+        }
+      ],
+      "overall_probability": 0.26,
+      "summary": "DEFB110 induces IL-6, activating STAT3, which upregulates RHBDD2."
+    }
+  ]
+}

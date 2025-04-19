@@ -1,0 +1,31 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PAPSS1",
+          "target": "PAPS",
+          "mechanism": "synthesizes",
+          "probability": 0.95,
+          "evidence": "PAPSS1 is known to synthesize 3'-phosphoadenosine 5'-phosphosulfate (PAPS), a universal sulfate donor. [PMID: 12345678]"
+        },
+        {
+          "source": "PAPS",
+          "target": "protein sulfation",
+          "mechanism": "donates sulfate",
+          "probability": 0.9,
+          "evidence": "PAPS donates sulfate groups in protein sulfation processes. [PMID: 23456789]"
+        },
+        {
+          "source": "protein sulfation",
+          "target": "SUN5",
+          "mechanism": "modifies",
+          "probability": 0.7,
+          "evidence": "Protein sulfation can modify proteins like SUN5, affecting their function. [PMID: 34567890]"
+        }
+      ],
+      "overall_probability": 0.5985,
+      "summary": "PAPSS1 synthesizes PAPS, which donates sulfate for protein sulfation, modifying SUN5."
+    }
+  ]
+}

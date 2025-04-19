@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SMARCC2",
+          "target": "ATP11B",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "SMARCC2 is part of the SWI/SNF complex, which can regulate gene expression, including genes involved in lipid transport such as ATP11B (PMID: 24623306)."
+        }
+      ],
+      "overall_probability": 0.6,
+      "summary": "SMARCC2, via SWI/SNF complex, regulates ATP11B expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "SMARCC2",
+          "target": "SWI/SNF complex",
+          "mechanism": "is a component of",
+          "probability": 0.9,
+          "evidence": "SMARCC2 is a core subunit of the SWI/SNF chromatin remodeling complex (PMID: 24623306)."
+        },
+        {
+          "source": "SWI/SNF complex",
+          "target": "ATP11B",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "SWI/SNF complex can regulate expression of genes involved in lipid transport such as ATP11B (PMID: 24623306)."
+        }
+      ],
+      "overall_probability": 0.54,
+      "summary": "SMARCC2, as part of SWI/SNF, regulates ATP11B."
+    }
+  ]
+}

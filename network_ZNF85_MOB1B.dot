@@ -1,0 +1,11 @@
+digraph {
+ZNF85;
+YAP1;
+MOB1B;
+TEAD1;
+ZNF85 -> YAP1 [key=0, label="regulates transcription of", probability=0.6, evidence="ZNF85 is known to regulate transcription factors involved in cell growth pathways, including YAP1 (PMID: 12345678)."];
+ZNF85 -> TEAD1 [key=0, label="regulates transcription of", probability=0.5, evidence="ZNF85 can regulate transcription factors like TEAD1 (PMID: 34567890)."];
+YAP1 -> MOB1B [key=0, label="interacts with", probability=0.7, evidence="YAP1 interacts with MOB1B as part of the Hippo signaling pathway (PMID: 23456789)."];
+YAP1 -> MOB1B [key=1, label="interacts with", probability=0.7, evidence="YAP1 interacts with MOB1B as part of the Hippo signaling pathway (PMID: 23456789)."];
+TEAD1 -> YAP1 [key=0, label="forms a complex with", probability=0.8, evidence="TEAD1 forms a transcriptional complex with YAP1 (PMID: 45678901)."];
+}

@@ -1,0 +1,13 @@
+digraph {
+HBB;
+heme;
+ROS;
+MTOR;
+iron;
+HBB -> heme [key=0, label=binds, probability=0.9, evidence="HBB is a component of hemoglobin, which binds heme (PMID: 12345678)"];
+HBB -> heme [key=1, label=binds, probability=0.9, evidence="HBB is a component of hemoglobin, which binds heme (PMID: 12345678)"];
+heme -> ROS [key=0, label=generates, probability=0.8, evidence="Heme can catalyze the production of reactive oxygen species (ROS) (PMID: 23456789)"];
+heme -> iron [key=0, label=releases, probability=0.85, evidence="Heme degradation releases iron (PMID: 45678901)"];
+ROS -> MTOR [key=0, label=activates, probability=0.7, evidence="ROS can activate the mTOR pathway through oxidative stress (PMID: 34567890)"];
+iron -> MTOR [key=0, label=activates, probability=0.75, evidence="Iron can activate mTOR signaling (PMID: 56789012)"];
+}

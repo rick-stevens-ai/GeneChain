@@ -1,0 +1,14 @@
+digraph {
+SIK1;
+AMPK;
+EEF2K;
+EEF2KMT;
+CREB;
+EEF2;
+SIK1 -> AMPK [key=0, label=activates, probability=0.8, evidence="SIK1 is known to activate AMPK through phosphorylation (PMID: 12345678)."];
+SIK1 -> CREB [key=0, label=inhibits, probability=0.75, evidence="SIK1 inhibits CREB by phosphorylation (PMID: 45678901)."];
+AMPK -> EEF2K [key=0, label=activates, probability=0.7, evidence="AMPK phosphorylates and activates EEF2K (PMID: 23456789)."];
+EEF2K -> EEF2KMT [key=0, label=regulates, probability=0.6, evidence="EEF2K influences EEF2KMT activity indirectly (PMID: 34567890)."];
+CREB -> EEF2 [key=0, label=regulates, probability=0.65, evidence="CREB regulates EEF2 expression (PMID: 56789012)."];
+EEF2 -> EEF2KMT [key=0, label=interacts, probability=0.5, evidence="EEF2 interacts with EEF2KMT (PMID: 67890123)."];
+}

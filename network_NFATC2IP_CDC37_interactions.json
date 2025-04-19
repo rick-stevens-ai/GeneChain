@@ -1,0 +1,72 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "NFATC2IP",
+          "target": "NFATC2",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "NFATC2IP is known to interact with NFATC2 to modulate its activity (PMID: 12021261)."
+        },
+        {
+          "source": "NFATC2",
+          "target": "calcineurin",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "NFATC2 is activated by calcineurin through dephosphorylation (PMID: 10412979)."
+        },
+        {
+          "source": "calcineurin",
+          "target": "HSP90",
+          "mechanism": "interacts",
+          "probability": 0.6,
+          "evidence": "Calcineurin has been shown to interact with HSP90, affecting its function (PMID: 15014431)."
+        },
+        {
+          "source": "HSP90",
+          "target": "CDC37",
+          "mechanism": "stabilizes",
+          "probability": 0.9,
+          "evidence": "HSP90, along with CDC37, stabilizes client kinases (PMID: 10966457)."
+        }
+      ],
+      "overall_probability": 0.3024,
+      "summary": "NFATC2IP binds NFATC2, activating calcineurin, which interacts with HSP90 to stabilize CDC37."
+    },
+    {
+      "edges": [
+        {
+          "source": "NFATC2IP",
+          "target": "NFATC2",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "NFATC2IP is known to interact with NFATC2 to modulate its activity (PMID: 12021261)."
+        },
+        {
+          "source": "NFATC2",
+          "target": "calcineurin",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "NFATC2 is activated by calcineurin through dephosphorylation (PMID: 10412979)."
+        },
+        {
+          "source": "calcineurin",
+          "target": "HSP90",
+          "mechanism": "interacts",
+          "probability": 0.6,
+          "evidence": "Calcineurin has been shown to interact with HSP90, affecting its function (PMID: 15014431)."
+        },
+        {
+          "source": "HSP90",
+          "target": "CDC37",
+          "mechanism": "associates",
+          "probability": 0.85,
+          "evidence": "HSP90 associates with CDC37 to form a chaperone complex (PMID: 10966457)."
+        }
+      ],
+      "overall_probability": 0.2856,
+      "summary": "NFATC2IP binds NFATC2, activating calcineurin, which interacts with HSP90 associating with CDC37."
+    }
+  ]
+}

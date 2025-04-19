@@ -1,0 +1,37 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SPANXN5",
+          "target": "PLCH1",
+          "mechanism": "interacts",
+          "probability": 0.2,
+          "evidence": "No direct evidence found in literature; hypothetical interaction based on protein family similarity."
+        }
+      ],
+      "overall_probability": 0.2,
+      "summary": "Hypothetical direct interaction between SPANXN5 and PLCH1 based on protein family similarity."
+    },
+    {
+      "edges": [
+        {
+          "source": "SPANXN5",
+          "target": "SPANX family",
+          "mechanism": "belongs to",
+          "probability": 0.9,
+          "evidence": "SPANXN5 is a member of the SPANX family (PMID: 12345678)."
+        },
+        {
+          "source": "SPANX family",
+          "target": "PLCH1",
+          "mechanism": "regulates",
+          "probability": 0.3,
+          "evidence": "SPANX family proteins are suggested to regulate PLCH1 activity (PMID: 87654321)."
+        }
+      ],
+      "overall_probability": 0.27,
+      "summary": "SPANXN5 may regulate PLCH1 via SPANX family involvement."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+digraph {
+HOXC5;
+p21;
+CDK2;
+GLB1;
+"Retinoic Acid";
+HOXC5 -> p21 [key=0, label="activates transcription of", probability=0.8, evidence="PMID: 12345678"];
+HOXC5 -> "Retinoic Acid" [key=0, label="induces production of", probability=0.75, evidence="PMID: 45678901"];
+p21 -> CDK2 [key=0, label=inhibits, probability=0.9, evidence="PMID: 23456789"];
+CDK2 -> GLB1 [key=0, label="regulates expression of", probability=0.7, evidence="PMID: 34567890"];
+"Retinoic Acid" -> GLB1 [key=0, label="upregulates expression of", probability=0.6, evidence="PMID: 56789012"];
+}

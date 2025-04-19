@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "BBS2",
+          "target": "BBSome",
+          "mechanism": "forms complex with",
+          "probability": 0.9,
+          "evidence": "PMID: 20080638"
+        },
+        {
+          "source": "BBSome",
+          "target": "ciliary trafficking",
+          "mechanism": "facilitates",
+          "probability": 0.85,
+          "evidence": "PMID: 20080638"
+        },
+        {
+          "source": "ciliary trafficking",
+          "target": "ZNF682",
+          "mechanism": "regulates localization",
+          "probability": 0.6,
+          "evidence": "PMID: 25605782"
+        }
+      ],
+      "overall_probability": 0.459,
+      "summary": "BBS2 forms BBSome, aiding ciliary trafficking, affecting ZNF682 localization."
+    },
+    {
+      "edges": [
+        {
+          "source": "BBS2",
+          "target": "BBSome",
+          "mechanism": "forms complex with",
+          "probability": 0.9,
+          "evidence": "PMID: 20080638"
+        },
+        {
+          "source": "BBSome",
+          "target": "ciliary signaling",
+          "mechanism": "modulates",
+          "probability": 0.8,
+          "evidence": "PMID: 20080638"
+        },
+        {
+          "source": "ciliary signaling",
+          "target": "ZNF682",
+          "mechanism": "influences expression",
+          "probability": 0.5,
+          "evidence": "PMID: 25605782"
+        }
+      ],
+      "overall_probability": 0.36,
+      "summary": "BBS2 forms BBSome, modulating ciliary signaling, influencing ZNF682 expression."
+    }
+  ]
+}

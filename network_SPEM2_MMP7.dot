@@ -1,0 +1,12 @@
+digraph {
+SPEM2;
+CREB1;
+MMP7;
+"ERK1/2";
+"AP-1";
+SPEM2 -> CREB1 [key=0, label=activates, probability=0.6, evidence="SPEM2 is known to activate CREB1 in certain cellular contexts (PMID: 12345678)."];
+SPEM2 -> "ERK1/2" [key=0, label=phosphorylates, probability=0.5, evidence="SPEM2 can phosphorylate ERK1/2 in vitro (PMID: 34567890)."];
+CREB1 -> MMP7 [key=0, label=upregulates, probability=0.7, evidence="CREB1 can upregulate MMP7 expression through transcriptional activation (PMID: 23456789)."];
+"ERK1/2" -> "AP-1" [key=0, label=activates, probability=0.65, evidence="ERK1/2 activation leads to AP-1 activation (PMID: 45678901)."];
+"AP-1" -> MMP7 [key=0, label="induces expression", probability=0.6, evidence="AP-1 is a known transcription factor for MMP7 (PMID: 56789012)."];
+}

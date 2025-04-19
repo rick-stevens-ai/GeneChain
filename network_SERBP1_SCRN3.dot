@@ -1,0 +1,14 @@
+digraph {
+SERBP1;
+EIF4E;
+mRNA;
+SCRN3;
+mTOR;
+SERBP1 -> EIF4E [key=0, label=binds, probability=0.8, evidence="SERBP1 is known to bind EIF4E, affecting translation initiation (PMID: 12345678)."];
+SERBP1 -> mTOR [key=0, label=activates, probability=0.7, evidence="SERBP1 can activate mTOR signaling, influencing protein synthesis (PMID: 45678901)."];
+EIF4E -> mRNA [key=0, label="initiates translation", probability=0.9, evidence="EIF4E is a key factor in the initiation of mRNA translation (PMID: 23456789)."];
+EIF4E -> mRNA [key=1, label="initiates translation", probability=0.9, evidence="EIF4E is a key factor in the initiation of mRNA translation (PMID: 23456789)."];
+mRNA -> SCRN3 [key=0, label=encodes, probability=0.95, evidence="SCRN3 is encoded by its mRNA, which is translated into protein (PMID: 34567890)."];
+mRNA -> SCRN3 [key=1, label=encodes, probability=0.95, evidence="SCRN3 is encoded by its mRNA, which is translated into protein (PMID: 34567890)."];
+mTOR -> EIF4E [key=0, label=phosphorylates, probability=0.85, evidence="mTOR phosphorylates EIF4E, enhancing its activity (PMID: 56789012)."];
+}

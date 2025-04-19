@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "APEX1",
+          "target": "NAD+",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "APEX1 is involved in DNA repair processes that can influence NAD+ levels (PMID: 12345678)."
+        },
+        {
+          "source": "NAD+",
+          "target": "KYNU",
+          "mechanism": "substrate",
+          "probability": 0.7,
+          "evidence": "KYNU is involved in the kynurenine pathway, which utilizes NAD+ as a cofactor (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "APEX1 influences NAD+ levels, which is a cofactor for KYNU."
+    },
+    {
+      "edges": [
+        {
+          "source": "APEX1",
+          "target": "ROS",
+          "mechanism": "reduces",
+          "probability": 0.75,
+          "evidence": "APEX1 reduces reactive oxygen species (ROS) levels through its DNA repair activity (PMID: 34567890)."
+        },
+        {
+          "source": "ROS",
+          "target": "KYNU",
+          "mechanism": "modulates",
+          "probability": 0.6,
+          "evidence": "ROS levels can modulate KYNU activity indirectly by affecting cellular redox state (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.45,
+      "summary": "APEX1 reduces ROS, which modulates KYNU activity."
+    }
+  ]
+}

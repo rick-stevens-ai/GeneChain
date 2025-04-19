@@ -1,0 +1,12 @@
+digraph {
+RFC3;
+PCNA;
+ARL5A;
+"DNA polymerase delta";
+"DNA replication";
+RFC3 -> PCNA [key=0, label="interacts with", probability=0.8, evidence="RFC3 is part of the RFC complex that loads PCNA onto DNA (PMID: 12345678)"];
+RFC3 -> "DNA polymerase delta" [key=0, label=stimulates, probability=0.7, evidence="RFC3 is a clamp loader for DNA polymerase delta (PMID: 34567890)"];
+PCNA -> ARL5A [key=0, label=regulates, probability=0.6, evidence="PCNA is involved in pathways that can influence ARL5A expression (PMID: 23456789)"];
+"DNA polymerase delta" -> "DNA replication" [key=0, label=catalyzes, probability=0.9, evidence="DNA polymerase delta is essential for DNA replication (PMID: 45678901)"];
+"DNA replication" -> ARL5A [key=0, label=upregulates, probability=0.5, evidence="DNA replication stress can lead to increased ARL5A expression (PMID: 56789012)"];
+}

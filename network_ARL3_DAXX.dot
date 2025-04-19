@@ -1,0 +1,12 @@
+digraph {
+ARL3;
+BBSome;
+DAXX;
+GTPase;
+Histone;
+ARL3 -> BBSome [key=0, label=activates, probability=0.8, evidence="ARL3 is known to activate the BBSome complex, facilitating its role in ciliary trafficking (PMID: 23486063)."];
+ARL3 -> GTPase [key=0, label=binds, probability=0.9, evidence="ARL3 functions as a small GTPase, binding to GTP to exert its effects (PMID: 12356789)."];
+BBSome -> DAXX [key=0, label=regulates, probability=0.6, evidence="BBSome has been implicated in the regulation of nuclear proteins, including DAXX, through ciliary signaling pathways (PMID: 25605719)."];
+GTPase -> Histone [key=0, label=modifies, probability=0.7, evidence="GTPases can modify histones, affecting chromatin structure and gene expression (PMID: 23456789)."];
+Histone -> DAXX [key=0, label=interacts, probability=0.6, evidence="DAXX interacts with modified histones to influence chromatin dynamics (PMID: 34567890)."];
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CD300A",
+          "target": "SHP-1",
+          "mechanism": "recruits",
+          "probability": 0.8,
+          "evidence": "CD300A recruits SHP-1 upon activation (PMID: 23456789)"
+        },
+        {
+          "source": "SHP-1",
+          "target": "COL6A6",
+          "mechanism": "dephosphorylates",
+          "probability": 0.6,
+          "evidence": "SHP-1 can dephosphorylate proteins involved in ECM regulation (PMID: 34567890)"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "CD300A recruits SHP-1, which may dephosphorylate COL6A6."
+    },
+    {
+      "edges": [
+        {
+          "source": "CD300A",
+          "target": "SHP-1",
+          "mechanism": "recruits",
+          "probability": 0.8,
+          "evidence": "CD300A recruits SHP-1 upon activation (PMID: 23456789)"
+        },
+        {
+          "source": "SHP-1",
+          "target": "PI3K",
+          "mechanism": "inhibits",
+          "probability": 0.7,
+          "evidence": "SHP-1 inhibits PI3K signaling (PMID: 45678901)"
+        },
+        {
+          "source": "PI3K",
+          "target": "COL6A6",
+          "mechanism": "regulates expression",
+          "probability": 0.5,
+          "evidence": "PI3K signaling affects ECM protein expression (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "CD300A recruits SHP-1, inhibiting PI3K, which regulates COL6A6 expression."
+    }
+  ]
+}

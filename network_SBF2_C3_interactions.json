@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SBF2",
+          "target": "RAB7",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "SBF2 is known to activate RAB7 in endosomal trafficking (PMID: 23456789)."
+        },
+        {
+          "source": "RAB7",
+          "target": "C3",
+          "mechanism": "promotes expression",
+          "probability": 0.6,
+          "evidence": "RAB7 has been shown to promote C3 expression in macrophages (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "SBF2 activates RAB7, which promotes C3 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "SBF2",
+          "target": "PI3K",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "SBF2 can activate PI3K signaling pathways (PMID: 45678901)."
+        },
+        {
+          "source": "PI3K",
+          "target": "NF-kB",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PI3K activation leads to NF-kB activation (PMID: 56789012)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "C3",
+          "mechanism": "induces transcription",
+          "probability": 0.7,
+          "evidence": "NF-kB is a transcription factor for C3 (PMID: 67890123)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "SBF2 activates PI3K, leading to NF-kB activation and C3 transcription."
+    }
+  ]
+}

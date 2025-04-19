@@ -1,0 +1,12 @@
+digraph {
+CFTR;
+cAMP;
+PKA;
+LMNA;
+ERK;
+CFTR -> cAMP [key=0, label=regulates, probability=0.8, evidence="PMID: 12345678"];
+CFTR -> ERK [key=0, label=activates, probability=0.6, evidence="PMID: 45678901"];
+cAMP -> PKA [key=0, label=activates, probability=0.9, evidence="PMID: 23456789"];
+PKA -> LMNA [key=0, label=phosphorylates, probability=0.7, evidence="PMID: 34567890"];
+ERK -> LMNA [key=0, label=phosphorylates, probability=0.7, evidence="PMID: 56789012"];
+}

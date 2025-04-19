@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "FTO",
+          "target": "m6A RNA methylation",
+          "mechanism": "demethylates",
+          "probability": 0.9,
+          "evidence": "PMID: 20010808"
+        },
+        {
+          "source": "m6A RNA methylation",
+          "target": "KCNQ1",
+          "mechanism": "regulates expression",
+          "probability": 0.7,
+          "evidence": "PMID: 30013173"
+        }
+      ],
+      "overall_probability": 0.63,
+      "summary": "FTO demethylates m6A, affecting KCNQ1 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "FTO",
+          "target": "m6A RNA methylation",
+          "mechanism": "demethylates",
+          "probability": 0.9,
+          "evidence": "PMID: 20010808"
+        },
+        {
+          "source": "m6A RNA methylation",
+          "target": "YTHDF2",
+          "mechanism": "recruits",
+          "probability": 0.8,
+          "evidence": "PMID: 27602518"
+        },
+        {
+          "source": "YTHDF2",
+          "target": "KCNQ1",
+          "mechanism": "degrades mRNA",
+          "probability": 0.6,
+          "evidence": "PMID: 28418038"
+        }
+      ],
+      "overall_probability": 0.432,
+      "summary": "FTO affects m6A, recruiting YTHDF2 to degrade KCNQ1 mRNA."
+    }
+  ]
+}

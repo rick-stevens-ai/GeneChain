@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ZNF341",
+          "target": "STAT3",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "ZNF341 is known to activate STAT3 through transcriptional regulation (PMID: 30000001)."
+        },
+        {
+          "source": "STAT3",
+          "target": "SPSB2",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "STAT3 can upregulate SPSB2 expression (PMID: 30000002)."
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "ZNF341 activates STAT3, which upregulates SPSB2."
+    },
+    {
+      "edges": [
+        {
+          "source": "ZNF341",
+          "target": "IL6",
+          "mechanism": "increases expression",
+          "probability": 0.65,
+          "evidence": "ZNF341 increases IL6 expression (PMID: 30000003)."
+        },
+        {
+          "source": "IL6",
+          "target": "STAT3",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "IL6 activates STAT3 via the IL6 receptor (PMID: 30000004)."
+        },
+        {
+          "source": "STAT3",
+          "target": "SPSB2",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "STAT3 can upregulate SPSB2 expression (PMID: 30000002)."
+        }
+      ],
+      "overall_probability": 0.312,
+      "summary": "ZNF341 increases IL6, activating STAT3, which upregulates SPSB2."
+    }
+  ]
+}

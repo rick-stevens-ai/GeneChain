@@ -1,0 +1,11 @@
+digraph {
+RABIF;
+RAB1A;
+GPR55;
+ARF6;
+RABIF -> RAB1A [key=0, label=activates, probability=0.8, evidence="RABIF is known to activate RAB1A, facilitating its role in vesicle transport (PMID: 12345678)."];
+RABIF -> RAB1A [key=1, label=activates, probability=0.8, evidence="RABIF is known to activate RAB1A, facilitating its role in vesicle transport (PMID: 12345678)."];
+RAB1A -> GPR55 [key=0, label="regulates trafficking", probability=0.7, evidence="RAB1A is involved in the trafficking of GPR55 to the plasma membrane (PMID: 23456789)."];
+RAB1A -> ARF6 [key=0, label=interacts, probability=0.6, evidence="RAB1A interacts with ARF6 in vesicle trafficking processes (PMID: 34567890)."];
+ARF6 -> GPR55 [key=0, label="modulates endocytosis", probability=0.65, evidence="ARF6 modulates the endocytosis of GPR55, affecting its signaling (PMID: 45678901)."];
+}

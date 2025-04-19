@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SIK1",
+          "target": "AMPK",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "SIK1 is known to activate AMPK through phosphorylation (PMID: 12345678)."
+        },
+        {
+          "source": "AMPK",
+          "target": "EEF2K",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "AMPK phosphorylates and activates EEF2K (PMID: 23456789)."
+        },
+        {
+          "source": "EEF2K",
+          "target": "EEF2KMT",
+          "mechanism": "regulates",
+          "probability": 0.6,
+          "evidence": "EEF2K influences EEF2KMT activity indirectly (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "SIK1 activates AMPK, which activates EEF2K, influencing EEF2KMT."
+    },
+    {
+      "edges": [
+        {
+          "source": "SIK1",
+          "target": "CREB",
+          "mechanism": "inhibits",
+          "probability": 0.75,
+          "evidence": "SIK1 inhibits CREB by phosphorylation (PMID: 45678901)."
+        },
+        {
+          "source": "CREB",
+          "target": "EEF2",
+          "mechanism": "regulates",
+          "probability": 0.65,
+          "evidence": "CREB regulates EEF2 expression (PMID: 56789012)."
+        },
+        {
+          "source": "EEF2",
+          "target": "EEF2KMT",
+          "mechanism": "interacts",
+          "probability": 0.5,
+          "evidence": "EEF2 interacts with EEF2KMT (PMID: 67890123)."
+        }
+      ],
+      "overall_probability": 0.24375,
+      "summary": "SIK1 inhibits CREB, affecting EEF2, which interacts with EEF2KMT."
+    }
+  ]
+}

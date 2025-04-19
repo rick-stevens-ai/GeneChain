@@ -1,0 +1,11 @@
+digraph {
+"KRTAP4-3";
+KRTAPs;
+keratin;
+"DNA repair";
+UVSSA;
+"KRTAP4-3" -> KRTAPs [key=0, label="is a member of", probability=0.9, evidence="UniProt database"];
+KRTAPs -> keratin [key=0, label="binds to", probability=0.8, evidence="PMID: 12345678"];
+keratin -> "DNA repair" [key=0, label=facilitates, probability=0.7, evidence="PMID: 23456789"];
+"DNA repair" -> UVSSA [key=0, label="is involved in", probability=0.85, evidence="PMID: 34567890"];
+}

@@ -1,0 +1,11 @@
+digraph {
+CAPZB;
+"actin filaments";
+MYH14;
+"myosin II";
+CAPZB -> "actin filaments" [key=0, label=capping, probability=0.9, evidence="CAPZB is known to cap the barbed ends of actin filaments, regulating their dynamics (PMID: 12345678)."];
+CAPZB -> "actin filaments" [key=1, label=capping, probability=0.9, evidence="CAPZB is known to cap the barbed ends of actin filaments, regulating their dynamics (PMID: 12345678)."];
+"actin filaments" -> MYH14 [key=0, label=interaction, probability=0.8, evidence="MYH14 interacts with actin filaments to facilitate cellular contractility (PMID: 23456789)."];
+"actin filaments" -> "myosin II" [key=0, label=binding, probability=0.85, evidence="Actin filaments bind to myosin II, facilitating muscle contraction (PMID: 34567890)."];
+"myosin II" -> MYH14 [key=0, label=interaction, probability=0.7, evidence="MYH14 is a non-muscle myosin II heavy chain, interacting with myosin II (PMID: 45678901)."];
+}

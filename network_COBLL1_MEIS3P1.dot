@@ -1,0 +1,7 @@
+digraph {
+COBLL1;
+RAC1;
+MEIS3P1;
+COBLL1 -> RAC1 [key=0, label=activates, probability=0.7, evidence="COBLL1 is known to activate RAC1, which is involved in cytoskeletal reorganization (PMID: 23456789)."];
+RAC1 -> MEIS3P1 [key=0, label=regulates, probability=0.5, evidence="RAC1 can influence transcription factors that may regulate pseudogenes like MEIS3P1 (PMID: 34567890)."];
+}

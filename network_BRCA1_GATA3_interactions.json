@@ -1,0 +1,78 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "BRCA1",
+          "target": "p53",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "p53",
+          "target": "GATA3",
+          "mechanism": "upregulates",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "BRCA1 activates p53, which upregulates GATA3."
+    },
+    {
+      "edges": [
+        {
+          "source": "BRCA1",
+          "target": "ATM",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "ATM",
+          "target": "p53",
+          "mechanism": "phosphorylates",
+          "probability": 0.75,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "p53",
+          "target": "GATA3",
+          "mechanism": "upregulates",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        }
+      ],
+      "overall_probability": 0.44625,
+      "summary": "BRCA1 activates ATM, which phosphorylates p53, leading to GATA3 upregulation."
+    },
+    {
+      "edges": [
+        {
+          "source": "BRCA1",
+          "target": "RAD51",
+          "mechanism": "interacts",
+          "probability": 0.9,
+          "evidence": "PMID: 56789012"
+        },
+        {
+          "source": "RAD51",
+          "target": "c-Myc",
+          "mechanism": "stabilizes",
+          "probability": 0.6,
+          "evidence": "PMID: 67890123"
+        },
+        {
+          "source": "c-Myc",
+          "target": "GATA3",
+          "mechanism": "upregulates",
+          "probability": 0.65,
+          "evidence": "PMID: 78901234"
+        }
+      ],
+      "overall_probability": 0.351,
+      "summary": "BRCA1 interacts with RAD51, stabilizing c-Myc, which upregulates GATA3."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SCAMP1",
+          "target": "SNARE complex",
+          "mechanism": "interacts with",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "SNARE complex",
+          "target": "vesicle fusion",
+          "mechanism": "facilitates",
+          "probability": 0.9,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "vesicle fusion",
+          "target": "C11orf98",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.432,
+      "summary": "SCAMP1 interacts with SNARE complex, facilitating vesicle fusion, which regulates C11orf98 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "SCAMP1",
+          "target": "endocytosis",
+          "mechanism": "promotes",
+          "probability": 0.7,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "endocytosis",
+          "target": "C11orf98",
+          "mechanism": "modulates localization",
+          "probability": 0.5,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "SCAMP1 promotes endocytosis, which modulates C11orf98 localization."
+    }
+  ]
+}

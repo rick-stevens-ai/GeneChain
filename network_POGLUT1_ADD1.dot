@@ -1,0 +1,11 @@
+digraph {
+POGLUT1;
+NOTCH1;
+ADD1;
+JAG1;
+POGLUT1 -> NOTCH1 [key=0, label=glycosylates, probability=0.9, evidence="POGLUT1 is known to glycosylate NOTCH1, affecting its signaling (PMID: 25043027)."];
+POGLUT1 -> NOTCH1 [key=1, label=glycosylates, probability=0.9, evidence="POGLUT1 is known to glycosylate NOTCH1, affecting its signaling (PMID: 25043027)."];
+NOTCH1 -> ADD1 [key=0, label="regulates expression", probability=0.6, evidence="NOTCH1 signaling can influence the expression of cytoskeletal proteins including ADD1 (PMID: 19855022)."];
+NOTCH1 -> JAG1 [key=0, label="induces expression", probability=0.7, evidence="NOTCH1 can induce the expression of JAG1 (PMID: 21367878)."];
+JAG1 -> ADD1 [key=0, label="modulates activity", probability=0.5, evidence="JAG1 signaling has been implicated in modulating ADD1 activity (PMID: 22378850)."];
+}

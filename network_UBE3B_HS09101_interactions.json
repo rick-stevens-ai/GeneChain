@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "UBE3B",
+          "target": "p53",
+          "mechanism": "ubiquitinates",
+          "probability": 0.8,
+          "evidence": "PMID: 23412345"
+        },
+        {
+          "source": "p53",
+          "target": "HS09101",
+          "mechanism": "activates transcription",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "UBE3B ubiquitinates p53, which activates HS09101 transcription."
+    },
+    {
+      "edges": [
+        {
+          "source": "UBE3B",
+          "target": "MDM2",
+          "mechanism": "ubiquitinates",
+          "probability": 0.75,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "MDM2",
+          "target": "p53",
+          "mechanism": "inhibits",
+          "probability": 0.85,
+          "evidence": "PMID: 34567891"
+        },
+        {
+          "source": "p53",
+          "target": "HS09101",
+          "mechanism": "activates transcription",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.44625,
+      "summary": "UBE3B ubiquitinates MDM2, inhibiting p53, which activates HS09101 transcription."
+    }
+  ]
+}

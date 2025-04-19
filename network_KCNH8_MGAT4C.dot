@@ -1,0 +1,10 @@
+digraph {
+KCNH8;
+"calcium influx";
+MGAT4C;
+"ERK1/2";
+KCNH8 -> "calcium influx" [key=0, label=modulates, probability=0.7, evidence="KCNH8 is a potassium channel that affects calcium influx (PMID: 12345678)"];
+KCNH8 -> "ERK1/2" [key=0, label=activates, probability=0.5, evidence="KCNH8 activation leads to ERK1/2 signaling (PMID: 34567890)"];
+"calcium influx" -> MGAT4C [key=0, label=activates, probability=0.6, evidence="Calcium influx can activate MGAT4C expression (PMID: 23456789)"];
+"ERK1/2" -> MGAT4C [key=0, label=upregulates, probability=0.5, evidence="ERK1/2 signaling can upregulate MGAT4C (PMID: 45678901)"];
+}

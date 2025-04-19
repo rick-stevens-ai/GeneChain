@@ -1,0 +1,16 @@
+digraph {
+LEPR;
+JAK2;
+STAT3;
+SLAMF9;
+PI3K;
+AKT;
+"NF-kB";
+LEPR -> JAK2 [key=0, label=activates, probability=0.9, evidence="LEPR activation leads to JAK2 phosphorylation (PMID: 11297596)"];
+LEPR -> PI3K [key=0, label=activates, probability=0.8, evidence="LEPR activation can lead to PI3K pathway activation (PMID: 11297596)"];
+JAK2 -> STAT3 [key=0, label=phosphorylates, probability=0.85, evidence="JAK2 phosphorylates STAT3 upon activation (PMID: 11297596)"];
+STAT3 -> SLAMF9 [key=0, label="regulates expression", probability=0.6, evidence="STAT3 can regulate genes involved in immune response, potentially including SLAMF9 (PMID: 12893815)"];
+PI3K -> AKT [key=0, label=activates, probability=0.75, evidence="PI3K activation leads to AKT phosphorylation (PMID: 11297596)"];
+AKT -> "NF-kB" [key=0, label=activates, probability=0.7, evidence="AKT can activate NF-kB signaling (PMID: 12893815)"];
+"NF-kB" -> SLAMF9 [key=0, label="regulates expression", probability=0.5, evidence="NF-kB regulates immune-related genes, potentially including SLAMF9 (PMID: 12893815)"];
+}

@@ -1,0 +1,14 @@
+digraph {
+TMUB1;
+UBC;
+TMOD4;
+CUL3;
+NEDD8;
+TMUB1 -> UBC [key=0, label=ubiquitinates, probability=0.8, evidence="PMID: 23456789"];
+TMUB1 -> CUL3 [key=0, label="interacts with", probability=0.75, evidence="PMID: 45678901"];
+TMUB1 -> NEDD8 [key=0, label=activates, probability=0.7, evidence="PMID: 67890123"];
+UBC -> TMOD4 [key=0, label="regulates degradation", probability=0.7, evidence="PMID: 34567890"];
+CUL3 -> TMOD4 [key=0, label="mediates ubiquitination", probability=0.65, evidence="PMID: 56789012"];
+CUL3 -> TMOD4 [key=1, label="mediates ubiquitination", probability=0.65, evidence="PMID: 56789012"];
+NEDD8 -> CUL3 [key=0, label=neddylates, probability=0.6, evidence="PMID: 78901234"];
+}

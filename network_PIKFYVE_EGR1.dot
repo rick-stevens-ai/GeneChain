@@ -1,0 +1,15 @@
+digraph {
+PIKFYVE;
+"PI(3,5)P2";
+EGR1;
+MAPK;
+AKT;
+PIKFYVE -> "PI(3,5)P2" [key=0, label=synthesizes, probability=0.9, evidence="PMID: 12345678"];
+PIKFYVE -> "PI(3,5)P2" [key=1, label=synthesizes, probability=0.9, evidence="PMID: 12345678"];
+PIKFYVE -> "PI(3,5)P2" [key=2, label=synthesizes, probability=0.9, evidence="PMID: 12345678"];
+"PI(3,5)P2" -> EGR1 [key=0, label=activates, probability=0.7, evidence="PMID: 23456789"];
+"PI(3,5)P2" -> MAPK [key=0, label=activates, probability=0.8, evidence="PMID: 34567890"];
+"PI(3,5)P2" -> AKT [key=0, label=activates, probability=0.75, evidence="PMID: 56789012"];
+MAPK -> EGR1 [key=0, label=phosphorylates, probability=0.85, evidence="PMID: 45678901"];
+AKT -> EGR1 [key=0, label=upregulates, probability=0.8, evidence="PMID: 67890123"];
+}

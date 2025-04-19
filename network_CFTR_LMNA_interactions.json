@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CFTR",
+          "target": "cAMP",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "cAMP",
+          "target": "PKA",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "PKA",
+          "target": "LMNA",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "CFTR regulates cAMP, activating PKA to phosphorylate LMNA."
+    },
+    {
+      "edges": [
+        {
+          "source": "CFTR",
+          "target": "ERK",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "ERK",
+          "target": "LMNA",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "CFTR activates ERK, which phosphorylates LMNA."
+    }
+  ]
+}

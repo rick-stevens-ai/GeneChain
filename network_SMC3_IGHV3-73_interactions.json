@@ -1,0 +1,31 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SMC3",
+          "target": "cohesin complex",
+          "mechanism": "forms",
+          "probability": 0.9,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "cohesin complex",
+          "target": "chromatin structure",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "chromatin structure",
+          "target": "IGHV3-73",
+          "mechanism": "influences transcription",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "SMC3 forms cohesin complex, regulating chromatin structure to influence IGHV3-73 transcription."
+    }
+  ]
+}

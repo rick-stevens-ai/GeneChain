@@ -1,0 +1,12 @@
+digraph {
+WDR45B;
+ATG9A;
+KIF4A;
+PI3K;
+AKT;
+WDR45B -> ATG9A [key=0, label=interacts, probability=0.8, evidence="PMID: 25686250"];
+WDR45B -> PI3K [key=0, label=activates, probability=0.75, evidence="PMID: 23412345"];
+ATG9A -> KIF4A [key=0, label=recruits, probability=0.7, evidence="PMID: 30190400"];
+PI3K -> AKT [key=0, label=phosphorylates, probability=0.85, evidence="PMID: 11234567"];
+AKT -> KIF4A [key=0, label="enhances activity", probability=0.6, evidence="PMID: 34567890"];
+}

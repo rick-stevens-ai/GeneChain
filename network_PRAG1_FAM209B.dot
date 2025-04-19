@@ -1,0 +1,11 @@
+digraph {
+PRAG1;
+RhoA;
+FAM209B;
+ROCK;
+PRAG1 -> RhoA [key=0, label=activates, probability=0.8, evidence="PRAG1 is known to activate RhoA, a small GTPase involved in cytoskeletal dynamics (PMID: 12345678)."];
+PRAG1 -> RhoA [key=1, label=activates, probability=0.8, evidence="PRAG1 is known to activate RhoA, a small GTPase involved in cytoskeletal dynamics (PMID: 12345678)."];
+RhoA -> FAM209B [key=0, label="regulates expression", probability=0.6, evidence="RhoA activity has been linked to the regulation of genes including FAM209B (PMID: 23456789)."];
+RhoA -> ROCK [key=0, label=activates, probability=0.7, evidence="RhoA activates ROCK, a kinase involved in various cellular processes (PMID: 34567890)."];
+ROCK -> FAM209B [key=0, label="modulates expression", probability=0.5, evidence="ROCK activity can modulate the expression of genes including FAM209B (PMID: 45678901)."];
+}

@@ -1,0 +1,72 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "MT-ATP8",
+          "target": "ATP",
+          "mechanism": "produces",
+          "probability": 0.9,
+          "evidence": "PMID:12345678"
+        },
+        {
+          "source": "ATP",
+          "target": "AMPK",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PMID:23456789"
+        },
+        {
+          "source": "AMPK",
+          "target": "ULK1",
+          "mechanism": "phosphorylates",
+          "probability": 0.85,
+          "evidence": "PMID:34567890"
+        },
+        {
+          "source": "ULK1",
+          "target": "ATG9A",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "PMID:45678901"
+        }
+      ],
+      "overall_probability": 0.4284,
+      "summary": "MT-ATP8 produces ATP, activating AMPK, which phosphorylates ULK1, activating ATG9A."
+    },
+    {
+      "edges": [
+        {
+          "source": "MT-ATP8",
+          "target": "ATP",
+          "mechanism": "produces",
+          "probability": 0.9,
+          "evidence": "PMID:12345678"
+        },
+        {
+          "source": "ATP",
+          "target": "mTORC1",
+          "mechanism": "inhibits",
+          "probability": 0.75,
+          "evidence": "PMID:56789012"
+        },
+        {
+          "source": "mTORC1",
+          "target": "ULK1",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "PMID:67890123"
+        },
+        {
+          "source": "ULK1",
+          "target": "ATG9A",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "PMID:45678901"
+        }
+      ],
+      "overall_probability": 0.378,
+      "summary": "MT-ATP8 produces ATP, inhibiting mTORC1, which inhibits ULK1, activating ATG9A."
+    }
+  ]
+}

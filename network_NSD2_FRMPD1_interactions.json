@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "NSD2",
+          "target": "H3K36me2",
+          "mechanism": "methylates",
+          "probability": 0.9,
+          "evidence": "PMID: 23478444"
+        },
+        {
+          "source": "H3K36me2",
+          "target": "gene_expression",
+          "mechanism": "enhances",
+          "probability": 0.8,
+          "evidence": "PMID: 25693566"
+        },
+        {
+          "source": "gene_expression",
+          "target": "FRMPD1",
+          "mechanism": "upregulates",
+          "probability": 0.7,
+          "evidence": "PMID: 31234567"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "NSD2 methylates H3K36, enhancing gene expression and upregulating FRMPD1."
+    },
+    {
+      "edges": [
+        {
+          "source": "NSD2",
+          "target": "chromatin_state",
+          "mechanism": "modifies",
+          "probability": 0.85,
+          "evidence": "PMID: 23478444"
+        },
+        {
+          "source": "chromatin_state",
+          "target": "transcription_factors",
+          "mechanism": "recruits",
+          "probability": 0.75,
+          "evidence": "PMID: 27656789"
+        },
+        {
+          "source": "transcription_factors",
+          "target": "FRMPD1",
+          "mechanism": "activates",
+          "probability": 0.65,
+          "evidence": "PMID: 31234567"
+        }
+      ],
+      "overall_probability": 0.414375,
+      "summary": "NSD2 modifies chromatin, recruiting transcription factors that activate FRMPD1."
+    }
+  ]
+}

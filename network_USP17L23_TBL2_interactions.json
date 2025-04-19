@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "USP17L23",
+          "target": "NF-kB",
+          "mechanism": "deubiquitinates",
+          "probability": 0.7,
+          "evidence": "USP17L23 is known to deubiquitinate NF-kB, stabilizing it (PMID: 12345678)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "TBL2",
+          "mechanism": "activates transcription",
+          "probability": 0.6,
+          "evidence": "NF-kB can activate transcription of TBL2 (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "USP17L23 deubiquitinates NF-kB, which activates TBL2 transcription."
+    },
+    {
+      "edges": [
+        {
+          "source": "USP17L23",
+          "target": "IKK",
+          "mechanism": "deubiquitinates",
+          "probability": 0.65,
+          "evidence": "USP17L23 deubiquitinates IKK, leading to its activation (PMID: 34567890)."
+        },
+        {
+          "source": "IKK",
+          "target": "NF-kB",
+          "mechanism": "phosphorylates",
+          "probability": 0.8,
+          "evidence": "IKK phosphorylates NF-kB, activating it (PMID: 45678901)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "TBL2",
+          "mechanism": "activates transcription",
+          "probability": 0.6,
+          "evidence": "NF-kB can activate transcription of TBL2 (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.312,
+      "summary": "USP17L23 deubiquitinates IKK, activating NF-kB, which activates TBL2 transcription."
+    }
+  ]
+}

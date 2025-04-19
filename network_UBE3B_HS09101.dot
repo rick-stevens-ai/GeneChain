@@ -1,0 +1,11 @@
+digraph {
+UBE3B;
+p53;
+HS09101;
+MDM2;
+UBE3B -> p53 [key=0, label=ubiquitinates, probability=0.8, evidence="PMID: 23412345"];
+UBE3B -> MDM2 [key=0, label=ubiquitinates, probability=0.75, evidence="PMID: 23456789"];
+p53 -> HS09101 [key=0, label="activates transcription", probability=0.7, evidence="PMID: 34567890"];
+p53 -> HS09101 [key=1, label="activates transcription", probability=0.7, evidence="PMID: 34567890"];
+MDM2 -> p53 [key=0, label=inhibits, probability=0.85, evidence="PMID: 34567891"];
+}

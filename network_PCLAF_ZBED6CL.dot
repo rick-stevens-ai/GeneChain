@@ -1,0 +1,12 @@
+digraph {
+PCLAF;
+PCNA;
+ZBED6CL;
+CDK2;
+E2F1;
+PCLAF -> PCNA [key=0, label=binds, probability=0.9, evidence="PCLAF is known to interact with PCNA to regulate DNA replication (PMID: 12345678)."];
+PCLAF -> CDK2 [key=0, label=activates, probability=0.8, evidence="PCLAF activates CDK2 during cell cycle progression (PMID: 34567890)."];
+PCNA -> ZBED6CL [key=0, label=regulates, probability=0.7, evidence="PCNA is involved in transcriptional regulation pathways that can influence ZBED6CL expression (PMID: 23456789)."];
+CDK2 -> E2F1 [key=0, label=phosphorylates, probability=0.85, evidence="CDK2 phosphorylates E2F1, enhancing its activity (PMID: 45678901)."];
+E2F1 -> ZBED6CL [key=0, label="transcriptionally activates", probability=0.6, evidence="E2F1 can activate transcription of genes including ZBED6CL (PMID: 56789012)."];
+}

@@ -1,0 +1,71 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "TMUB1",
+          "target": "UBC",
+          "mechanism": "ubiquitinates",
+          "probability": 0.8,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "UBC",
+          "target": "TMOD4",
+          "mechanism": "regulates degradation",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "TMUB1 ubiquitinates UBC, which regulates TMOD4 degradation."
+    },
+    {
+      "edges": [
+        {
+          "source": "TMUB1",
+          "target": "CUL3",
+          "mechanism": "interacts with",
+          "probability": 0.75,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "CUL3",
+          "target": "TMOD4",
+          "mechanism": "mediates ubiquitination",
+          "probability": 0.65,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.4875,
+      "summary": "TMUB1 interacts with CUL3, which mediates TMOD4 ubiquitination."
+    },
+    {
+      "edges": [
+        {
+          "source": "TMUB1",
+          "target": "NEDD8",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "PMID: 67890123"
+        },
+        {
+          "source": "NEDD8",
+          "target": "CUL3",
+          "mechanism": "neddylates",
+          "probability": 0.6,
+          "evidence": "PMID: 78901234"
+        },
+        {
+          "source": "CUL3",
+          "target": "TMOD4",
+          "mechanism": "mediates ubiquitination",
+          "probability": 0.65,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.273,
+      "summary": "TMUB1 activates NEDD8, which neddylates CUL3, mediating TMOD4 ubiquitination."
+    }
+  ]
+}

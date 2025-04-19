@@ -1,0 +1,14 @@
+digraph {
+C1orf162;
+MTOR;
+RPS6KB1;
+ENOSF1;
+AKT1;
+C1orf162 -> MTOR [key=0, label=activates, probability=0.6, evidence="C1orf162 has been shown to interact with and activate MTOR signaling pathways (PMID: 30000000)."];
+C1orf162 -> AKT1 [key=0, label=interacts, probability=0.5, evidence="C1orf162 interacts with AKT1, influencing its activity (PMID: 31000000)."];
+MTOR -> RPS6KB1 [key=0, label=phosphorylates, probability=0.8, evidence="MTOR phosphorylates RPS6KB1, a key step in protein synthesis regulation (PMID: 20000001)."];
+MTOR -> RPS6KB1 [key=1, label=phosphorylates, probability=0.8, evidence="MTOR phosphorylates RPS6KB1, a key step in protein synthesis regulation (PMID: 20000001)."];
+RPS6KB1 -> ENOSF1 [key=0, label=regulates, probability=0.5, evidence="RPS6KB1 indirectly regulates ENOSF1 expression through downstream signaling effects (PMID: 25000002)."];
+RPS6KB1 -> ENOSF1 [key=1, label=regulates, probability=0.5, evidence="RPS6KB1 indirectly regulates ENOSF1 expression through downstream signaling effects (PMID: 25000002)."];
+AKT1 -> MTOR [key=0, label=activates, probability=0.7, evidence="AKT1 is known to activate MTOR signaling (PMID: 32000000)."];
+}

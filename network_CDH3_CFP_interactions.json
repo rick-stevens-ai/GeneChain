@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CDH3",
+          "target": "beta-catenin",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "beta-catenin",
+          "target": "TCF/LEF",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "TCF/LEF",
+          "target": "CFP",
+          "mechanism": "transcriptionally activates",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "CDH3 binds beta-catenin, activating TCF/LEF, which activates CFP transcription."
+    },
+    {
+      "edges": [
+        {
+          "source": "CDH3",
+          "target": "beta-catenin",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "beta-catenin",
+          "target": "GSK3",
+          "mechanism": "inhibits",
+          "probability": 0.85,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "GSK3",
+          "target": "CFP",
+          "mechanism": "phosphorylates",
+          "probability": 0.6,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.408,
+      "summary": "CDH3 binds beta-catenin, inhibiting GSK3, which phosphorylates CFP."
+    }
+  ]
+}

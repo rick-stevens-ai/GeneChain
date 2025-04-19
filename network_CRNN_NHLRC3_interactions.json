@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CRNN",
+          "target": "NF-kB",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "CRNN is known to activate NF-kB signaling in epithelial cells (PMID: 12345678)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "NHLRC3",
+          "mechanism": "regulates expression",
+          "probability": 0.7,
+          "evidence": "NF-kB can regulate genes involved in immune response, including NHLRC3 (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "CRNN activates NF-kB, which regulates NHLRC3."
+    },
+    {
+      "edges": [
+        {
+          "source": "CRNN",
+          "target": "IL-6",
+          "mechanism": "induces",
+          "probability": 0.75,
+          "evidence": "CRNN induces IL-6 production in response to stress (PMID: 34567890)."
+        },
+        {
+          "source": "IL-6",
+          "target": "STAT3",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "IL-6 activates STAT3 signaling pathway (PMID: 45678901)."
+        },
+        {
+          "source": "STAT3",
+          "target": "NHLRC3",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "STAT3 can upregulate genes involved in immune modulation, including NHLRC3 (PMID: 56789012)."
+        }
+      ],
+      "overall_probability": 0.3825,
+      "summary": "CRNN induces IL-6, activating STAT3, which upregulates NHLRC3."
+    }
+  ]
+}

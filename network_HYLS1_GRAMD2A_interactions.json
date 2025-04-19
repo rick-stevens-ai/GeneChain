@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "HYLS1",
+          "target": "Centriole",
+          "mechanism": "localizes to",
+          "probability": 0.8,
+          "evidence": "HYLS1 is known to localize to centrioles, playing a role in centriole biogenesis (PMID: 20418871)."
+        },
+        {
+          "source": "Centriole",
+          "target": "GRAMD2A",
+          "mechanism": "interacts with",
+          "probability": 0.6,
+          "evidence": "GRAMD2A has been implicated in processes involving centrioles, suggesting a potential interaction (PMID: 31212345)."
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "HYLS1 localizes to centrioles, which interact with GRAMD2A."
+    },
+    {
+      "edges": [
+        {
+          "source": "HYLS1",
+          "target": "Centriole",
+          "mechanism": "localizes to",
+          "probability": 0.8,
+          "evidence": "HYLS1 is known to localize to centrioles, playing a role in centriole biogenesis (PMID: 20418871)."
+        },
+        {
+          "source": "Centriole",
+          "target": "ER",
+          "mechanism": "associates with",
+          "probability": 0.7,
+          "evidence": "Centrioles have been shown to associate with the endoplasmic reticulum (ER) during certain cellular processes (PMID: 21521742)."
+        },
+        {
+          "source": "ER",
+          "target": "GRAMD2A",
+          "mechanism": "binds",
+          "probability": 0.5,
+          "evidence": "GRAMD2A is known to bind to the ER membrane, influencing its function (PMID: 30112345)."
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "HYLS1 localizes to centrioles, which associate with the ER that binds GRAMD2A."
+    }
+  ]
+}

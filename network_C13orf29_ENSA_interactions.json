@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "C13orf29",
+          "target": "PP2A",
+          "mechanism": "interacts with",
+          "probability": 0.6,
+          "evidence": "BioGRID: C13orf29 interacts with PP2A"
+        },
+        {
+          "source": "PP2A",
+          "target": "ENSA",
+          "mechanism": "dephosphorylates",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "C13orf29 interacts with PP2A, which dephosphorylates ENSA."
+    },
+    {
+      "edges": [
+        {
+          "source": "C13orf29",
+          "target": "AKT",
+          "mechanism": "activates",
+          "probability": 0.5,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "AKT",
+          "target": "GSK3",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "GSK3",
+          "target": "ENSA",
+          "mechanism": "inhibits",
+          "probability": 0.6,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.21,
+      "summary": "C13orf29 activates AKT, which phosphorylates GSK3, inhibiting ENSA."
+    }
+  ]
+}

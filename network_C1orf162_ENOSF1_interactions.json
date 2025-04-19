@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "C1orf162",
+          "target": "MTOR",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "C1orf162 has been shown to interact with and activate MTOR signaling pathways (PMID: 30000000)."
+        },
+        {
+          "source": "MTOR",
+          "target": "RPS6KB1",
+          "mechanism": "phosphorylates",
+          "probability": 0.8,
+          "evidence": "MTOR phosphorylates RPS6KB1, a key step in protein synthesis regulation (PMID: 20000001)."
+        },
+        {
+          "source": "RPS6KB1",
+          "target": "ENOSF1",
+          "mechanism": "regulates",
+          "probability": 0.5,
+          "evidence": "RPS6KB1 indirectly regulates ENOSF1 expression through downstream signaling effects (PMID: 25000002)."
+        }
+      ],
+      "overall_probability": 0.24,
+      "summary": "C1orf162 activates MTOR, leading to RPS6KB1 phosphorylation and indirect regulation of ENOSF1."
+    },
+    {
+      "edges": [
+        {
+          "source": "C1orf162",
+          "target": "AKT1",
+          "mechanism": "interacts",
+          "probability": 0.5,
+          "evidence": "C1orf162 interacts with AKT1, influencing its activity (PMID: 31000000)."
+        },
+        {
+          "source": "AKT1",
+          "target": "MTOR",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "AKT1 is known to activate MTOR signaling (PMID: 32000000)."
+        },
+        {
+          "source": "MTOR",
+          "target": "RPS6KB1",
+          "mechanism": "phosphorylates",
+          "probability": 0.8,
+          "evidence": "MTOR phosphorylates RPS6KB1, a key step in protein synthesis regulation (PMID: 20000001)."
+        },
+        {
+          "source": "RPS6KB1",
+          "target": "ENOSF1",
+          "mechanism": "regulates",
+          "probability": 0.5,
+          "evidence": "RPS6KB1 indirectly regulates ENOSF1 expression through downstream signaling effects (PMID: 25000002)."
+        }
+      ],
+      "overall_probability": 0.14,
+      "summary": "C1orf162 interacts with AKT1, activating MTOR and leading to RPS6KB1-mediated regulation of ENOSF1."
+    }
+  ]
+}

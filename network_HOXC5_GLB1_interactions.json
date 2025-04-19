@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "HOXC5",
+          "target": "p21",
+          "mechanism": "activates transcription of",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "p21",
+          "target": "CDK2",
+          "mechanism": "inhibits",
+          "probability": 0.9,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "CDK2",
+          "target": "GLB1",
+          "mechanism": "regulates expression of",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "HOXC5 activates p21, inhibiting CDK2, which regulates GLB1."
+    },
+    {
+      "edges": [
+        {
+          "source": "HOXC5",
+          "target": "Retinoic Acid",
+          "mechanism": "induces production of",
+          "probability": 0.75,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "Retinoic Acid",
+          "target": "GLB1",
+          "mechanism": "upregulates expression of",
+          "probability": 0.6,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.45,
+      "summary": "HOXC5 induces Retinoic Acid, which upregulates GLB1."
+    }
+  ]
+}

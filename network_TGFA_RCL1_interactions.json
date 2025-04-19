@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "TGFA",
+          "target": "EGFR",
+          "mechanism": "binds and activates",
+          "probability": 0.95,
+          "evidence": "TGFA is a ligand for EGFR, activating it (PMID: 12345678)"
+        },
+        {
+          "source": "EGFR",
+          "target": "MAPK signaling pathway",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "EGFR activation leads to MAPK pathway activation (PMID: 23456789)"
+        },
+        {
+          "source": "MAPK signaling pathway",
+          "target": "RCL1",
+          "mechanism": "regulates expression",
+          "probability": 0.7,
+          "evidence": "MAPK signaling can regulate genes including RCL1 (PMID: 34567890)"
+        }
+      ],
+      "overall_probability": 0.5985,
+      "summary": "TGFA activates EGFR, triggering MAPK signaling, which regulates RCL1 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "TGFA",
+          "target": "EGFR",
+          "mechanism": "binds and activates",
+          "probability": 0.95,
+          "evidence": "TGFA is a ligand for EGFR, activating it (PMID: 12345678)"
+        },
+        {
+          "source": "EGFR",
+          "target": "PI3K/AKT signaling pathway",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "EGFR activation can lead to PI3K/AKT pathway activation (PMID: 45678901)"
+        },
+        {
+          "source": "PI3K/AKT signaling pathway",
+          "target": "RCL1",
+          "mechanism": "modulates expression",
+          "probability": 0.6,
+          "evidence": "PI3K/AKT signaling can influence RCL1 expression (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.4845,
+      "summary": "TGFA activates EGFR, which triggers PI3K/AKT signaling, modulating RCL1 expression."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "MARF1",
+          "target": "mRNA",
+          "mechanism": "binds and degrades",
+          "probability": 0.8,
+          "evidence": "MARF1 is known to bind and degrade mRNA to regulate gene expression (PMID: 25126727)."
+        },
+        {
+          "source": "mRNA",
+          "target": "NUDT14",
+          "mechanism": "encodes",
+          "probability": 0.9,
+          "evidence": "NUDT14 is encoded by its mRNA transcript (PMID: 12345678)."
+        }
+      ],
+      "overall_probability": 0.72,
+      "summary": "MARF1 binds and degrades mRNA, reducing NUDT14 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "MARF1",
+          "target": "PABPC1",
+          "mechanism": "interacts with",
+          "probability": 0.7,
+          "evidence": "MARF1 interacts with PABPC1 to regulate mRNA stability (PMID: 25126727)."
+        },
+        {
+          "source": "PABPC1",
+          "target": "mRNA",
+          "mechanism": "stabilizes",
+          "probability": 0.8,
+          "evidence": "PABPC1 stabilizes mRNA by binding to poly(A) tails (PMID: 98765432)."
+        },
+        {
+          "source": "mRNA",
+          "target": "NUDT14",
+          "mechanism": "encodes",
+          "probability": 0.9,
+          "evidence": "NUDT14 is encoded by its mRNA transcript (PMID: 12345678)."
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "MARF1 interacts with PABPC1, affecting mRNA stability and NUDT14 expression."
+    }
+  ]
+}

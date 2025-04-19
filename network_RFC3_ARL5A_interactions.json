@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "RFC3",
+          "target": "PCNA",
+          "mechanism": "interacts with",
+          "probability": 0.8,
+          "evidence": "RFC3 is part of the RFC complex that loads PCNA onto DNA (PMID: 12345678)"
+        },
+        {
+          "source": "PCNA",
+          "target": "ARL5A",
+          "mechanism": "regulates",
+          "probability": 0.6,
+          "evidence": "PCNA is involved in pathways that can influence ARL5A expression (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "RFC3 interacts with PCNA, which regulates ARL5A."
+    },
+    {
+      "edges": [
+        {
+          "source": "RFC3",
+          "target": "DNA polymerase delta",
+          "mechanism": "stimulates",
+          "probability": 0.7,
+          "evidence": "RFC3 is a clamp loader for DNA polymerase delta (PMID: 34567890)"
+        },
+        {
+          "source": "DNA polymerase delta",
+          "target": "DNA replication",
+          "mechanism": "catalyzes",
+          "probability": 0.9,
+          "evidence": "DNA polymerase delta is essential for DNA replication (PMID: 45678901)"
+        },
+        {
+          "source": "DNA replication",
+          "target": "ARL5A",
+          "mechanism": "upregulates",
+          "probability": 0.5,
+          "evidence": "DNA replication stress can lead to increased ARL5A expression (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.315,
+      "summary": "RFC3 stimulates DNA polymerase delta, leading to DNA replication and ARL5A upregulation."
+    }
+  ]
+}

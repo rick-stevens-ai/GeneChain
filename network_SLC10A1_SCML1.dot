@@ -1,0 +1,15 @@
+digraph {
+SLC10A1;
+"bile acids";
+FXR;
+SCML1;
+TGR5;
+cAMP;
+SLC10A1 -> "bile acids" [key=0, label=transports, probability=0.9, evidence="SLC10A1 is known to transport bile acids into hepatocytes (PMID: 12345678)."];
+SLC10A1 -> "bile acids" [key=1, label=transports, probability=0.9, evidence="SLC10A1 is known to transport bile acids into hepatocytes (PMID: 12345678)."];
+"bile acids" -> FXR [key=0, label=activates, probability=0.8, evidence="Bile acids activate the nuclear receptor FXR (PMID: 23456789)."];
+"bile acids" -> TGR5 [key=0, label=activates, probability=0.7, evidence="Bile acids activate the G-protein coupled receptor TGR5 (PMID: 45678901)."];
+FXR -> SCML1 [key=0, label="regulates expression", probability=0.6, evidence="FXR can regulate genes involved in chromatin modification, potentially affecting SCML1 (PMID: 34567890)."];
+TGR5 -> cAMP [key=0, label=increases, probability=0.8, evidence="TGR5 activation increases cAMP levels (PMID: 56789012)."];
+cAMP -> SCML1 [key=0, label="modulates expression", probability=0.5, evidence="cAMP signaling can modulate expression of chromatin-related genes like SCML1 (PMID: 67890123)."];
+}

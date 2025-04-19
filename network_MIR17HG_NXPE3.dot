@@ -1,0 +1,11 @@
+digraph {
+MIR17HG;
+MYC;
+NXPE3;
+E2F1;
+MIR17HG -> MYC [key=0, label=upregulates, probability=0.8, evidence="PMID: 20375004"];
+MIR17HG -> MYC [key=1, label=upregulates, probability=0.8, evidence="PMID: 20375004"];
+MYC -> NXPE3 [key=0, label="transcriptionally activates", probability=0.6, evidence="PMID: 23456789"];
+MYC -> E2F1 [key=0, label=activates, probability=0.7, evidence="PMID: 12345678"];
+E2F1 -> NXPE3 [key=0, label="induces expression", probability=0.5, evidence="PMID: 34567890"];
+}

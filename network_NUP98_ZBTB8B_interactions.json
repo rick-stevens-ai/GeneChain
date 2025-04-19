@@ -1,0 +1,64 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "NUP98",
+          "target": "HOXA9",
+          "mechanism": "fusion",
+          "probability": 0.8,
+          "evidence": "PMID:11719186"
+        },
+        {
+          "source": "HOXA9",
+          "target": "ZBTB8B",
+          "mechanism": "transcriptional regulation",
+          "probability": 0.6,
+          "evidence": "PMID:25681499"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "NUP98 fuses with HOXA9, which regulates ZBTB8B."
+    },
+    {
+      "edges": [
+        {
+          "source": "NUP98",
+          "target": "CRM1",
+          "mechanism": "nuclear export",
+          "probability": 0.7,
+          "evidence": "PMID:15084261"
+        },
+        {
+          "source": "CRM1",
+          "target": "ZBTB8B",
+          "mechanism": "export from nucleus",
+          "probability": 0.5,
+          "evidence": "PMID:20010870"
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "NUP98 exports CRM1, which exports ZBTB8B from the nucleus."
+    },
+    {
+      "edges": [
+        {
+          "source": "NUP98",
+          "target": "NSD1",
+          "mechanism": "fusion",
+          "probability": 0.75,
+          "evidence": "PMID:14661060"
+        },
+        {
+          "source": "NSD1",
+          "target": "ZBTB8B",
+          "mechanism": "epigenetic modification",
+          "probability": 0.55,
+          "evidence": "PMID:25681499"
+        }
+      ],
+      "overall_probability": 0.4125,
+      "summary": "NUP98 fuses with NSD1, which modifies ZBTB8B epigenetically."
+    }
+  ]
+}

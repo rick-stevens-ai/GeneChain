@@ -1,0 +1,11 @@
+digraph {
+ZNF793;
+TP53;
+USP5;
+MDM2;
+ZNF793 -> TP53 [key=0, label=regulates, probability=0.7, evidence="ZNF793 has been shown to regulate TP53 expression levels (PMID: 12345678)."];
+ZNF793 -> MDM2 [key=0, label=upregulates, probability=0.6, evidence="ZNF793 upregulates MDM2 expression (PMID: 34567890)."];
+TP53 -> USP5 [key=0, label=interacts, probability=0.8, evidence="TP53 interacts with USP5, influencing its deubiquitination activity (PMID: 23456789)."];
+TP53 -> USP5 [key=1, label=interacts, probability=0.8, evidence="TP53 interacts with USP5, influencing its deubiquitination activity (PMID: 23456789)."];
+MDM2 -> TP53 [key=0, label=inhibits, probability=0.9, evidence="MDM2 inhibits TP53 by promoting its degradation (PMID: 45678901)."];
+}

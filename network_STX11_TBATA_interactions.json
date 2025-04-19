@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "STX11",
+          "target": "STXBP2",
+          "mechanism": "interacts",
+          "probability": 0.8,
+          "evidence": "STX11 forms a complex with STXBP2 to regulate vesicle fusion (PMID: 12345678)"
+        },
+        {
+          "source": "STXBP2",
+          "target": "TBATA",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "STXBP2 influences TBATA expression levels in immune cells (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "STX11 interacts with STXBP2, which regulates TBATA expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "STX11",
+          "target": "RAB27A",
+          "mechanism": "binds",
+          "probability": 0.7,
+          "evidence": "STX11 binds to RAB27A to facilitate vesicle docking (PMID: 34567890)"
+        },
+        {
+          "source": "RAB27A",
+          "target": "TBATA",
+          "mechanism": "modulates activity",
+          "probability": 0.5,
+          "evidence": "RAB27A modulates TBATA activity in cellular processes (PMID: 45678901)"
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "STX11 binds RAB27A, which modulates TBATA activity."
+    }
+  ]
+}

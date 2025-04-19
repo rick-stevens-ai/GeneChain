@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "POGLUT1",
+          "target": "NOTCH1",
+          "mechanism": "glycosylates",
+          "probability": 0.9,
+          "evidence": "POGLUT1 is known to glycosylate NOTCH1, affecting its signaling (PMID: 25043027)."
+        },
+        {
+          "source": "NOTCH1",
+          "target": "ADD1",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "NOTCH1 signaling can influence the expression of cytoskeletal proteins including ADD1 (PMID: 19855022)."
+        }
+      ],
+      "overall_probability": 0.54,
+      "summary": "POGLUT1 glycosylates NOTCH1, which regulates ADD1 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "POGLUT1",
+          "target": "NOTCH1",
+          "mechanism": "glycosylates",
+          "probability": 0.9,
+          "evidence": "POGLUT1 is known to glycosylate NOTCH1, affecting its signaling (PMID: 25043027)."
+        },
+        {
+          "source": "NOTCH1",
+          "target": "JAG1",
+          "mechanism": "induces expression",
+          "probability": 0.7,
+          "evidence": "NOTCH1 can induce the expression of JAG1 (PMID: 21367878)."
+        },
+        {
+          "source": "JAG1",
+          "target": "ADD1",
+          "mechanism": "modulates activity",
+          "probability": 0.5,
+          "evidence": "JAG1 signaling has been implicated in modulating ADD1 activity (PMID: 22378850)."
+        }
+      ],
+      "overall_probability": 0.315,
+      "summary": "POGLUT1 glycosylates NOTCH1, inducing JAG1, which modulates ADD1."
+    }
+  ]
+}

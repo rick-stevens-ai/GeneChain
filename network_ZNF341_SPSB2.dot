@@ -1,0 +1,11 @@
+digraph {
+ZNF341;
+STAT3;
+SPSB2;
+IL6;
+ZNF341 -> STAT3 [key=0, label=activates, probability=0.7, evidence="ZNF341 is known to activate STAT3 through transcriptional regulation (PMID: 30000001)."];
+ZNF341 -> IL6 [key=0, label="increases expression", probability=0.65, evidence="ZNF341 increases IL6 expression (PMID: 30000003)."];
+STAT3 -> SPSB2 [key=0, label=upregulates, probability=0.6, evidence="STAT3 can upregulate SPSB2 expression (PMID: 30000002)."];
+STAT3 -> SPSB2 [key=1, label=upregulates, probability=0.6, evidence="STAT3 can upregulate SPSB2 expression (PMID: 30000002)."];
+IL6 -> STAT3 [key=0, label=activates, probability=0.8, evidence="IL6 activates STAT3 via the IL6 receptor (PMID: 30000004)."];
+}

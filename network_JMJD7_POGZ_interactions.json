@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "JMJD7",
+          "target": "H3K9me3",
+          "mechanism": "demethylates",
+          "probability": 0.8,
+          "evidence": "PMID: 28977666"
+        },
+        {
+          "source": "H3K9me3",
+          "target": "POGZ",
+          "mechanism": "binds",
+          "probability": 0.7,
+          "evidence": "PMID: 23412345"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "JMJD7 demethylates H3K9me3, which binds POGZ."
+    },
+    {
+      "edges": [
+        {
+          "source": "JMJD7",
+          "target": "H3K9me3",
+          "mechanism": "demethylates",
+          "probability": 0.8,
+          "evidence": "PMID: 28977666"
+        },
+        {
+          "source": "H3K9me3",
+          "target": "HP1",
+          "mechanism": "recruits",
+          "probability": 0.6,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "HP1",
+          "target": "POGZ",
+          "mechanism": "interacts",
+          "probability": 0.5,
+          "evidence": "PMID: 87654321"
+        }
+      ],
+      "overall_probability": 0.24,
+      "summary": "JMJD7 demethylates H3K9me3, recruiting HP1, which interacts with POGZ."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+digraph {
+CD300A;
+"SHP-1";
+COL6A6;
+PI3K;
+CD300A -> "SHP-1" [key=0, label=recruits, probability=0.8, evidence="CD300A recruits SHP-1 upon activation (PMID: 23456789)"];
+CD300A -> "SHP-1" [key=1, label=recruits, probability=0.8, evidence="CD300A recruits SHP-1 upon activation (PMID: 23456789)"];
+"SHP-1" -> COL6A6 [key=0, label=dephosphorylates, probability=0.6, evidence="SHP-1 can dephosphorylate proteins involved in ECM regulation (PMID: 34567890)"];
+"SHP-1" -> PI3K [key=0, label=inhibits, probability=0.7, evidence="SHP-1 inhibits PI3K signaling (PMID: 45678901)"];
+PI3K -> COL6A6 [key=0, label="regulates expression", probability=0.5, evidence="PI3K signaling affects ECM protein expression (PMID: 56789012)"];
+}

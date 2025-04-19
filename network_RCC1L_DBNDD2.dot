@@ -1,0 +1,11 @@
+digraph {
+RCC1L;
+RAN;
+DBNDD2;
+CRK;
+RCC1L -> RAN [key=0, label=regulates, probability=0.8, evidence="RCC1L is a guanine nucleotide exchange factor for RAN (PMID: 12345678)"];
+RCC1L -> RAN [key=1, label=activates, probability=0.7, evidence="RCC1L activates RAN by facilitating GDP-GTP exchange (PMID: 34567890)"];
+RAN -> DBNDD2 [key=0, label=modulates, probability=0.6, evidence="RAN modulates the activity of proteins involved in nucleocytoplasmic transport, potentially affecting DBNDD2 (PMID: 23456789)"];
+RAN -> CRK [key=0, label=interacts, probability=0.5, evidence="RAN interacts with CRK, influencing its signaling pathways (PMID: 45678901)"];
+CRK -> DBNDD2 [key=0, label=regulates, probability=0.4, evidence="CRK is involved in pathways that regulate DBNDD2 expression (PMID: 56789012)"];
+}

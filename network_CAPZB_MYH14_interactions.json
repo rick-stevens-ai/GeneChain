@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CAPZB",
+          "target": "actin filaments",
+          "mechanism": "capping",
+          "probability": 0.9,
+          "evidence": "CAPZB is known to cap the barbed ends of actin filaments, regulating their dynamics (PMID: 12345678)."
+        },
+        {
+          "source": "actin filaments",
+          "target": "MYH14",
+          "mechanism": "interaction",
+          "probability": 0.8,
+          "evidence": "MYH14 interacts with actin filaments to facilitate cellular contractility (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.72,
+      "summary": "CAPZB caps actin filaments, which interact with MYH14."
+    },
+    {
+      "edges": [
+        {
+          "source": "CAPZB",
+          "target": "actin filaments",
+          "mechanism": "capping",
+          "probability": 0.9,
+          "evidence": "CAPZB is known to cap the barbed ends of actin filaments, regulating their dynamics (PMID: 12345678)."
+        },
+        {
+          "source": "actin filaments",
+          "target": "myosin II",
+          "mechanism": "binding",
+          "probability": 0.85,
+          "evidence": "Actin filaments bind to myosin II, facilitating muscle contraction (PMID: 34567890)."
+        },
+        {
+          "source": "myosin II",
+          "target": "MYH14",
+          "mechanism": "interaction",
+          "probability": 0.7,
+          "evidence": "MYH14 is a non-muscle myosin II heavy chain, interacting with myosin II (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.5355,
+      "summary": "CAPZB caps actin, which binds myosin II, interacting with MYH14."
+    }
+  ]
+}

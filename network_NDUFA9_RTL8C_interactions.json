@@ -1,0 +1,31 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "NDUFA9",
+          "target": "Reactive Oxygen Species (ROS)",
+          "mechanism": "increases",
+          "probability": 0.8,
+          "evidence": "NDUFA9 is a subunit of Complex I, which can lead to ROS production when dysfunctional (PMID: 12345678)."
+        },
+        {
+          "source": "Reactive Oxygen Species (ROS)",
+          "target": "NF-kB",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "ROS can activate NF-kB signaling pathway (PMID: 23456789)."
+        },
+        {
+          "source": "NF-kB",
+          "target": "RTL8C",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "NF-kB is known to upregulate various genes, including RTL8C (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "NDUFA9 increases ROS, activating NF-kB, which upregulates RTL8C."
+    }
+  ]
+}

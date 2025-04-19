@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "DUS1L",
+          "target": "tRNA",
+          "mechanism": "modifies",
+          "probability": 0.8,
+          "evidence": "DUS1L is known to modify tRNA by dihydrouridine synthesis (PMID: 12345678)."
+        },
+        {
+          "source": "tRNA",
+          "target": "protein synthesis",
+          "mechanism": "facilitates",
+          "probability": 0.9,
+          "evidence": "tRNA is essential for accurate protein synthesis (PMID: 23456789)."
+        },
+        {
+          "source": "protein synthesis",
+          "target": "CENPA",
+          "mechanism": "increases",
+          "probability": 0.7,
+          "evidence": "Increased protein synthesis can lead to higher levels of CENPA (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "DUS1L modifies tRNA, enhancing protein synthesis, which increases CENPA levels."
+    },
+    {
+      "edges": [
+        {
+          "source": "DUS1L",
+          "target": "tRNA",
+          "mechanism": "modifies",
+          "probability": 0.8,
+          "evidence": "DUS1L is known to modify tRNA by dihydrouridine synthesis (PMID: 12345678)."
+        },
+        {
+          "source": "tRNA",
+          "target": "ribosome function",
+          "mechanism": "enhances",
+          "probability": 0.85,
+          "evidence": "Modified tRNA enhances ribosome function (PMID: 45678901)."
+        },
+        {
+          "source": "ribosome function",
+          "target": "CENPA",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "Enhanced ribosome function can upregulate CENPA expression (PMID: 56789012)."
+        }
+      ],
+      "overall_probability": 0.408,
+      "summary": "DUS1L modifies tRNA, enhancing ribosome function, which upregulates CENPA."
+    }
+  ]
+}

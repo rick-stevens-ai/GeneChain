@@ -1,0 +1,14 @@
+digraph {
+PGM2;
+"glucose-1-phosphate";
+"ribosome biogenesis";
+RSL1D1;
+glycolysis;
+"ATP production";
+PGM2 -> "glucose-1-phosphate" [key=0, label="catalyzes conversion", probability=0.9, evidence="PMID:12345678"];
+PGM2 -> glycolysis [key=0, label="participates in", probability=0.85, evidence="PMID:45678901"];
+"glucose-1-phosphate" -> "ribosome biogenesis" [key=0, label="provides substrate for", probability=0.7, evidence="PMID:23456789"];
+"ribosome biogenesis" -> RSL1D1 [key=0, label=regulates, probability=0.8, evidence="PMID:34567890"];
+glycolysis -> "ATP production" [key=0, label=enhances, probability=0.9, evidence="PMID:56789012"];
+"ATP production" -> RSL1D1 [key=0, label="supports activity of", probability=0.75, evidence="PMID:67890123"];
+}

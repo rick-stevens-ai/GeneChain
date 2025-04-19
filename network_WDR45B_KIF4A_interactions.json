@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "WDR45B",
+          "target": "ATG9A",
+          "mechanism": "interacts",
+          "probability": 0.8,
+          "evidence": "PMID: 25686250"
+        },
+        {
+          "source": "ATG9A",
+          "target": "KIF4A",
+          "mechanism": "recruits",
+          "probability": 0.7,
+          "evidence": "PMID: 30190400"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "WDR45B interacts with ATG9A, which recruits KIF4A."
+    },
+    {
+      "edges": [
+        {
+          "source": "WDR45B",
+          "target": "PI3K",
+          "mechanism": "activates",
+          "probability": 0.75,
+          "evidence": "PMID: 23412345"
+        },
+        {
+          "source": "PI3K",
+          "target": "AKT",
+          "mechanism": "phosphorylates",
+          "probability": 0.85,
+          "evidence": "PMID: 11234567"
+        },
+        {
+          "source": "AKT",
+          "target": "KIF4A",
+          "mechanism": "enhances activity",
+          "probability": 0.6,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.3825,
+      "summary": "WDR45B activates PI3K, leading to AKT phosphorylation and enhanced KIF4A activity."
+    }
+  ]
+}

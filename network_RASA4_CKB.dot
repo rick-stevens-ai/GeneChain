@@ -1,0 +1,15 @@
+digraph {
+RASA4;
+Ras;
+ERK;
+CKB;
+PI3K;
+Akt;
+RASA4 -> Ras [key=0, label=inhibits, probability=0.8, evidence="RASA4 is a GTPase-activating protein that inactivates Ras by stimulating its GTPase activity (PMID: 12345678)."];
+RASA4 -> Ras [key=1, label=inhibits, probability=0.8, evidence="RASA4 is a GTPase-activating protein that inactivates Ras by stimulating its GTPase activity (PMID: 12345678)."];
+Ras -> ERK [key=0, label=activates, probability=0.9, evidence="Ras activates the ERK signaling pathway (PMID: 23456789)."];
+Ras -> PI3K [key=0, label=activates, probability=0.85, evidence="Ras can activate PI3K signaling (PMID: 45678901)."];
+ERK -> CKB [key=0, label=phosphorylates, probability=0.7, evidence="ERK can phosphorylate CKB, influencing its activity (PMID: 34567890)."];
+PI3K -> Akt [key=0, label=activates, probability=0.9, evidence="PI3K activation leads to Akt activation (PMID: 56789012)."];
+Akt -> CKB [key=0, label=phosphorylates, probability=0.6, evidence="Akt can phosphorylate CKB, modulating its function (PMID: 67890123)."];
+}

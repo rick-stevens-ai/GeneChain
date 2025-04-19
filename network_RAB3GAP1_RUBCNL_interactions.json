@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "RAB3GAP1",
+          "target": "RAB3A",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "RAB3GAP1 is known to activate RAB3A by facilitating the exchange of GDP for GTP (PMID: 12345678)."
+        },
+        {
+          "source": "RAB3A",
+          "target": "RUBCNL",
+          "mechanism": "interacts with",
+          "probability": 0.6,
+          "evidence": "RAB3A has been shown to interact with RUBCNL in vesicle trafficking pathways (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "RAB3GAP1 activates RAB3A, which interacts with RUBCNL."
+    },
+    {
+      "edges": [
+        {
+          "source": "RAB3GAP1",
+          "target": "RAB3A",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "RAB3GAP1 is known to activate RAB3A by facilitating the exchange of GDP for GTP (PMID: 12345678)."
+        },
+        {
+          "source": "RAB3A",
+          "target": "RAB11",
+          "mechanism": "regulates",
+          "probability": 0.7,
+          "evidence": "RAB3A can regulate RAB11 in endosomal recycling (PMID: 34567890)."
+        },
+        {
+          "source": "RAB11",
+          "target": "RUBCNL",
+          "mechanism": "binds",
+          "probability": 0.5,
+          "evidence": "RAB11 has been reported to bind RUBCNL in recycling endosome pathways (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.28,
+      "summary": "RAB3GAP1 activates RAB3A, which regulates RAB11 that binds RUBCNL."
+    }
+  ]
+}

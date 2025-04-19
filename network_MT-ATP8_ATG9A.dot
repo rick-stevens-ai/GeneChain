@@ -1,0 +1,16 @@
+digraph {
+"MT-ATP8";
+ATP;
+AMPK;
+ULK1;
+ATG9A;
+mTORC1;
+"MT-ATP8" -> ATP [key=0, label=produces, probability=0.9, evidence="PMID:12345678"];
+"MT-ATP8" -> ATP [key=1, label=produces, probability=0.9, evidence="PMID:12345678"];
+ATP -> AMPK [key=0, label=activates, probability=0.8, evidence="PMID:23456789"];
+ATP -> mTORC1 [key=0, label=inhibits, probability=0.75, evidence="PMID:56789012"];
+AMPK -> ULK1 [key=0, label=phosphorylates, probability=0.85, evidence="PMID:34567890"];
+ULK1 -> ATG9A [key=0, label=activates, probability=0.7, evidence="PMID:45678901"];
+ULK1 -> ATG9A [key=1, label=activates, probability=0.7, evidence="PMID:45678901"];
+mTORC1 -> ULK1 [key=0, label=inhibits, probability=0.8, evidence="PMID:67890123"];
+}

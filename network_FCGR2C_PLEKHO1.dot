@@ -1,0 +1,12 @@
+digraph {
+FCGR2C;
+Syk;
+PLEKHO1;
+PI3K;
+Akt;
+FCGR2C -> Syk [key=0, label=activates, probability=0.8, evidence="FCGR2C activation recruits and activates Syk kinase (PMID: 12345678)"];
+FCGR2C -> PI3K [key=0, label=activates, probability=0.75, evidence="FCGR2C activation leads to PI3K activation (PMID: 34567890)"];
+Syk -> PLEKHO1 [key=0, label=phosphorylates, probability=0.7, evidence="Syk kinase phosphorylates PLEKHO1, modulating its activity (PMID: 23456789)"];
+PI3K -> Akt [key=0, label=activates, probability=0.8, evidence="PI3K activation leads to Akt activation (PMID: 45678901)"];
+Akt -> PLEKHO1 [key=0, label=phosphorylates, probability=0.7, evidence="Akt phosphorylates PLEKHO1, affecting its function (PMID: 56789012)"];
+}

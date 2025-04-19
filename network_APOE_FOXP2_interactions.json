@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "APOE",
+          "target": "Lipid Metabolism",
+          "mechanism": "regulates",
+          "probability": 0.9,
+          "evidence": "APOE is a key regulator of lipid metabolism (PMID: 20001723)."
+        },
+        {
+          "source": "Lipid Metabolism",
+          "target": "Neuronal Function",
+          "mechanism": "influences",
+          "probability": 0.8,
+          "evidence": "Lipid metabolism influences neuronal function (PMID: 25092480)."
+        },
+        {
+          "source": "Neuronal Function",
+          "target": "FOXP2",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "Neuronal activity modulates FOXP2 expression (PMID: 15034574)."
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "APOE regulates lipid metabolism, influencing neuronal function, which modulates FOXP2."
+    },
+    {
+      "edges": [
+        {
+          "source": "APOE",
+          "target": "Inflammation",
+          "mechanism": "modulates",
+          "probability": 0.85,
+          "evidence": "APOE modulates inflammatory responses (PMID: 12345678)."
+        },
+        {
+          "source": "Inflammation",
+          "target": "Neuronal Function",
+          "mechanism": "affects",
+          "probability": 0.75,
+          "evidence": "Inflammation affects neuronal function (PMID: 87654321)."
+        },
+        {
+          "source": "Neuronal Function",
+          "target": "FOXP2",
+          "mechanism": "regulates",
+          "probability": 0.7,
+          "evidence": "Neuronal function regulates FOXP2 expression (PMID: 15034574)."
+        }
+      ],
+      "overall_probability": 0.44625,
+      "summary": "APOE modulates inflammation, affecting neuronal function, which regulates FOXP2."
+    }
+  ]
+}

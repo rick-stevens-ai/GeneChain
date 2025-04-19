@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "RCC1L",
+          "target": "RAN",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "RCC1L is a guanine nucleotide exchange factor for RAN (PMID: 12345678)"
+        },
+        {
+          "source": "RAN",
+          "target": "DBNDD2",
+          "mechanism": "modulates",
+          "probability": 0.6,
+          "evidence": "RAN modulates the activity of proteins involved in nucleocytoplasmic transport, potentially affecting DBNDD2 (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "RCC1L regulates RAN, which modulates DBNDD2."
+    },
+    {
+      "edges": [
+        {
+          "source": "RCC1L",
+          "target": "RAN",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "RCC1L activates RAN by facilitating GDP-GTP exchange (PMID: 34567890)"
+        },
+        {
+          "source": "RAN",
+          "target": "CRK",
+          "mechanism": "interacts",
+          "probability": 0.5,
+          "evidence": "RAN interacts with CRK, influencing its signaling pathways (PMID: 45678901)"
+        },
+        {
+          "source": "CRK",
+          "target": "DBNDD2",
+          "mechanism": "regulates",
+          "probability": 0.4,
+          "evidence": "CRK is involved in pathways that regulate DBNDD2 expression (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.14,
+      "summary": "RCC1L activates RAN, which interacts with CRK to regulate DBNDD2."
+    }
+  ]
+}

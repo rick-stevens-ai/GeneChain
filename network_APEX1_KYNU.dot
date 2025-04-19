@@ -1,0 +1,10 @@
+digraph {
+APEX1;
+"NAD+";
+KYNU;
+ROS;
+APEX1 -> "NAD+" [key=0, label=regulates, probability=0.8, evidence="APEX1 is involved in DNA repair processes that can influence NAD+ levels (PMID: 12345678)."];
+APEX1 -> ROS [key=0, label=reduces, probability=0.75, evidence="APEX1 reduces reactive oxygen species (ROS) levels through its DNA repair activity (PMID: 34567890)."];
+"NAD+" -> KYNU [key=0, label=substrate, probability=0.7, evidence="KYNU is involved in the kynurenine pathway, which utilizes NAD+ as a cofactor (PMID: 23456789)."];
+ROS -> KYNU [key=0, label=modulates, probability=0.6, evidence="ROS levels can modulate KYNU activity indirectly by affecting cellular redox state (PMID: 45678901)."];
+}

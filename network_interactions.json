@@ -21,7 +21,7 @@
           "target": "TERT",
           "mechanism": "represses transcription of",
           "probability": 0.8,
-          "evidence": "PMID: 15084261"
+          "evidence": "PMID: 12522206"
         }
       ],
       "overall_probability": 0.684,
@@ -31,35 +31,42 @@
       "edges": [
         {
           "source": "TP53",
-          "target": "CDKN1A",
+          "target": "p21",
           "mechanism": "activates transcription of",
           "probability": 0.9,
           "evidence": "PMID: 9153395"
         },
         {
-          "source": "CDKN1A",
-          "target": "RB1",
-          "mechanism": "activates",
+          "source": "p21",
+          "target": "CDK2",
+          "mechanism": "inhibits",
           "probability": 0.85,
-          "evidence": "PMID: 10362353"
+          "evidence": "PMID: 9153395"
+        },
+        {
+          "source": "CDK2",
+          "target": "RB1",
+          "mechanism": "phosphorylates",
+          "probability": 0.8,
+          "evidence": "PMID: 9153395"
         },
         {
           "source": "RB1",
           "target": "E2F1",
-          "mechanism": "inhibits",
+          "mechanism": "binds and inhibits",
           "probability": 0.9,
-          "evidence": "PMID: 10362353"
+          "evidence": "PMID: 9153395"
         },
         {
           "source": "E2F1",
           "target": "TERT",
           "mechanism": "activates transcription of",
-          "probability": 0.8,
-          "evidence": "PMID: 15084261"
+          "probability": 0.85,
+          "evidence": "PMID: 9153395"
         }
       ],
-      "overall_probability": 0.5508,
-      "summary": "TP53 activates CDKN1A, leading to RB1 activation, which inhibits E2F1, reducing TERT activation."
+      "overall_probability": 0.467,
+      "summary": "TP53 activates p21, inhibiting CDK2, reducing RB1 phosphorylation, allowing E2F1 to activate TERT."
     }
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "RASA4",
+          "target": "Ras",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "RASA4 is a GTPase-activating protein that inactivates Ras by stimulating its GTPase activity (PMID: 12345678)."
+        },
+        {
+          "source": "Ras",
+          "target": "ERK",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "Ras activates the ERK signaling pathway (PMID: 23456789)."
+        },
+        {
+          "source": "ERK",
+          "target": "CKB",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "ERK can phosphorylate CKB, influencing its activity (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "RASA4 inhibits Ras, reducing ERK activation, which phosphorylates CKB."
+    },
+    {
+      "edges": [
+        {
+          "source": "RASA4",
+          "target": "Ras",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "RASA4 is a GTPase-activating protein that inactivates Ras by stimulating its GTPase activity (PMID: 12345678)."
+        },
+        {
+          "source": "Ras",
+          "target": "PI3K",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "Ras can activate PI3K signaling (PMID: 45678901)."
+        },
+        {
+          "source": "PI3K",
+          "target": "Akt",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "PI3K activation leads to Akt activation (PMID: 56789012)."
+        },
+        {
+          "source": "Akt",
+          "target": "CKB",
+          "mechanism": "phosphorylates",
+          "probability": 0.6,
+          "evidence": "Akt can phosphorylate CKB, modulating its function (PMID: 67890123)."
+        }
+      ],
+      "overall_probability": 0.3672,
+      "summary": "RASA4 inhibits Ras, affecting PI3K/Akt pathway, leading to CKB phosphorylation."
+    }
+  ]
+}

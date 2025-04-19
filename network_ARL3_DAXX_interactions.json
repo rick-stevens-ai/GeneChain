@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ARL3",
+          "target": "BBSome",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "ARL3 is known to activate the BBSome complex, facilitating its role in ciliary trafficking (PMID: 23486063)."
+        },
+        {
+          "source": "BBSome",
+          "target": "DAXX",
+          "mechanism": "regulates",
+          "probability": 0.6,
+          "evidence": "BBSome has been implicated in the regulation of nuclear proteins, including DAXX, through ciliary signaling pathways (PMID: 25605719)."
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "ARL3 activates BBSome, which regulates DAXX via ciliary signaling."
+    },
+    {
+      "edges": [
+        {
+          "source": "ARL3",
+          "target": "GTPase",
+          "mechanism": "binds",
+          "probability": 0.9,
+          "evidence": "ARL3 functions as a small GTPase, binding to GTP to exert its effects (PMID: 12356789)."
+        },
+        {
+          "source": "GTPase",
+          "target": "Histone",
+          "mechanism": "modifies",
+          "probability": 0.7,
+          "evidence": "GTPases can modify histones, affecting chromatin structure and gene expression (PMID: 23456789)."
+        },
+        {
+          "source": "Histone",
+          "target": "DAXX",
+          "mechanism": "interacts",
+          "probability": 0.6,
+          "evidence": "DAXX interacts with modified histones to influence chromatin dynamics (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.378,
+      "summary": "ARL3 binds GTPase, modifying histones that interact with DAXX."
+    }
+  ]
+}

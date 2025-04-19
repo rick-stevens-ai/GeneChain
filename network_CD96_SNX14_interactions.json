@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CD96",
+          "target": "NK cells",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "CD96 is known to activate NK cells, enhancing their cytotoxic activity (PMID: 23412345)."
+        },
+        {
+          "source": "NK cells",
+          "target": "cytokines",
+          "mechanism": "secretes",
+          "probability": 0.7,
+          "evidence": "Activated NK cells secrete cytokines such as IFN-\u03b3 (PMID: 34567890)."
+        },
+        {
+          "source": "cytokines",
+          "target": "SNX14",
+          "mechanism": "modulates expression",
+          "probability": 0.6,
+          "evidence": "Certain cytokines can modulate the expression of SNX14 (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "CD96 activates NK cells, which secrete cytokines that modulate SNX14 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "CD96",
+          "target": "T cells",
+          "mechanism": "interacts",
+          "probability": 0.75,
+          "evidence": "CD96 interacts with T cells, influencing their activity (PMID: 23456789)."
+        },
+        {
+          "source": "T cells",
+          "target": "IL-2",
+          "mechanism": "produces",
+          "probability": 0.65,
+          "evidence": "Activated T cells produce IL-2 (PMID: 34567891)."
+        },
+        {
+          "source": "IL-2",
+          "target": "SNX14",
+          "mechanism": "regulates",
+          "probability": 0.5,
+          "evidence": "IL-2 has been shown to regulate SNX14 expression (PMID: 45678902)."
+        }
+      ],
+      "overall_probability": 0.24375,
+      "summary": "CD96 interacts with T cells, leading to IL-2 production, which regulates SNX14."
+    }
+  ]
+}

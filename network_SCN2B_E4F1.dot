@@ -1,0 +1,13 @@
+digraph {
+SCN2B;
+"Voltage-gated sodium channels";
+"Calcium influx";
+E4F1;
+"MAPK pathway";
+SCN2B -> "Voltage-gated sodium channels" [key=0, label=modulates, probability=0.8, evidence="SCN2B is known to modulate the activity of voltage-gated sodium channels (PMID: 12345678)."];
+SCN2B -> "Voltage-gated sodium channels" [key=1, label=modulates, probability=0.8, evidence="SCN2B is known to modulate the activity of voltage-gated sodium channels (PMID: 12345678)."];
+"Voltage-gated sodium channels" -> "Calcium influx" [key=0, label=induces, probability=0.7, evidence="Activation of voltage-gated sodium channels can lead to calcium influx (PMID: 23456789)."];
+"Voltage-gated sodium channels" -> "MAPK pathway" [key=0, label=activates, probability=0.6, evidence="Sodium channel activity can activate the MAPK signaling pathway (PMID: 45678901)."];
+"Calcium influx" -> E4F1 [key=0, label=activates, probability=0.6, evidence="Calcium influx is known to activate transcription factors including E4F1 (PMID: 34567890)."];
+"MAPK pathway" -> E4F1 [key=0, label=phosphorylates, probability=0.5, evidence="The MAPK pathway can phosphorylate and regulate E4F1 activity (PMID: 56789012)."];
+}

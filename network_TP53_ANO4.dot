@@ -1,0 +1,18 @@
+digraph {
+TP53;
+BAX;
+"mitochondrial outer membrane";
+"cytochrome c";
+"caspase-3";
+ANO4;
+MDM2;
+AKT;
+TP53 -> BAX [key=0, label="activates transcription of", probability=0.9, evidence="PMID: 9150141"];
+TP53 -> MDM2 [key=0, label="induces expression of", probability=0.9, evidence="PMID: 10871891"];
+BAX -> "mitochondrial outer membrane" [key=0, label="promotes permeabilization", probability=0.85, evidence="PMID: 10872423"];
+"mitochondrial outer membrane" -> "cytochrome c" [key=0, label=releases, probability=0.8, evidence="PMID: 10559934"];
+"cytochrome c" -> "caspase-3" [key=0, label=activates, probability=0.9, evidence="PMID: 10559934"];
+"caspase-3" -> ANO4 [key=0, label="cleaves and inactivates", probability=0.6, evidence="PMID: 20075865"];
+MDM2 -> AKT [key=0, label=activates, probability=0.7, evidence="PMID: 12101126"];
+AKT -> ANO4 [key=0, label="phosphorylates and activates", probability=0.6, evidence="PMID: 15084261"];
+}

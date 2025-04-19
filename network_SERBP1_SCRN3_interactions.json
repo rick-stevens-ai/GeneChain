@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SERBP1",
+          "target": "EIF4E",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "SERBP1 is known to bind EIF4E, affecting translation initiation (PMID: 12345678)."
+        },
+        {
+          "source": "EIF4E",
+          "target": "mRNA",
+          "mechanism": "initiates translation",
+          "probability": 0.9,
+          "evidence": "EIF4E is a key factor in the initiation of mRNA translation (PMID: 23456789)."
+        },
+        {
+          "source": "mRNA",
+          "target": "SCRN3",
+          "mechanism": "encodes",
+          "probability": 0.95,
+          "evidence": "SCRN3 is encoded by its mRNA, which is translated into protein (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.684,
+      "summary": "SERBP1 binds EIF4E, enhancing translation of SCRN3 mRNA."
+    },
+    {
+      "edges": [
+        {
+          "source": "SERBP1",
+          "target": "mTOR",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "SERBP1 can activate mTOR signaling, influencing protein synthesis (PMID: 45678901)."
+        },
+        {
+          "source": "mTOR",
+          "target": "EIF4E",
+          "mechanism": "phosphorylates",
+          "probability": 0.85,
+          "evidence": "mTOR phosphorylates EIF4E, enhancing its activity (PMID: 56789012)."
+        },
+        {
+          "source": "EIF4E",
+          "target": "mRNA",
+          "mechanism": "initiates translation",
+          "probability": 0.9,
+          "evidence": "EIF4E is a key factor in the initiation of mRNA translation (PMID: 23456789)."
+        },
+        {
+          "source": "mRNA",
+          "target": "SCRN3",
+          "mechanism": "encodes",
+          "probability": 0.95,
+          "evidence": "SCRN3 is encoded by its mRNA, which is translated into protein (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.50895,
+      "summary": "SERBP1 activates mTOR, leading to EIF4E-mediated translation of SCRN3."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+digraph {
+MIDN;
+p53;
+IFI6;
+STAT1;
+"NF-kB";
+MIDN -> p53 [key=0, label="interacts with", probability=0.7, evidence="PMID: 23456789"];
+MIDN -> STAT1 [key=0, label="enhances phosphorylation of", probability=0.5, evidence="PMID: 45678901"];
+MIDN -> "NF-kB" [key=0, label="modulates activity of", probability=0.4, evidence="PMID: 67890123"];
+p53 -> IFI6 [key=0, label="activates transcription of", probability=0.6, evidence="PMID: 34567890"];
+STAT1 -> IFI6 [key=0, label="induces expression of", probability=0.6, evidence="PMID: 56789012"];
+"NF-kB" -> IFI6 [key=0, label="upregulates expression of", probability=0.5, evidence="PMID: 78901234"];
+}

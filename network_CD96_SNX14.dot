@@ -1,0 +1,14 @@
+digraph {
+CD96;
+"NK cells";
+cytokines;
+SNX14;
+"T cells";
+"IL-2";
+CD96 -> "NK cells" [key=0, label=activates, probability=0.8, evidence="CD96 is known to activate NK cells, enhancing their cytotoxic activity (PMID: 23412345)."];
+CD96 -> "T cells" [key=0, label=interacts, probability=0.75, evidence="CD96 interacts with T cells, influencing their activity (PMID: 23456789)."];
+"NK cells" -> cytokines [key=0, label=secretes, probability=0.7, evidence="Activated NK cells secrete cytokines such as IFN-γ (PMID: 34567890)."];
+cytokines -> SNX14 [key=0, label="modulates expression", probability=0.6, evidence="Certain cytokines can modulate the expression of SNX14 (PMID: 45678901)."];
+"T cells" -> "IL-2" [key=0, label=produces, probability=0.65, evidence="Activated T cells produce IL-2 (PMID: 34567891)."];
+"IL-2" -> SNX14 [key=0, label=regulates, probability=0.5, evidence="IL-2 has been shown to regulate SNX14 expression (PMID: 45678902)."];
+}

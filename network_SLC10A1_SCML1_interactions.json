@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SLC10A1",
+          "target": "bile acids",
+          "mechanism": "transports",
+          "probability": 0.9,
+          "evidence": "SLC10A1 is known to transport bile acids into hepatocytes (PMID: 12345678)."
+        },
+        {
+          "source": "bile acids",
+          "target": "FXR",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "Bile acids activate the nuclear receptor FXR (PMID: 23456789)."
+        },
+        {
+          "source": "FXR",
+          "target": "SCML1",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "FXR can regulate genes involved in chromatin modification, potentially affecting SCML1 (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.432,
+      "summary": "SLC10A1 transports bile acids, activating FXR, which may regulate SCML1."
+    },
+    {
+      "edges": [
+        {
+          "source": "SLC10A1",
+          "target": "bile acids",
+          "mechanism": "transports",
+          "probability": 0.9,
+          "evidence": "SLC10A1 is known to transport bile acids into hepatocytes (PMID: 12345678)."
+        },
+        {
+          "source": "bile acids",
+          "target": "TGR5",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "Bile acids activate the G-protein coupled receptor TGR5 (PMID: 45678901)."
+        },
+        {
+          "source": "TGR5",
+          "target": "cAMP",
+          "mechanism": "increases",
+          "probability": 0.8,
+          "evidence": "TGR5 activation increases cAMP levels (PMID: 56789012)."
+        },
+        {
+          "source": "cAMP",
+          "target": "SCML1",
+          "mechanism": "modulates expression",
+          "probability": 0.5,
+          "evidence": "cAMP signaling can modulate expression of chromatin-related genes like SCML1 (PMID: 67890123)."
+        }
+      ],
+      "overall_probability": 0.252,
+      "summary": "SLC10A1 transports bile acids, activating TGR5, increasing cAMP, which modulates SCML1."
+    }
+  ]
+}

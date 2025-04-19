@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SCAF4",
+          "target": "RNA polymerase II",
+          "mechanism": "regulates transcription",
+          "probability": 0.7,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "RNA polymerase II",
+          "target": "TMOD1",
+          "mechanism": "transcribes",
+          "probability": 0.8,
+          "evidence": "PMID: 23456789"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "SCAF4 regulates RNA polymerase II, which transcribes TMOD1."
+    },
+    {
+      "edges": [
+        {
+          "source": "SCAF4",
+          "target": "splicing factors",
+          "mechanism": "interacts with",
+          "probability": 0.6,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "splicing factors",
+          "target": "TMOD1 mRNA",
+          "mechanism": "modifies splicing",
+          "probability": 0.7,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "TMOD1 mRNA",
+          "target": "TMOD1",
+          "mechanism": "translates",
+          "probability": 0.9,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.378,
+      "summary": "SCAF4 interacts with splicing factors, modifying TMOD1 mRNA splicing and translation."
+    }
+  ]
+}

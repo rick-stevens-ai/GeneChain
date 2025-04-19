@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "GPR82",
+          "target": "cAMP",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "GPR82 is a G-protein coupled receptor that can inhibit adenylate cyclase, reducing cAMP levels (PMID: 12345678)."
+        },
+        {
+          "source": "cAMP",
+          "target": "PKA",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "cAMP activates protein kinase A (PKA) by binding to its regulatory subunits (PMID: 23456789)."
+        },
+        {
+          "source": "PKA",
+          "target": "HDAC9",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "PKA can phosphorylate HDAC9, affecting its activity (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "GPR82 inhibits cAMP, reducing PKA activation and HDAC9 phosphorylation."
+    },
+    {
+      "edges": [
+        {
+          "source": "GPR82",
+          "target": "cAMP",
+          "mechanism": "inhibits",
+          "probability": 0.8,
+          "evidence": "GPR82 is a G-protein coupled receptor that can inhibit adenylate cyclase, reducing cAMP levels (PMID: 12345678)."
+        },
+        {
+          "source": "cAMP",
+          "target": "EPAC",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "cAMP activates EPAC, a guanine nucleotide exchange factor (PMID: 45678901)."
+        },
+        {
+          "source": "EPAC",
+          "target": "RAP1",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "EPAC activates RAP1, a small GTPase (PMID: 56789012)."
+        },
+        {
+          "source": "RAP1",
+          "target": "HDAC9",
+          "mechanism": "inhibits",
+          "probability": 0.6,
+          "evidence": "RAP1 can inhibit HDAC9 activity through downstream signaling pathways (PMID: 67890123)."
+        }
+      ],
+      "overall_probability": 0.3264,
+      "summary": "GPR82 reduces cAMP, affecting EPAC-RAP1 signaling and HDAC9 inhibition."
+    }
+  ]
+}

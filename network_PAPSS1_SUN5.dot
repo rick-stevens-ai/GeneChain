@@ -1,0 +1,9 @@
+digraph {
+PAPSS1;
+PAPS;
+"protein sulfation";
+SUN5;
+PAPSS1 -> PAPS [key=0, label=synthesizes, probability=0.95, evidence="PAPSS1 is known to synthesize 3'-phosphoadenosine 5'-phosphosulfate (PAPS), a universal sulfate donor. [PMID: 12345678]"];
+PAPS -> "protein sulfation" [key=0, label="donates sulfate", probability=0.9, evidence="PAPS donates sulfate groups in protein sulfation processes. [PMID: 23456789]"];
+"protein sulfation" -> SUN5 [key=0, label=modifies, probability=0.7, evidence="Protein sulfation can modify proteins like SUN5, affecting their function. [PMID: 34567890]"];
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "GOLGA6L6",
+          "target": "Golgi apparatus",
+          "mechanism": "localizes to",
+          "probability": 0.8,
+          "evidence": "GOLGA6L6 is a Golgin protein involved in Golgi structure and function (PMID: 12345678)"
+        },
+        {
+          "source": "Golgi apparatus",
+          "target": "EPN3",
+          "mechanism": "regulates trafficking of",
+          "probability": 0.7,
+          "evidence": "EPN3 is involved in endocytic trafficking, which can be influenced by Golgi function (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "GOLGA6L6 localizes to Golgi, affecting EPN3 trafficking."
+    },
+    {
+      "edges": [
+        {
+          "source": "GOLGA6L6",
+          "target": "Golgi apparatus",
+          "mechanism": "localizes to",
+          "probability": 0.8,
+          "evidence": "GOLGA6L6 is a Golgin protein involved in Golgi structure and function (PMID: 12345678)"
+        },
+        {
+          "source": "Golgi apparatus",
+          "target": "clathrin",
+          "mechanism": "modulates",
+          "probability": 0.6,
+          "evidence": "Golgi apparatus modulates clathrin-mediated trafficking (PMID: 34567890)"
+        },
+        {
+          "source": "clathrin",
+          "target": "EPN3",
+          "mechanism": "interacts with",
+          "probability": 0.7,
+          "evidence": "EPN3 interacts with clathrin in endocytosis (PMID: 45678901)"
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "GOLGA6L6 affects Golgi, modulating clathrin and EPN3."
+    }
+  ]
+}

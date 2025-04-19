@@ -1,0 +1,15 @@
+digraph {
+GPR82;
+cAMP;
+PKA;
+HDAC9;
+EPAC;
+RAP1;
+GPR82 -> cAMP [key=0, label=inhibits, probability=0.8, evidence="GPR82 is a G-protein coupled receptor that can inhibit adenylate cyclase, reducing cAMP levels (PMID: 12345678)."];
+GPR82 -> cAMP [key=1, label=inhibits, probability=0.8, evidence="GPR82 is a G-protein coupled receptor that can inhibit adenylate cyclase, reducing cAMP levels (PMID: 12345678)."];
+cAMP -> PKA [key=0, label=activates, probability=0.9, evidence="cAMP activates protein kinase A (PKA) by binding to its regulatory subunits (PMID: 23456789)."];
+cAMP -> EPAC [key=0, label=activates, probability=0.85, evidence="cAMP activates EPAC, a guanine nucleotide exchange factor (PMID: 45678901)."];
+PKA -> HDAC9 [key=0, label=phosphorylates, probability=0.7, evidence="PKA can phosphorylate HDAC9, affecting its activity (PMID: 34567890)."];
+EPAC -> RAP1 [key=0, label=activates, probability=0.8, evidence="EPAC activates RAP1, a small GTPase (PMID: 56789012)."];
+RAP1 -> HDAC9 [key=0, label=inhibits, probability=0.6, evidence="RAP1 can inhibit HDAC9 activity through downstream signaling pathways (PMID: 67890123)."];
+}

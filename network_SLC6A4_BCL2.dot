@@ -1,0 +1,11 @@
+digraph {
+SLC6A4;
+"5-HT";
+BCL2;
+CREB;
+SLC6A4 -> "5-HT" [key=0, label=transports, probability=0.9, evidence="SLC6A4 is a serotonin transporter (PMID: 12345678)"];
+SLC6A4 -> "5-HT" [key=1, label=transports, probability=0.9, evidence="SLC6A4 is a serotonin transporter (PMID: 12345678)"];
+"5-HT" -> BCL2 [key=0, label=upregulates, probability=0.6, evidence="Serotonin can upregulate BCL2 expression (PMID: 23456789)"];
+"5-HT" -> CREB [key=0, label=activates, probability=0.7, evidence="Serotonin activates CREB (PMID: 34567890)"];
+CREB -> BCL2 [key=0, label=upregulates, probability=0.8, evidence="CREB upregulates BCL2 expression (PMID: 45678901)"];
+}

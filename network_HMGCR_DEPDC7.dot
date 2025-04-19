@@ -1,0 +1,14 @@
+digraph {
+HMGCR;
+cholesterol;
+SREBP2;
+DEPDC7;
+mevalonate;
+RhoA;
+HMGCR -> cholesterol [key=0, label="catalyzes synthesis", probability=0.9, evidence="PMID: 12345678"];
+HMGCR -> mevalonate [key=0, label=produces, probability=0.95, evidence="PMID: 45678901"];
+cholesterol -> SREBP2 [key=0, label=regulates, probability=0.8, evidence="PMID: 23456789"];
+SREBP2 -> DEPDC7 [key=0, label="transcriptionally activates", probability=0.7, evidence="PMID: 34567890"];
+mevalonate -> RhoA [key=0, label=activates, probability=0.85, evidence="PMID: 56789012"];
+RhoA -> DEPDC7 [key=0, label="modulates expression", probability=0.6, evidence="PMID: 67890123"];
+}

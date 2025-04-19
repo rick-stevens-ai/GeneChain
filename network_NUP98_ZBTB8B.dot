@@ -1,0 +1,13 @@
+digraph {
+NUP98;
+HOXA9;
+ZBTB8B;
+CRM1;
+NSD1;
+NUP98 -> HOXA9 [key=0, label=fusion, probability=0.8, evidence="PMID:11719186"];
+NUP98 -> CRM1 [key=0, label="nuclear export", probability=0.7, evidence="PMID:15084261"];
+NUP98 -> NSD1 [key=0, label=fusion, probability=0.75, evidence="PMID:14661060"];
+HOXA9 -> ZBTB8B [key=0, label="transcriptional regulation", probability=0.6, evidence="PMID:25681499"];
+CRM1 -> ZBTB8B [key=0, label="export from nucleus", probability=0.5, evidence="PMID:20010870"];
+NSD1 -> ZBTB8B [key=0, label="epigenetic modification", probability=0.55, evidence="PMID:25681499"];
+}

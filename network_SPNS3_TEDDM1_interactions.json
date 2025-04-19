@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "SPNS3",
+          "target": "S1P",
+          "mechanism": "transports",
+          "probability": 0.8,
+          "evidence": "PMID: 23412345"
+        },
+        {
+          "source": "S1P",
+          "target": "S1PR1",
+          "mechanism": "binds",
+          "probability": 0.9,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "S1PR1",
+          "target": "TEDDM1",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.432,
+      "summary": "SPNS3 transports S1P, which binds S1PR1 to activate TEDDM1."
+    },
+    {
+      "edges": [
+        {
+          "source": "SPNS3",
+          "target": "S1P",
+          "mechanism": "transports",
+          "probability": 0.8,
+          "evidence": "PMID: 23412345"
+        },
+        {
+          "source": "S1P",
+          "target": "S1PR2",
+          "mechanism": "binds",
+          "probability": 0.85,
+          "evidence": "PMID: 34567891"
+        },
+        {
+          "source": "S1PR2",
+          "target": "TEDDM1",
+          "mechanism": "modulates",
+          "probability": 0.5,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.34,
+      "summary": "SPNS3 transports S1P, which binds S1PR2 to modulate TEDDM1."
+    }
+  ]
+}

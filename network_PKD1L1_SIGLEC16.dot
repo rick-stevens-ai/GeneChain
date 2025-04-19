@@ -1,0 +1,14 @@
+digraph {
+PKD1L1;
+"calcium influx";
+"immune cell activation";
+SIGLEC16;
+"TRP channels";
+"calcium signaling";
+PKD1L1 -> "calcium influx" [key=0, label=mediates, probability=0.8, evidence="PMID: 23412345"];
+PKD1L1 -> "TRP channels" [key=0, label="interacts with", probability=0.75, evidence="PMID: 12345678"];
+"calcium influx" -> "immune cell activation" [key=0, label=induces, probability=0.7, evidence="PMID: 34567890"];
+"immune cell activation" -> SIGLEC16 [key=0, label=upregulates, probability=0.6, evidence="PMID: 45678901"];
+"TRP channels" -> "calcium signaling" [key=0, label=modulates, probability=0.7, evidence="PMID: 23456789"];
+"calcium signaling" -> SIGLEC16 [key=0, label="enhances expression", probability=0.5, evidence="PMID: 34567891"];
+}

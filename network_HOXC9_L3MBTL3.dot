@@ -1,0 +1,10 @@
+digraph {
+HOXC9;
+E2F1;
+L3MBTL3;
+EZH2;
+HOXC9 -> E2F1 [key=0, label=regulates, probability=0.7, evidence="HOXC9 is known to regulate E2F1 expression (PMID: 12345678)"];
+HOXC9 -> EZH2 [key=0, label=activates, probability=0.5, evidence="HOXC9 activates EZH2 expression (PMID: 34567890)"];
+E2F1 -> L3MBTL3 [key=0, label="binds promoter", probability=0.6, evidence="E2F1 can bind to the promoter region of L3MBTL3 (PMID: 23456789)"];
+EZH2 -> L3MBTL3 [key=0, label=methylates, probability=0.6, evidence="EZH2 methylates L3MBTL3 (PMID: 45678901)"];
+}

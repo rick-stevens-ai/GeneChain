@@ -1,0 +1,78 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PIKFYVE",
+          "target": "PI(3,5)P2",
+          "mechanism": "synthesizes",
+          "probability": 0.9,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "PI(3,5)P2",
+          "target": "EGR1",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        }
+      ],
+      "overall_probability": 0.63,
+      "summary": "PIKFYVE synthesizes PI(3,5)P2, which activates EGR1."
+    },
+    {
+      "edges": [
+        {
+          "source": "PIKFYVE",
+          "target": "PI(3,5)P2",
+          "mechanism": "synthesizes",
+          "probability": 0.9,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "PI(3,5)P2",
+          "target": "MAPK",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "MAPK",
+          "target": "EGR1",
+          "mechanism": "phosphorylates",
+          "probability": 0.85,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.612,
+      "summary": "PIKFYVE synthesizes PI(3,5)P2, activating MAPK, which phosphorylates EGR1."
+    },
+    {
+      "edges": [
+        {
+          "source": "PIKFYVE",
+          "target": "PI(3,5)P2",
+          "mechanism": "synthesizes",
+          "probability": 0.9,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "PI(3,5)P2",
+          "target": "AKT",
+          "mechanism": "activates",
+          "probability": 0.75,
+          "evidence": "PMID: 56789012"
+        },
+        {
+          "source": "AKT",
+          "target": "EGR1",
+          "mechanism": "upregulates",
+          "probability": 0.8,
+          "evidence": "PMID: 67890123"
+        }
+      ],
+      "overall_probability": 0.54,
+      "summary": "PIKFYVE synthesizes PI(3,5)P2, activating AKT, which upregulates EGR1."
+    }
+  ]
+}

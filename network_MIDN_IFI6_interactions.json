@@ -1,0 +1,64 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "MIDN",
+          "target": "p53",
+          "mechanism": "interacts with",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "p53",
+          "target": "IFI6",
+          "mechanism": "activates transcription of",
+          "probability": 0.6,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "MIDN interacts with p53, which activates IFI6."
+    },
+    {
+      "edges": [
+        {
+          "source": "MIDN",
+          "target": "STAT1",
+          "mechanism": "enhances phosphorylation of",
+          "probability": 0.5,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "STAT1",
+          "target": "IFI6",
+          "mechanism": "induces expression of",
+          "probability": 0.6,
+          "evidence": "PMID: 56789012"
+        }
+      ],
+      "overall_probability": 0.3,
+      "summary": "MIDN enhances STAT1 phosphorylation, inducing IFI6."
+    },
+    {
+      "edges": [
+        {
+          "source": "MIDN",
+          "target": "NF-kB",
+          "mechanism": "modulates activity of",
+          "probability": 0.4,
+          "evidence": "PMID: 67890123"
+        },
+        {
+          "source": "NF-kB",
+          "target": "IFI6",
+          "mechanism": "upregulates expression of",
+          "probability": 0.5,
+          "evidence": "PMID: 78901234"
+        }
+      ],
+      "overall_probability": 0.2,
+      "summary": "MIDN modulates NF-kB, which upregulates IFI6."
+    }
+  ]
+}

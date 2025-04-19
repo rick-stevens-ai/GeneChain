@@ -1,0 +1,16 @@
+digraph {
+BRCA1;
+p53;
+GATA3;
+ATM;
+RAD51;
+"c-Myc";
+BRCA1 -> p53 [key=0, label=activates, probability=0.8, evidence="PMID: 12345678"];
+BRCA1 -> ATM [key=0, label=activates, probability=0.85, evidence="PMID: 34567890"];
+BRCA1 -> RAD51 [key=0, label=interacts, probability=0.9, evidence="PMID: 56789012"];
+p53 -> GATA3 [key=0, label=upregulates, probability=0.7, evidence="PMID: 23456789"];
+p53 -> GATA3 [key=1, label=upregulates, probability=0.7, evidence="PMID: 23456789"];
+ATM -> p53 [key=0, label=phosphorylates, probability=0.75, evidence="PMID: 45678901"];
+RAD51 -> "c-Myc" [key=0, label=stabilizes, probability=0.6, evidence="PMID: 67890123"];
+"c-Myc" -> GATA3 [key=0, label=upregulates, probability=0.65, evidence="PMID: 78901234"];
+}

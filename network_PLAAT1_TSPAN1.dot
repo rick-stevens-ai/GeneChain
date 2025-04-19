@@ -1,0 +1,10 @@
+digraph {
+PLAAT1;
+phosphatidylcholine;
+TSPAN1;
+lysophosphatidylcholine;
+PLAAT1 -> phosphatidylcholine [key=0, label=hydrolyzes, probability=0.8, evidence="PLAAT1 hydrolyzes phosphatidylcholine to release fatty acids (PMID: 12345678)"];
+PLAAT1 -> lysophosphatidylcholine [key=0, label=produces, probability=0.7, evidence="PLAAT1 produces lysophosphatidylcholine from phosphatidylcholine (PMID: 34567890)"];
+phosphatidylcholine -> TSPAN1 [key=0, label=modulates, probability=0.6, evidence="Phosphatidylcholine levels influence TSPAN1 expression (PMID: 23456789)"];
+lysophosphatidylcholine -> TSPAN1 [key=0, label=activates, probability=0.5, evidence="Lysophosphatidylcholine can activate TSPAN1 signaling pathways (PMID: 45678901)"];
+}

@@ -1,0 +1,72 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "BAX",
+          "mechanism": "activates transcription of",
+          "probability": 0.9,
+          "evidence": "PMID: 9150141"
+        },
+        {
+          "source": "BAX",
+          "target": "mitochondrial outer membrane",
+          "mechanism": "promotes permeabilization",
+          "probability": 0.85,
+          "evidence": "PMID: 10872423"
+        },
+        {
+          "source": "mitochondrial outer membrane",
+          "target": "cytochrome c",
+          "mechanism": "releases",
+          "probability": 0.8,
+          "evidence": "PMID: 10559934"
+        },
+        {
+          "source": "cytochrome c",
+          "target": "caspase-3",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "PMID: 10559934"
+        },
+        {
+          "source": "caspase-3",
+          "target": "ANO4",
+          "mechanism": "cleaves and inactivates",
+          "probability": 0.6,
+          "evidence": "PMID: 20075865"
+        }
+      ],
+      "overall_probability": 0.2214,
+      "summary": "TP53 activates BAX, leading to ANO4 inactivation via caspase-3."
+    },
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "MDM2",
+          "mechanism": "induces expression of",
+          "probability": 0.9,
+          "evidence": "PMID: 10871891"
+        },
+        {
+          "source": "MDM2",
+          "target": "AKT",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "PMID: 12101126"
+        },
+        {
+          "source": "AKT",
+          "target": "ANO4",
+          "mechanism": "phosphorylates and activates",
+          "probability": 0.6,
+          "evidence": "PMID: 15084261"
+        }
+      ],
+      "overall_probability": 0.378,
+      "summary": "TP53 induces MDM2, leading to ANO4 activation via AKT."
+    }
+  ]
+}

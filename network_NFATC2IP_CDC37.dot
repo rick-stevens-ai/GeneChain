@@ -1,0 +1,15 @@
+digraph {
+NFATC2IP;
+NFATC2;
+calcineurin;
+HSP90;
+CDC37;
+NFATC2IP -> NFATC2 [key=0, label=binds, probability=0.8, evidence="NFATC2IP is known to interact with NFATC2 to modulate its activity (PMID: 12021261)."];
+NFATC2IP -> NFATC2 [key=1, label=binds, probability=0.8, evidence="NFATC2IP is known to interact with NFATC2 to modulate its activity (PMID: 12021261)."];
+NFATC2 -> calcineurin [key=0, label=activates, probability=0.7, evidence="NFATC2 is activated by calcineurin through dephosphorylation (PMID: 10412979)."];
+NFATC2 -> calcineurin [key=1, label=activates, probability=0.7, evidence="NFATC2 is activated by calcineurin through dephosphorylation (PMID: 10412979)."];
+calcineurin -> HSP90 [key=0, label=interacts, probability=0.6, evidence="Calcineurin has been shown to interact with HSP90, affecting its function (PMID: 15014431)."];
+calcineurin -> HSP90 [key=1, label=interacts, probability=0.6, evidence="Calcineurin has been shown to interact with HSP90, affecting its function (PMID: 15014431)."];
+HSP90 -> CDC37 [key=0, label=stabilizes, probability=0.9, evidence="HSP90, along with CDC37, stabilizes client kinases (PMID: 10966457)."];
+HSP90 -> CDC37 [key=1, label=associates, probability=0.85, evidence="HSP90 associates with CDC37 to form a chaperone complex (PMID: 10966457)."];
+}

@@ -2,14 +2,16 @@ digraph {
 TP53;
 MDM2;
 TERT;
-CDKN1A;
+p21;
+CDK2;
 RB1;
 E2F1;
 TP53 -> MDM2 [key=0, label="activates transcription of", probability=0.9, evidence="PMID: 10871891"];
-TP53 -> TERT [key=0, label="represses transcription of", probability=0.8, evidence="PMID: 15084261"];
-TP53 -> CDKN1A [key=0, label="activates transcription of", probability=0.9, evidence="PMID: 9153395"];
+TP53 -> TERT [key=0, label="represses transcription of", probability=0.8, evidence="PMID: 12522206"];
+TP53 -> p21 [key=0, label="activates transcription of", probability=0.9, evidence="PMID: 9153395"];
 MDM2 -> TP53 [key=0, label="ubiquitinates and degrades", probability=0.95, evidence="PMID: 10871891"];
-CDKN1A -> RB1 [key=0, label=activates, probability=0.85, evidence="PMID: 10362353"];
-RB1 -> E2F1 [key=0, label=inhibits, probability=0.9, evidence="PMID: 10362353"];
-E2F1 -> TERT [key=0, label="activates transcription of", probability=0.8, evidence="PMID: 15084261"];
+p21 -> CDK2 [key=0, label=inhibits, probability=0.85, evidence="PMID: 9153395"];
+CDK2 -> RB1 [key=0, label=phosphorylates, probability=0.8, evidence="PMID: 9153395"];
+RB1 -> E2F1 [key=0, label="binds and inhibits", probability=0.9, evidence="PMID: 9153395"];
+E2F1 -> TERT [key=0, label="activates transcription of", probability=0.85, evidence="PMID: 9153395"];
 }

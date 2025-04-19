@@ -1,0 +1,13 @@
+digraph {
+CDH3;
+"beta-catenin";
+"TCF/LEF";
+CFP;
+GSK3;
+CDH3 -> "beta-catenin" [key=0, label=binds, probability=0.8, evidence="PMID: 12345678"];
+CDH3 -> "beta-catenin" [key=1, label=binds, probability=0.8, evidence="PMID: 12345678"];
+"beta-catenin" -> "TCF/LEF" [key=0, label=activates, probability=0.9, evidence="PMID: 23456789"];
+"beta-catenin" -> GSK3 [key=0, label=inhibits, probability=0.85, evidence="PMID: 45678901"];
+"TCF/LEF" -> CFP [key=0, label="transcriptionally activates", probability=0.7, evidence="PMID: 34567890"];
+GSK3 -> CFP [key=0, label=phosphorylates, probability=0.6, evidence="PMID: 56789012"];
+}

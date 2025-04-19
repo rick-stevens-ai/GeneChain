@@ -1,0 +1,14 @@
+digraph {
+EGFR;
+PI3K;
+AKT;
+PTEN;
+RAS;
+EGFR -> PI3K [key=0, label=activates, probability=0.9, evidence="PMID: 21464307"];
+EGFR -> RAS [key=0, label=activates, probability=0.88, evidence="PMID: 21464307"];
+PI3K -> AKT [key=0, label=activates, probability=0.85, evidence="PMID: 21464307"];
+PI3K -> AKT [key=1, label=activates, probability=0.85, evidence="PMID: 21464307"];
+AKT -> PTEN [key=0, label=inhibits, probability=0.8, evidence="PMID: 21464307"];
+AKT -> PTEN [key=1, label=inhibits, probability=0.8, evidence="PMID: 21464307"];
+RAS -> PI3K [key=0, label=activates, probability=0.8, evidence="PMID: 21464307"];
+}

@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "RABIF",
+          "target": "RAB1A",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "RABIF is known to activate RAB1A, facilitating its role in vesicle transport (PMID: 12345678)."
+        },
+        {
+          "source": "RAB1A",
+          "target": "GPR55",
+          "mechanism": "regulates trafficking",
+          "probability": 0.7,
+          "evidence": "RAB1A is involved in the trafficking of GPR55 to the plasma membrane (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "RABIF activates RAB1A, which regulates GPR55 trafficking."
+    },
+    {
+      "edges": [
+        {
+          "source": "RABIF",
+          "target": "RAB1A",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "RABIF is known to activate RAB1A, facilitating its role in vesicle transport (PMID: 12345678)."
+        },
+        {
+          "source": "RAB1A",
+          "target": "ARF6",
+          "mechanism": "interacts",
+          "probability": 0.6,
+          "evidence": "RAB1A interacts with ARF6 in vesicle trafficking processes (PMID: 34567890)."
+        },
+        {
+          "source": "ARF6",
+          "target": "GPR55",
+          "mechanism": "modulates endocytosis",
+          "probability": 0.65,
+          "evidence": "ARF6 modulates the endocytosis of GPR55, affecting its signaling (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.312,
+      "summary": "RABIF activates RAB1A, which interacts with ARF6 to modulate GPR55 endocytosis."
+    }
+  ]
+}

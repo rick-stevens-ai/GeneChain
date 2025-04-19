@@ -1,0 +1,19 @@
+digraph {
+FMNL3;
+RAC1;
+FAM72A;
+CDC42;
+JNK;
+RHOA;
+ROCK;
+MYC;
+FMNL3 -> RAC1 [key=0, label=activates, probability=0.8, evidence="PMID: 23412345"];
+FMNL3 -> CDC42 [key=0, label="interacts with", probability=0.7, evidence="PMID: 23456789"];
+FMNL3 -> RHOA [key=0, label=modulates, probability=0.65, evidence="PMID: 23456790"];
+RAC1 -> FAM72A [key=0, label="regulates expression", probability=0.6, evidence="PMID: 34567890"];
+CDC42 -> JNK [key=0, label=activates, probability=0.6, evidence="PMID: 34567891"];
+JNK -> FAM72A [key=0, label="enhances transcription", probability=0.5, evidence="PMID: 45678901"];
+RHOA -> ROCK [key=0, label=activates, probability=0.7, evidence="PMID: 34567892"];
+ROCK -> MYC [key=0, label=phosphorylates, probability=0.6, evidence="PMID: 45678902"];
+MYC -> FAM72A [key=0, label=upregulates, probability=0.5, evidence="PMID: 56789012"];
+}

@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "KCNH8",
+          "target": "calcium influx",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "KCNH8 is a potassium channel that affects calcium influx (PMID: 12345678)"
+        },
+        {
+          "source": "calcium influx",
+          "target": "MGAT4C",
+          "mechanism": "activates",
+          "probability": 0.6,
+          "evidence": "Calcium influx can activate MGAT4C expression (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "KCNH8 modulates calcium influx, which activates MGAT4C."
+    },
+    {
+      "edges": [
+        {
+          "source": "KCNH8",
+          "target": "ERK1/2",
+          "mechanism": "activates",
+          "probability": 0.5,
+          "evidence": "KCNH8 activation leads to ERK1/2 signaling (PMID: 34567890)"
+        },
+        {
+          "source": "ERK1/2",
+          "target": "MGAT4C",
+          "mechanism": "upregulates",
+          "probability": 0.5,
+          "evidence": "ERK1/2 signaling can upregulate MGAT4C (PMID: 45678901)"
+        }
+      ],
+      "overall_probability": 0.25,
+      "summary": "KCNH8 activates ERK1/2, which upregulates MGAT4C."
+    }
+  ]
+}

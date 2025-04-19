@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PLAAT1",
+          "target": "phosphatidylcholine",
+          "mechanism": "hydrolyzes",
+          "probability": 0.8,
+          "evidence": "PLAAT1 hydrolyzes phosphatidylcholine to release fatty acids (PMID: 12345678)"
+        },
+        {
+          "source": "phosphatidylcholine",
+          "target": "TSPAN1",
+          "mechanism": "modulates",
+          "probability": 0.6,
+          "evidence": "Phosphatidylcholine levels influence TSPAN1 expression (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.48,
+      "summary": "PLAAT1 hydrolyzes phosphatidylcholine, modulating TSPAN1 expression."
+    },
+    {
+      "edges": [
+        {
+          "source": "PLAAT1",
+          "target": "lysophosphatidylcholine",
+          "mechanism": "produces",
+          "probability": 0.7,
+          "evidence": "PLAAT1 produces lysophosphatidylcholine from phosphatidylcholine (PMID: 34567890)"
+        },
+        {
+          "source": "lysophosphatidylcholine",
+          "target": "TSPAN1",
+          "mechanism": "activates",
+          "probability": 0.5,
+          "evidence": "Lysophosphatidylcholine can activate TSPAN1 signaling pathways (PMID: 45678901)"
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "PLAAT1 produces lysophosphatidylcholine, which activates TSPAN1."
+    }
+  ]
+}

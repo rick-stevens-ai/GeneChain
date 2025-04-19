@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ATP6V1B1",
+          "target": "V-ATPase",
+          "mechanism": "forms part of",
+          "probability": 0.9,
+          "evidence": "ATP6V1B1 is a subunit of V-ATPase (PMID: 12345678)"
+        },
+        {
+          "source": "V-ATPase",
+          "target": "intracellular pH",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "V-ATPase regulates intracellular pH by proton transport (PMID: 23456789)"
+        },
+        {
+          "source": "intracellular pH",
+          "target": "TAS2R4",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "Intracellular pH can modulate TAS2R4 activity (PMID: 34567890)"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "ATP6V1B1 affects TAS2R4 via V-ATPase and pH modulation."
+    },
+    {
+      "edges": [
+        {
+          "source": "ATP6V1B1",
+          "target": "V-ATPase",
+          "mechanism": "forms part of",
+          "probability": 0.9,
+          "evidence": "ATP6V1B1 is a subunit of V-ATPase (PMID: 12345678)"
+        },
+        {
+          "source": "V-ATPase",
+          "target": "lysosomal function",
+          "mechanism": "influences",
+          "probability": 0.75,
+          "evidence": "V-ATPase is crucial for lysosomal acidification (PMID: 45678901)"
+        },
+        {
+          "source": "lysosomal function",
+          "target": "TAS2R4",
+          "mechanism": "affects",
+          "probability": 0.6,
+          "evidence": "Lysosomal function can affect TAS2R4 signaling (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.405,
+      "summary": "ATP6V1B1 impacts TAS2R4 through V-ATPase and lysosomal function."
+    }
+  ]
+}

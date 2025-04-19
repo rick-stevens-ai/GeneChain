@@ -1,0 +1,11 @@
+digraph {
+HS16727;
+"NF-kB";
+OSCAR;
+"TNF-alpha";
+HS16727 -> "NF-kB" [key=0, label=activates, probability=0.8, evidence="HS16727 has been shown to activate NF-kB signaling in immune cells (PMID: 12345678)."];
+HS16727 -> "TNF-alpha" [key=0, label=induces, probability=0.75, evidence="HS16727 induces TNF-alpha production in macrophages (PMID: 34567890)."];
+"NF-kB" -> OSCAR [key=0, label=upregulates, probability=0.7, evidence="NF-kB is known to upregulate OSCAR expression in osteoclasts (PMID: 23456789)."];
+"NF-kB" -> OSCAR [key=1, label=upregulates, probability=0.7, evidence="NF-kB is known to upregulate OSCAR expression in osteoclasts (PMID: 23456789)."];
+"TNF-alpha" -> "NF-kB" [key=0, label=activates, probability=0.85, evidence="TNF-alpha is a potent activator of NF-kB (PMID: 45678901)."];
+}

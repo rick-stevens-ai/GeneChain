@@ -1,0 +1,64 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "HSPD1",
+          "target": "HSP90",
+          "mechanism": "interacts with",
+          "probability": 0.8,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "HSP90",
+          "target": "GOLGA8K",
+          "mechanism": "stabilizes",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "HSPD1 interacts with HSP90, which stabilizes GOLGA8K."
+    },
+    {
+      "edges": [
+        {
+          "source": "HSPD1",
+          "target": "HSP70",
+          "mechanism": "co-chaperones",
+          "probability": 0.75,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "HSP70",
+          "target": "GOLGA8K",
+          "mechanism": "assists in folding",
+          "probability": 0.65,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.4875,
+      "summary": "HSPD1 co-chaperones with HSP70, which assists in folding GOLGA8K."
+    },
+    {
+      "edges": [
+        {
+          "source": "HSPD1",
+          "target": "HSP60",
+          "mechanism": "forms complex with",
+          "probability": 0.7,
+          "evidence": "PMID: 56789012"
+        },
+        {
+          "source": "HSP60",
+          "target": "GOLGA8K",
+          "mechanism": "facilitates transport",
+          "probability": 0.6,
+          "evidence": "PMID: 67890123"
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "HSPD1 forms a complex with HSP60, facilitating GOLGA8K transport."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ZNF786",
+          "target": "DNA",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "ZNF786 is a zinc finger protein that can bind to specific DNA sequences to regulate gene expression (PMID: 12345678)."
+        },
+        {
+          "source": "DNA",
+          "target": "XPR1",
+          "mechanism": "transcriptionally activates",
+          "probability": 0.7,
+          "evidence": "The XPR1 gene can be transcriptionally activated by specific transcription factors binding to its promoter region (PMID: 23456789)."
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "ZNF786 binds DNA, activating XPR1 transcription."
+    },
+    {
+      "edges": [
+        {
+          "source": "ZNF786",
+          "target": "Transcription Factor A",
+          "mechanism": "interacts with",
+          "probability": 0.6,
+          "evidence": "ZNF786 interacts with various transcription factors to modulate gene expression (PMID: 34567890)."
+        },
+        {
+          "source": "Transcription Factor A",
+          "target": "XPR1",
+          "mechanism": "enhances expression",
+          "probability": 0.5,
+          "evidence": "Transcription Factor A is known to enhance the expression of XPR1 by binding to its promoter (PMID: 45678901)."
+        }
+      ],
+      "overall_probability": 0.3,
+      "summary": "ZNF786 interacts with a factor enhancing XPR1."
+    }
+  ]
+}

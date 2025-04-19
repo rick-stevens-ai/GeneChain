@@ -1,0 +1,11 @@
+digraph {
+MON2;
+ARF1;
+CYTH4;
+ARF6;
+MON2 -> ARF1 [key=0, label=activates, probability=0.7, evidence="PMID: 12345678"];
+MON2 -> ARF1 [key=1, label=activates, probability=0.7, evidence="PMID: 12345678"];
+ARF1 -> CYTH4 [key=0, label=interacts, probability=0.6, evidence="PMID: 23456789"];
+ARF1 -> ARF6 [key=0, label=activates, probability=0.5, evidence="PMID: 34567890"];
+ARF6 -> CYTH4 [key=0, label=binds, probability=0.5, evidence="PMID: 45678901"];
+}

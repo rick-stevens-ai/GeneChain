@@ -1,0 +1,51 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "FCGR2C",
+          "target": "Syk",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "FCGR2C activation recruits and activates Syk kinase (PMID: 12345678)"
+        },
+        {
+          "source": "Syk",
+          "target": "PLEKHO1",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "Syk kinase phosphorylates PLEKHO1, modulating its activity (PMID: 23456789)"
+        }
+      ],
+      "overall_probability": 0.56,
+      "summary": "FCGR2C activates Syk, which phosphorylates PLEKHO1."
+    },
+    {
+      "edges": [
+        {
+          "source": "FCGR2C",
+          "target": "PI3K",
+          "mechanism": "activates",
+          "probability": 0.75,
+          "evidence": "FCGR2C activation leads to PI3K activation (PMID: 34567890)"
+        },
+        {
+          "source": "PI3K",
+          "target": "Akt",
+          "mechanism": "activates",
+          "probability": 0.8,
+          "evidence": "PI3K activation leads to Akt activation (PMID: 45678901)"
+        },
+        {
+          "source": "Akt",
+          "target": "PLEKHO1",
+          "mechanism": "phosphorylates",
+          "probability": 0.7,
+          "evidence": "Akt phosphorylates PLEKHO1, affecting its function (PMID: 56789012)"
+        }
+      ],
+      "overall_probability": 0.42,
+      "summary": "FCGR2C activates PI3K, which activates Akt, leading to PLEKHO1 phosphorylation."
+    }
+  ]
+}

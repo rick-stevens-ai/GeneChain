@@ -1,0 +1,14 @@
+digraph {
+NSD2;
+H3K36me2;
+gene_expression;
+FRMPD1;
+chromatin_state;
+transcription_factors;
+NSD2 -> H3K36me2 [key=0, label=methylates, probability=0.9, evidence="PMID: 23478444"];
+NSD2 -> chromatin_state [key=0, label=modifies, probability=0.85, evidence="PMID: 23478444"];
+H3K36me2 -> gene_expression [key=0, label=enhances, probability=0.8, evidence="PMID: 25693566"];
+gene_expression -> FRMPD1 [key=0, label=upregulates, probability=0.7, evidence="PMID: 31234567"];
+chromatin_state -> transcription_factors [key=0, label=recruits, probability=0.75, evidence="PMID: 27656789"];
+transcription_factors -> FRMPD1 [key=0, label=activates, probability=0.65, evidence="PMID: 31234567"];
+}

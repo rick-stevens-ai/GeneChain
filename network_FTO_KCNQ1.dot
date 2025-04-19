@@ -1,0 +1,11 @@
+digraph {
+FTO;
+"m6A RNA methylation";
+KCNQ1;
+YTHDF2;
+FTO -> "m6A RNA methylation" [key=0, label=demethylates, probability=0.9, evidence="PMID: 20010808"];
+FTO -> "m6A RNA methylation" [key=1, label=demethylates, probability=0.9, evidence="PMID: 20010808"];
+"m6A RNA methylation" -> KCNQ1 [key=0, label="regulates expression", probability=0.7, evidence="PMID: 30013173"];
+"m6A RNA methylation" -> YTHDF2 [key=0, label=recruits, probability=0.8, evidence="PMID: 27602518"];
+YTHDF2 -> KCNQ1 [key=0, label="degrades mRNA", probability=0.6, evidence="PMID: 28418038"];
+}

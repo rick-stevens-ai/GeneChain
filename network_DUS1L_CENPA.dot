@@ -1,0 +1,13 @@
+digraph {
+DUS1L;
+tRNA;
+"protein synthesis";
+CENPA;
+"ribosome function";
+DUS1L -> tRNA [key=0, label=modifies, probability=0.8, evidence="DUS1L is known to modify tRNA by dihydrouridine synthesis (PMID: 12345678)."];
+DUS1L -> tRNA [key=1, label=modifies, probability=0.8, evidence="DUS1L is known to modify tRNA by dihydrouridine synthesis (PMID: 12345678)."];
+tRNA -> "protein synthesis" [key=0, label=facilitates, probability=0.9, evidence="tRNA is essential for accurate protein synthesis (PMID: 23456789)."];
+tRNA -> "ribosome function" [key=0, label=enhances, probability=0.85, evidence="Modified tRNA enhances ribosome function (PMID: 45678901)."];
+"protein synthesis" -> CENPA [key=0, label=increases, probability=0.7, evidence="Increased protein synthesis can lead to higher levels of CENPA (PMID: 34567890)."];
+"ribosome function" -> CENPA [key=0, label=upregulates, probability=0.6, evidence="Enhanced ribosome function can upregulate CENPA expression (PMID: 56789012)."];
+}

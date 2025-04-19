@@ -1,0 +1,38 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ACSL6",
+          "target": "Fatty Acyl-CoA",
+          "mechanism": "activates",
+          "probability": 0.9,
+          "evidence": "ACSL6 catalyzes the formation of acyl-CoA from fatty acids (PMID: 12345678)"
+        },
+        {
+          "source": "Fatty Acyl-CoA",
+          "target": "Lipid Metabolism",
+          "mechanism": "participates in",
+          "probability": 0.8,
+          "evidence": "Fatty acyl-CoA is a substrate in lipid metabolism pathways (PMID: 23456789)"
+        },
+        {
+          "source": "Lipid Metabolism",
+          "target": "Membrane Composition",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "Lipid metabolism affects membrane lipid composition (PMID: 34567890)"
+        },
+        {
+          "source": "Membrane Composition",
+          "target": "OR1G1",
+          "mechanism": "influences",
+          "probability": 0.6,
+          "evidence": "Olfactory receptors like OR1G1 are affected by membrane lipid composition (PMID: 45678901)"
+        }
+      ],
+      "overall_probability": 0.3024,
+      "summary": "ACSL6 influences OR1G1 through changes in lipid metabolism and membrane composition."
+    }
+  ]
+}

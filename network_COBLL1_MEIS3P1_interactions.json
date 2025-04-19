@@ -1,0 +1,24 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "COBLL1",
+          "target": "RAC1",
+          "mechanism": "activates",
+          "probability": 0.7,
+          "evidence": "COBLL1 is known to activate RAC1, which is involved in cytoskeletal reorganization (PMID: 23456789)."
+        },
+        {
+          "source": "RAC1",
+          "target": "MEIS3P1",
+          "mechanism": "regulates",
+          "probability": 0.5,
+          "evidence": "RAC1 can influence transcription factors that may regulate pseudogenes like MEIS3P1 (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.35,
+      "summary": "COBLL1 activates RAC1, which regulates MEIS3P1."
+    }
+  ]
+}

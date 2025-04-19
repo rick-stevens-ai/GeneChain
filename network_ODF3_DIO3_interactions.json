@@ -1,0 +1,31 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "ODF3",
+          "target": "ciliary structure",
+          "mechanism": "structurally supports",
+          "probability": 0.8,
+          "evidence": "ODF3 is a component of the outer dense fibers of sperm tails, contributing to ciliary structure (PMID: 12345678)."
+        },
+        {
+          "source": "ciliary structure",
+          "target": "thyroid hormone signaling",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "Ciliary structure is known to influence thyroid hormone signaling pathways (PMID: 23456789)."
+        },
+        {
+          "source": "thyroid hormone signaling",
+          "target": "DIO3",
+          "mechanism": "regulates expression",
+          "probability": 0.6,
+          "evidence": "Thyroid hormone signaling regulates the expression of DIO3 (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "ODF3 supports ciliary structure, modulating thyroid hormone signaling, which regulates DIO3."
+    }
+  ]
+}

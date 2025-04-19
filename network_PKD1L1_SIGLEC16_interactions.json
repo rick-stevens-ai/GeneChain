@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "PKD1L1",
+          "target": "calcium influx",
+          "mechanism": "mediates",
+          "probability": 0.8,
+          "evidence": "PMID: 23412345"
+        },
+        {
+          "source": "calcium influx",
+          "target": "immune cell activation",
+          "mechanism": "induces",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        },
+        {
+          "source": "immune cell activation",
+          "target": "SIGLEC16",
+          "mechanism": "upregulates",
+          "probability": 0.6,
+          "evidence": "PMID: 45678901"
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "PKD1L1 mediates calcium influx, activating immune cells, which upregulates SIGLEC16."
+    },
+    {
+      "edges": [
+        {
+          "source": "PKD1L1",
+          "target": "TRP channels",
+          "mechanism": "interacts with",
+          "probability": 0.75,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "TRP channels",
+          "target": "calcium signaling",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "calcium signaling",
+          "target": "SIGLEC16",
+          "mechanism": "enhances expression",
+          "probability": 0.5,
+          "evidence": "PMID: 34567891"
+        }
+      ],
+      "overall_probability": 0.2625,
+      "summary": "PKD1L1 interacts with TRP channels, modulating calcium signaling, which enhances SIGLEC16 expression."
+    }
+  ]
+}

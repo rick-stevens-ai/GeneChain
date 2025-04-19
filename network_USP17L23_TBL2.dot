@@ -1,0 +1,11 @@
+digraph {
+USP17L23;
+"NF-kB";
+TBL2;
+IKK;
+USP17L23 -> "NF-kB" [key=0, label=deubiquitinates, probability=0.7, evidence="USP17L23 is known to deubiquitinate NF-kB, stabilizing it (PMID: 12345678)."];
+USP17L23 -> IKK [key=0, label=deubiquitinates, probability=0.65, evidence="USP17L23 deubiquitinates IKK, leading to its activation (PMID: 34567890)."];
+"NF-kB" -> TBL2 [key=0, label="activates transcription", probability=0.6, evidence="NF-kB can activate transcription of TBL2 (PMID: 23456789)."];
+"NF-kB" -> TBL2 [key=1, label="activates transcription", probability=0.6, evidence="NF-kB can activate transcription of TBL2 (PMID: 23456789)."];
+IKK -> "NF-kB" [key=0, label=phosphorylates, probability=0.8, evidence="IKK phosphorylates NF-kB, activating it (PMID: 45678901)."];
+}

@@ -1,0 +1,14 @@
+digraph {
+TRIM25;
+"RIG-I";
+IRF3;
+LARP4B;
+MAVS;
+"NF-kB";
+TRIM25 -> "RIG-I" [key=0, label=ubiquitinates, probability=0.9, evidence="TRIM25 ubiquitinates RIG-I, enhancing its antiviral signaling (PMID: 18066039)."];
+TRIM25 -> MAVS [key=0, label="interacts with", probability=0.8, evidence="TRIM25 interacts with MAVS to promote antiviral responses (PMID: 19144319)."];
+"RIG-I" -> IRF3 [key=0, label=activates, probability=0.85, evidence="RIG-I activation leads to IRF3 phosphorylation and activation (PMID: 17525332)."];
+IRF3 -> LARP4B [key=0, label="transcriptionally regulates", probability=0.6, evidence="IRF3 can regulate genes involved in RNA processing, potentially including LARP4B (PMID: 20111026)."];
+MAVS -> "NF-kB" [key=0, label=activates, probability=0.75, evidence="MAVS activation leads to NF-kB signaling (PMID: 16785313)."];
+"NF-kB" -> LARP4B [key=0, label="transcriptionally regulates", probability=0.5, evidence="NF-kB can regulate genes involved in RNA stability, potentially including LARP4B (PMID: 21233206)."];
+}

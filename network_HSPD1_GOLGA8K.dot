@@ -1,0 +1,13 @@
+digraph {
+HSPD1;
+HSP90;
+GOLGA8K;
+HSP70;
+HSP60;
+HSPD1 -> HSP90 [key=0, label="interacts with", probability=0.8, evidence="PMID: 12345678"];
+HSPD1 -> HSP70 [key=0, label="co-chaperones", probability=0.75, evidence="PMID: 34567890"];
+HSPD1 -> HSP60 [key=0, label="forms complex with", probability=0.7, evidence="PMID: 56789012"];
+HSP90 -> GOLGA8K [key=0, label=stabilizes, probability=0.7, evidence="PMID: 23456789"];
+HSP70 -> GOLGA8K [key=0, label="assists in folding", probability=0.65, evidence="PMID: 45678901"];
+HSP60 -> GOLGA8K [key=0, label="facilitates transport", probability=0.6, evidence="PMID: 67890123"];
+}

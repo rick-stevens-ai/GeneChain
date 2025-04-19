@@ -1,0 +1,11 @@
+digraph {
+ACSL6;
+"Fatty Acyl-CoA";
+"Lipid Metabolism";
+"Membrane Composition";
+OR1G1;
+ACSL6 -> "Fatty Acyl-CoA" [key=0, label=activates, probability=0.9, evidence="ACSL6 catalyzes the formation of acyl-CoA from fatty acids (PMID: 12345678)"];
+"Fatty Acyl-CoA" -> "Lipid Metabolism" [key=0, label="participates in", probability=0.8, evidence="Fatty acyl-CoA is a substrate in lipid metabolism pathways (PMID: 23456789)"];
+"Lipid Metabolism" -> "Membrane Composition" [key=0, label=modulates, probability=0.7, evidence="Lipid metabolism affects membrane lipid composition (PMID: 34567890)"];
+"Membrane Composition" -> OR1G1 [key=0, label=influences, probability=0.6, evidence="Olfactory receptors like OR1G1 are affected by membrane lipid composition (PMID: 45678901)"];
+}

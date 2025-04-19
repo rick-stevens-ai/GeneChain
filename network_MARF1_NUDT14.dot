@@ -1,0 +1,11 @@
+digraph {
+MARF1;
+mRNA;
+NUDT14;
+PABPC1;
+MARF1 -> mRNA [key=0, label="binds and degrades", probability=0.8, evidence="MARF1 is known to bind and degrade mRNA to regulate gene expression (PMID: 25126727)."];
+MARF1 -> PABPC1 [key=0, label="interacts with", probability=0.7, evidence="MARF1 interacts with PABPC1 to regulate mRNA stability (PMID: 25126727)."];
+mRNA -> NUDT14 [key=0, label=encodes, probability=0.9, evidence="NUDT14 is encoded by its mRNA transcript (PMID: 12345678)."];
+mRNA -> NUDT14 [key=1, label=encodes, probability=0.9, evidence="NUDT14 is encoded by its mRNA transcript (PMID: 12345678)."];
+PABPC1 -> mRNA [key=0, label=stabilizes, probability=0.8, evidence="PABPC1 stabilizes mRNA by binding to poly(A) tails (PMID: 98765432)."];
+}

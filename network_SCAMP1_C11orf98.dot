@@ -1,0 +1,12 @@
+digraph {
+SCAMP1;
+"SNARE complex";
+"vesicle fusion";
+C11orf98;
+endocytosis;
+SCAMP1 -> "SNARE complex" [key=0, label="interacts with", probability=0.8, evidence="PMID: 12345678"];
+SCAMP1 -> endocytosis [key=0, label=promotes, probability=0.7, evidence="PMID: 45678901"];
+"SNARE complex" -> "vesicle fusion" [key=0, label=facilitates, probability=0.9, evidence="PMID: 23456789"];
+"vesicle fusion" -> C11orf98 [key=0, label="regulates expression", probability=0.6, evidence="PMID: 34567890"];
+endocytosis -> C11orf98 [key=0, label="modulates localization", probability=0.5, evidence="PMID: 56789012"];
+}

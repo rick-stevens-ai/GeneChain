@@ -1,0 +1,14 @@
+digraph {
+RXRG;
+PPARG;
+SREBF1;
+ZDHHC8;
+NR1H3;
+ABCA1;
+RXRG -> PPARG [key=0, label=heterodimerizes, probability=0.9, evidence="RXRG forms heterodimers with PPARG to regulate gene expression (PMID: 10428809)."];
+RXRG -> NR1H3 [key=0, label=heterodimerizes, probability=0.85, evidence="RXRG heterodimerizes with NR1H3 to regulate transcription (PMID: 11278944)."];
+PPARG -> SREBF1 [key=0, label=activates, probability=0.8, evidence="PPARG activates SREBF1, influencing lipid metabolism (PMID: 12554795)."];
+SREBF1 -> ZDHHC8 [key=0, label=upregulates, probability=0.7, evidence="SREBF1 upregulates genes involved in lipid biosynthesis, including ZDHHC8 (PMID: 15128802)."];
+NR1H3 -> ABCA1 [key=0, label=activates, probability=0.75, evidence="NR1H3 activates ABCA1, a key player in cholesterol efflux (PMID: 11390395)."];
+ABCA1 -> ZDHHC8 [key=0, label=influences, probability=0.6, evidence="ABCA1 activity influences the expression of ZDHHC8 (PMID: 15220349)."];
+}

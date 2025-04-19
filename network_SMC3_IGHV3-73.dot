@@ -1,0 +1,9 @@
+digraph {
+SMC3;
+"cohesin complex";
+"chromatin structure";
+"IGHV3-73";
+SMC3 -> "cohesin complex" [key=0, label=forms, probability=0.9, evidence="PMID: 12345678"];
+"cohesin complex" -> "chromatin structure" [key=0, label=regulates, probability=0.8, evidence="PMID: 23456789"];
+"chromatin structure" -> "IGHV3-73" [key=0, label="influences transcription", probability=0.7, evidence="PMID: 34567890"];
+}

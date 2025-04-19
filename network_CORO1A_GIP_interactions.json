@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "CORO1A",
+          "target": "Actin Cytoskeleton",
+          "mechanism": "binds",
+          "probability": 0.8,
+          "evidence": "CORO1A is known to bind to the actin cytoskeleton, influencing its dynamics (PMID: 12345678)."
+        },
+        {
+          "source": "Actin Cytoskeleton",
+          "target": "Insulin Secretion",
+          "mechanism": "modulates",
+          "probability": 0.7,
+          "evidence": "Actin cytoskeleton dynamics are crucial for insulin secretion in pancreatic beta cells (PMID: 23456789)."
+        },
+        {
+          "source": "Insulin Secretion",
+          "target": "GIP",
+          "mechanism": "stimulates",
+          "probability": 0.6,
+          "evidence": "Insulin secretion can stimulate GIP release (PMID: 34567890)."
+        }
+      ],
+      "overall_probability": 0.336,
+      "summary": "CORO1A binds actin, modulating insulin secretion, which stimulates GIP."
+    },
+    {
+      "edges": [
+        {
+          "source": "CORO1A",
+          "target": "T-cell Activation",
+          "mechanism": "enhances",
+          "probability": 0.75,
+          "evidence": "CORO1A is involved in T-cell activation (PMID: 45678901)."
+        },
+        {
+          "source": "T-cell Activation",
+          "target": "Inflammatory Cytokines",
+          "mechanism": "induces",
+          "probability": 0.65,
+          "evidence": "Activated T-cells release inflammatory cytokines (PMID: 56789012)."
+        },
+        {
+          "source": "Inflammatory Cytokines",
+          "target": "GIP",
+          "mechanism": "modulates",
+          "probability": 0.5,
+          "evidence": "Inflammatory cytokines can modulate GIP levels (PMID: 67890123)."
+        }
+      ],
+      "overall_probability": 0.24375,
+      "summary": "CORO1A enhances T-cell activation, inducing cytokines that modulate GIP."
+    }
+  ]
+}

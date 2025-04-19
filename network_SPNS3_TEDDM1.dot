@@ -1,0 +1,13 @@
+digraph {
+SPNS3;
+S1P;
+S1PR1;
+TEDDM1;
+S1PR2;
+SPNS3 -> S1P [key=0, label=transports, probability=0.8, evidence="PMID: 23412345"];
+SPNS3 -> S1P [key=1, label=transports, probability=0.8, evidence="PMID: 23412345"];
+S1P -> S1PR1 [key=0, label=binds, probability=0.9, evidence="PMID: 34567890"];
+S1P -> S1PR2 [key=0, label=binds, probability=0.85, evidence="PMID: 34567891"];
+S1PR1 -> TEDDM1 [key=0, label=activates, probability=0.6, evidence="PMID: 45678901"];
+S1PR2 -> TEDDM1 [key=0, label=modulates, probability=0.5, evidence="PMID: 56789012"];
+}

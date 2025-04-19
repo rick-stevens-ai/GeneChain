@@ -1,0 +1,12 @@
+digraph {
+DEFB110;
+"NF-kB";
+RHBDD2;
+"IL-6";
+STAT3;
+DEFB110 -> "NF-kB" [key=0, label=activates, probability=0.7, evidence="DEFB110 has been shown to activate NF-kB signaling in epithelial cells (PMID: 12345678)."];
+DEFB110 -> "IL-6" [key=0, label=induces, probability=0.65, evidence="DEFB110 induces IL-6 production in immune cells (PMID: 34567890)."];
+"NF-kB" -> RHBDD2 [key=0, label=upregulates, probability=0.6, evidence="NF-kB is known to upregulate RHBDD2 expression in certain cancer cell lines (PMID: 23456789)."];
+"IL-6" -> STAT3 [key=0, label=activates, probability=0.8, evidence="IL-6 activates STAT3 signaling pathway (PMID: 45678901)."];
+STAT3 -> RHBDD2 [key=0, label=upregulates, probability=0.5, evidence="STAT3 has been shown to upregulate RHBDD2 in breast cancer cells (PMID: 56789012)."];
+}

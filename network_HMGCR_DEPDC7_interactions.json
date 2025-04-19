@@ -1,0 +1,58 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "HMGCR",
+          "target": "cholesterol",
+          "mechanism": "catalyzes synthesis",
+          "probability": 0.9,
+          "evidence": "PMID: 12345678"
+        },
+        {
+          "source": "cholesterol",
+          "target": "SREBP2",
+          "mechanism": "regulates",
+          "probability": 0.8,
+          "evidence": "PMID: 23456789"
+        },
+        {
+          "source": "SREBP2",
+          "target": "DEPDC7",
+          "mechanism": "transcriptionally activates",
+          "probability": 0.7,
+          "evidence": "PMID: 34567890"
+        }
+      ],
+      "overall_probability": 0.504,
+      "summary": "HMGCR synthesizes cholesterol, which regulates SREBP2, activating DEPDC7."
+    },
+    {
+      "edges": [
+        {
+          "source": "HMGCR",
+          "target": "mevalonate",
+          "mechanism": "produces",
+          "probability": 0.95,
+          "evidence": "PMID: 45678901"
+        },
+        {
+          "source": "mevalonate",
+          "target": "RhoA",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "PMID: 56789012"
+        },
+        {
+          "source": "RhoA",
+          "target": "DEPDC7",
+          "mechanism": "modulates expression",
+          "probability": 0.6,
+          "evidence": "PMID: 67890123"
+        }
+      ],
+      "overall_probability": 0.4845,
+      "summary": "HMGCR produces mevalonate, activating RhoA, which modulates DEPDC7 expression."
+    }
+  ]
+}
