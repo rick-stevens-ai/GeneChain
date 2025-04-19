@@ -1,0 +1,65 @@
+{
+  "paths": [
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "MDM2",
+          "mechanism": "activates transcription of",
+          "probability": 0.9,
+          "evidence": "PMID: 10871891"
+        },
+        {
+          "source": "MDM2",
+          "target": "TP53",
+          "mechanism": "ubiquitinates and degrades",
+          "probability": 0.95,
+          "evidence": "PMID: 10871891"
+        },
+        {
+          "source": "TP53",
+          "target": "TERT",
+          "mechanism": "represses transcription of",
+          "probability": 0.8,
+          "evidence": "PMID: 15084261"
+        }
+      ],
+      "overall_probability": 0.684,
+      "summary": "TP53 activates MDM2, which degrades TP53, reducing its repression of TERT."
+    },
+    {
+      "edges": [
+        {
+          "source": "TP53",
+          "target": "CDKN1A",
+          "mechanism": "activates transcription of",
+          "probability": 0.9,
+          "evidence": "PMID: 9153395"
+        },
+        {
+          "source": "CDKN1A",
+          "target": "RB1",
+          "mechanism": "activates",
+          "probability": 0.85,
+          "evidence": "PMID: 10362353"
+        },
+        {
+          "source": "RB1",
+          "target": "E2F1",
+          "mechanism": "inhibits",
+          "probability": 0.9,
+          "evidence": "PMID: 10362353"
+        },
+        {
+          "source": "E2F1",
+          "target": "TERT",
+          "mechanism": "activates transcription of",
+          "probability": 0.8,
+          "evidence": "PMID: 15084261"
+        }
+      ],
+      "overall_probability": 0.5508,
+      "summary": "TP53 activates CDKN1A, leading to RB1 activation, which inhibits E2F1, reducing TERT activation."
+    }
+  ]
+}
