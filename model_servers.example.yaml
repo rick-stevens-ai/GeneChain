@@ -1,0 +1,99 @@
+# Gene Chain Analysis Tool - Model Server Configuration
+# Copy this file to model_servers.yaml and configure your model endpoints
+
+servers:
+  # OpenAI GPT-4.1 (recommended) - requires OPENAI_API_KEY environment variable
+  - server: "api.openai.com"
+    shortname: "gpt41"
+    openai_api_key: "${OPENAI_API_KEY}"
+    openai_api_base: "https://api.openai.com/v1"
+    openai_model: "gpt-4.1"
+
+  # OpenAI GPT-4 (fallback) - requires OPENAI_API_KEY environment variable
+  - server: "api.openai.com"
+    shortname: "gpt4"
+    openai_api_key: "${OPENAI_API_KEY}"
+    openai_api_base: "https://api.openai.com/v1"
+    openai_model: "gpt-4"
+
+  # OpenAI GPT-4o (optimized for speed) - requires OPENAI_API_KEY environment variable
+  - server: "api.openai.com"
+    shortname: "gpt4o"
+    openai_api_key: "${OPENAI_API_KEY}"
+    openai_api_base: "https://api.openai.com/v1"
+    openai_model: "gpt-4o"
+
+  # OpenAI O3 (advanced reasoning) - requires OPENAI_API_KEY environment variable
+  - server: "api.openai.com"
+    shortname: "o3"
+    openai_api_key: "${OPENAI_API_KEY}"
+    openai_api_base: "https://api.openai.com/v1"
+    openai_model: "o3"
+
+  # OpenAI O4-mini (cost-effective) - requires OPENAI_API_KEY environment variable
+  - server: "api.openai.com"
+    shortname: "o4mini"
+    openai_api_key: "${OPENAI_API_KEY}"
+    openai_api_base: "https://api.openai.com/v1"
+    openai_model: "o4-mini"
+
+  # Local model server examples (uncomment and configure as needed)
+  
+  # LM Studio (local inference server)
+  # - server: "localhost"
+  #   shortname: "lmstudio"
+  #   openai_api_key: "no_key"
+  #   openai_api_base: "http://127.0.0.1:1234/v1"
+  #   openai_model: "your-model-name"
+
+  # Ollama (local inference server)
+  # - server: "localhost"
+  #   shortname: "ollama"
+  #   openai_api_key: "no_key"
+  #   openai_api_base: "http://127.0.0.1:11434/v1"
+  #   openai_model: "llama3.1:70b"
+
+  # vLLM server (local/remote inference)
+  # - server: "your-server.com"
+  #   shortname: "vllm"
+  #   openai_api_key: "no_key"
+  #   openai_api_base: "http://your-server.com:8000/v1"
+  #   openai_model: "meta-llama/Llama-3.1-70B-Instruct"
+
+  # Anthropic Claude (if you have API access)
+  # - server: "api.anthropic.com"
+  #   shortname: "claude"
+  #   openai_api_key: "${ANTHROPIC_API_KEY}"
+  #   openai_api_base: "https://api.anthropic.com/v1"
+  #   openai_model: "claude-3-5-sonnet-20241022"
+
+  # Azure OpenAI (if you have Azure OpenAI access)
+  # - server: "your-resource.openai.azure.com"
+  #   shortname: "azure"
+  #   openai_api_key: "${AZURE_OPENAI_API_KEY}"
+  #   openai_api_base: "https://your-resource.openai.azure.com/openai/deployments/your-deployment/chat/completions?api-version=2023-12-01-preview"
+  #   openai_model: "gpt-4"
+
+# Configuration Notes:
+# 
+# 1. Environment Variables:
+#    - Use ${VARIABLE_NAME} syntax for environment variables
+#    - Set OPENAI_API_KEY in your environment: export OPENAI_API_KEY="sk-..."
+#    
+# 2. Model Selection:
+#    - Use --model with either the full openai_model name or shortname
+#    - Example: --model gpt-4.1 or --model gpt41
+#    
+# 3. Local Models:
+#    - Ensure your local inference server is running
+#    - Configure the correct port and model name
+#    - Set openai_api_key to "no_key" for local servers
+#    
+# 4. Custom APIs:
+#    - Many APIs are OpenAI-compatible (same API format)
+#    - Adjust the openai_api_base URL for your specific service
+#    - Set appropriate authentication keys
+#
+# 5. Testing Configuration:
+#    - Test with: python model_config.py --list
+#    - Show specific model: python model_config.py --show gpt-4.1
